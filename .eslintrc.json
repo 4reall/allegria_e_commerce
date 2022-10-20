@@ -1,3 +1,62 @@
 {
-  "extends": "next/core-web-vitals"
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "plugin:@next/next/recommended",
+        "plugin:storybook/recommended",
+        "airbnb",
+        "prettier",
+        "next/core-web-vitals"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "prettier"
+    ],
+    "rules": {
+        "prettier/prettier": "error",
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/forbid-prop-types": "off",
+        "import/extensions": "off",
+        "react/jsx-filename-extension": "off",
+        "arrow-body-style": "off",
+        "import/prefer-default-export": "off",
+        "react/function-component-definition": [
+            "error",
+            {
+                "namedComponents": [
+                    "function-declaration",
+                    "arrow-function"
+                ],
+                "unnamedComponents": "arrow-function"
+            }
+        ],
+        "react/require-default-props": [
+            "error",
+            {
+                "ignoreFunctionalComponents": true
+            }
+        ],
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": [
+                    "**/*.stories.*",
+                    "**/.storybook/**/*.*"
+                ],
+                "peerDependencies": true
+            }
+        ]
+    }
 }
