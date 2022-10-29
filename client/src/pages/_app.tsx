@@ -1,5 +1,5 @@
 import type { AppProps } from 'next/app';
-import '@/common/styles/global.css';
+import 'common/styles/global.css';
 import { appWithTranslation } from 'next-i18next';
 
 function App({ Component, pageProps }: AppProps) {

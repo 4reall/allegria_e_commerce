@@ -32,6 +32,9 @@
         "react/jsx-filename-extension": "off",
         "arrow-body-style": "off",
         "import/prefer-default-export": "off",
+        "import/no-absolute-path": "off",
+        "no-unused-vars": "warn",
+        "react/no-unused-prop-types":"warn",
         "react/function-component-definition": [
             "error",
             {
