@@ -35,6 +35,7 @@
         "import/no-absolute-path": "off",
         "no-unused-vars": "warn",
         "react/no-unused-prop-types":"warn",
+        "global-require": "off",
         "react/function-component-definition": [
             "error",
             {
