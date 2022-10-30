@@ -2,70 +2,68 @@ import cn from 'classnames';
 import {
 	ComponentProps,
 	useState,
-	FocusEvent,
-	MouseEvent,
 	useRef,
 	forwardRef,
-	useImperativeHandle,
-	useId,
+	ChangeEvent,
 } from 'react';
 import { Label } from '@radix-ui/react-label';
-import { v4 } from 'uuid';
 import Logo from '/public/assets/icons/passwordLabel.svg';
 import { mergeRefs } from 'react-merge-refs';
+import { v4 } from 'uuid';
 
 interface InputOwnProps {
 	align: 'start' | 'center';
+	error?: boolean;
 }
 
 type InputProps = InputOwnProps &
 	Omit<ComponentProps<'input'>, keyof InputOwnProps>;
 
 const Input = forwardRef<HTMLInputElement, InputProps>(
-	({ align, placeholder, ...props }, ref) => {
-		const [focused, setFocused] = useState(false);
+	({ align, placeholder, error, ...props }, ref) => {
+		const [value, setValue] = useState('');
 		const [passwordVisible, setPasswordVisible] = useState(false);
 		const innerRef = useRef<HTMLInputElement>();
-		const id = useId();
 
-		const handleFocus = (e: FocusEvent<HTMLInputElement>) => {
-			if (document.activeElement === innerRef.current) setFocused(true);
-			if (props.onFocus) props.onFocus(e);
+		const handleClick = () => {
+			setPasswordVisible(!passwordVisible);
 		};
 
-		const handleBlur = (e: FocusEvent<HTMLInputElement>) => {
-			setFocused(false);
-			if (props.onBlur) props.onBlur(e);
+		const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+			setValue(e.target.value);
+			if (props.onChange) props.onChange(e);
 		};
 
 		return (
-			<div className="relative">
+			<Label
+				className={cn(
+					'relative block h-8 p-[2px] outline-2 focus:outline-red-500'
+					// error ? 'outline-red-500' : ''
+				)}
+			>
 				<input
 					ref={mergeRefs([ref, innerRef])}
-					id={id}
 					{...props}
-					onFocus={handleFocus}
-					onBlur={handleBlur}
+					placeholder={placeholder}
+					onChange={handleChange}
+					type={passwordVisible ? '' : 'password'}
 					className={cn(
-						'py-1 px-[2px] border-b-[1px] border-primaryDark h-8',
-						'focus:outline-0',
-						'transition-all duration-500'
+						'border-primaryDark h-full w-full border-b-[1px] py-1 px-[2px] text-sm',
+						'focus-visible:outline-beige focus:outline-none',
+						value && 'placeholder:text-transparent',
+						!passwordVisible && value && 'font-mono'
 					)}
 				/>
-				<Label
-					htmlFor={props.id || id}
+				<span
+					tabIndex={1}
+					onMouseDown={handleClick}
 					className={cn(
-						'absolute top-[0.25rem] left-0 text-gray',
-						'transition-all duration-200',
-						focused ? 'opacity-0' : 'opacity-100'
+						'absolute right-2 top-1/2 block -translate-y-[45%] p-2'
 					)}
 				>
-					{placeholder}
-				</Label>
-				<span>
 					<Logo />
 				</span>
-			</div>
+			</Label>
 		);
 	}
 );
