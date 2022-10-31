@@ -2,72 +2,76 @@ import cn from 'classnames';
 import {
 	ComponentProps,
 	useState,
-	FocusEvent,
-	MouseEvent,
 	useRef,
 	forwardRef,
-	useImperativeHandle,
-	useId,
+	ChangeEvent,
+	KeyboardEvent,
 } from 'react';
 import { Label } from '@radix-ui/react-label';
-import { v4 } from 'uuid';
 import Logo from '/public/assets/icons/passwordLabel.svg';
-import { mergeRefs } from 'react-merge-refs';
 
 interface InputOwnProps {
-	align: 'start' | 'center';
+	error?: boolean;
 }
 
 type InputProps = InputOwnProps &
 	Omit<ComponentProps<'input'>, keyof InputOwnProps>;
 
 const Input = forwardRef<HTMLInputElement, InputProps>(
-	({ align, placeholder, ...props }, ref) => {
-		const [focused, setFocused] = useState(false);
+	({ error, type, ...props }, ref) => {
+		const [value, setValue] = useState('');
 		const [passwordVisible, setPasswordVisible] = useState(false);
-		const innerRef = useRef<HTMLInputElement>();
-		const id = useId();
 
-		const handleFocus = (e: FocusEvent<HTMLInputElement>) => {
-			if (document.activeElement === innerRef.current) setFocused(true);
-			if (props.onFocus) props.onFocus(e);
+		const isPassword = type === 'password';
+		const password = passwordVisible ? '' : 'password';
+
+		const handleClick = () => {
+			setPasswordVisible(!passwordVisible);
 		};
 
-		const handleBlur = (e: FocusEvent<HTMLInputElement>) => {
-			setFocused(false);
-			if (props.onBlur) props.onBlur(e);
+		const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+			setValue(e.target.value.trim());
+			if (props.onChange) props.onChange(e);
+		};
+
+		const handleSpacePress = (e: KeyboardEvent) => {
+			if (e.key === ' ') setPasswordVisible(!passwordVisible);
 		};
 
 		return (
-			<div className="relative">
+			<div className={cn('relative block h-8')}>
 				<input
-					ref={mergeRefs([ref, innerRef])}
-					id={id}
+					ref={ref}
 					{...props}
-					onFocus={handleFocus}
-					onBlur={handleBlur}
+					value={value}
+					onChange={handleChange}
+					type={isPassword ? password : type}
 					className={cn(
-						'py-1 px-[2px] border-b-[1px] border-primaryDark h-8',
-						'focus:outline-0',
-						'transition-all duration-500'
+						'border-primaryDark h-full w-full border-b-[1px] py-1 px-[2px] text-sm tracking-wider',
+						'focus:outline-[2px] focus:outline-offset-4',
+						value && 'placeholder:text-transparent',
+						!passwordVisible && value && isPassword && 'font-mono',
+						error ? 'outline-red-500' : 'outline-beige'
 					)}
 				/>
-				<Label
-					htmlFor={props.id || id}
-					className={cn(
-						'absolute top-[0.25rem] left-0 text-gray',
-						'transition-all duration-200',
-						focused ? 'opacity-0' : 'opacity-100'
-					)}
-				>
-					{placeholder}
-				</Label>
-				<span>
-					<Logo />
-				</span>
+				{isPassword && (
+					<Label
+						htmlFor={props.id}
+						tabIndex={1}
+						onClick={handleClick}
+						onKeyDown={handleSpacePress}
+						className={cn(
+							'absolute right-2 top-1/2 block -translate-y-[45%] p-1'
+						)}
+					>
+						<Logo />
+					</Label>
+				)}
 			</div>
 		);
 	}
 );
+
+Input.displayName = 'Input';
 
 export default Input;
