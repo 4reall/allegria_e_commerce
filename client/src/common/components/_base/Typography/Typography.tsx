@@ -10,12 +10,14 @@ const typographyConfig = {
 		primary: 'text-primary',
 		primaryDark: 'text-primary-dark',
 		gray: 'text-gray',
+		beige: 'text-beige',
+		accent: 'text-accent',
 	},
 	variant: {
 		'2xl': 'text-2xl',
 		xl: 'text-xl',
 		lg: 'text-lg',
-		md: 'text-md',
+		base: 'text-base',
 		sm: 'text-sm',
 		xs: 'text-xs',
 	},
@@ -42,7 +44,7 @@ type TypographyProps<TTag extends ElementType> = TypographyOwnProps<TTag> &
 const baseTag = 'span';
 
 const Typography = <TTag extends ElementType = typeof baseTag>({
-	variant = 'md',
+	variant = 'base',
 	color = 'primary',
 	type = 'normal',
 	spacing = 'none',

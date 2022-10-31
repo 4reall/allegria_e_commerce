@@ -6,12 +6,21 @@ const nextConfig = {
 	reactStrictMode: true,
 	swcMinify: true,
 	i18n,
+	images: {
+		remotePatterns: [
+			{
+				protocol: 'https',
+				hostname: 'image.uniqlo.com',
+			},
+		],
+	},
 	webpack(config) {
 		config.module.rules.push({
 			test: /\.svg$/i,
 			issuer: /\.[jt]sx?$/,
 			use: ['@svgr/webpack'],
 		});
+
 		return config;
 	},
 };
