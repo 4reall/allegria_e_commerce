@@ -20,12 +20,9 @@ module.exports = {
 				normal: ['Jost', 'sans-serif'],
 			},
 			fontSize: {
-				'2xl': '90px',
-				xl: '50px',
-				lg: '30px',
-				md: '16px',
-				sm: '14px',
-				xs: '12px',
+				'2xl': 'font-size: 5.625rem; line-height:1;',
+				xl: 'font-size: 3.125rem; line-height: 1;',
+				lg: 'font-size: 1.875rem; line-height: 2.25rem;',
 			},
 			keyframes: {
 				'scale-in': {
