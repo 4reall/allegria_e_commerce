@@ -4,7 +4,7 @@ import cn from "classnames";
 
 const AccordionMenu = ({ categories }: any) => {
   return (
-    <Accordion.Root type="single" collapsible>
+    <Accordion.Root type="multiple">
       {categories.map((categorie: any, index: number) => (
         <Accordion.Item
           key={index}
@@ -12,11 +12,13 @@ const AccordionMenu = ({ categories }: any) => {
           className={cn("border-b-[1px]", "border-beige")}
         >
           <Accordion.Header>
-            <Accordion.Trigger className="w-full h-full  py-[15px] group">
+            <Accordion.Trigger className="group h-full  w-full py-[15px]">
               <Typography color="primaryDark" variant="sm" uppercase>
                 <div className="flex justify-between">
-                  <span className="font-[800]">{categorie.name}</span>
-                  <span className="group-radix-state-open:hidden text-primaryDark">
+                  <span className="font-[800]">
+                    {categorie.title}
+                  </span>
+                  <span className="text-primaryDark group-radix-state-open:hidden">
                     <svg
                       width="15"
                       height="15"
@@ -32,7 +34,7 @@ const AccordionMenu = ({ categories }: any) => {
                       ></path>
                     </svg>
                   </span>
-                  <span className="group-radix-state-closed:hidden text-accent font-[900]">
+                  <span className="font-[900] text-accent group-radix-state-closed:hidden">
                     <svg
                       width="15"
                       height="15"
@@ -58,18 +60,63 @@ const AccordionMenu = ({ categories }: any) => {
               <Accordion.Content
                 className={cn("last-of-type:mb-[15px] ")}
               >
-                <Typography
-                  variant="sm"
-                  color="primaryDark"
-                  as="p"
-                  className="font-[400]  cursor-pointer hover:text-accent"
-                >
+                <Typography variant="sm" color="primaryDark">
                   {item}
                 </Typography>
               </Accordion.Content>
             );
           })}
         </Accordion.Item>
+      ))}
+    </Accordion.Root>
+  );
+};
+
+interface ContentItem {
+  title: string;
+  content: string[] | string;
+}
+
+const CustomAccordionItem = ({
+  item,
+  index,
+}: {
+  item: ContentItem;
+  index: number;
+}) => {
+  return (
+    <Accordion.Item value={`item-${index}`}>
+      <Accordion.Header>
+        <Accordion.Trigger
+          className={cn("group", "h-full", "w-full", "py-[15px]")}
+        >
+          {item.title}
+        </Accordion.Trigger>
+        {Array.isArray(item.content) ? (
+          item.content.map((item: string, index: number) => {
+            return <Accordion.Content>{item}</Accordion.Content>;
+          })
+        ) : (
+          <Accordion.Content>{item.content}</Accordion.Content>
+        )}
+      </Accordion.Header>
+    </Accordion.Item>
+  );
+};
+
+export const CustomAccordion = ({
+  items,
+}: {
+  items: ContentItem[];
+}) => {
+  // const
+  return (
+    <Accordion.Root type="multiple">
+      {items.map((item, index) => (
+        <CustomAccordionItem
+          item={item}
+          index={index}
+        ></CustomAccordionItem>
       ))}
     </Accordion.Root>
   );

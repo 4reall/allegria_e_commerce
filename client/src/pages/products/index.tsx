@@ -3,7 +3,10 @@ import cn from "classnames";
 import Image from "next/image";
 import React, { PropsWithChildren } from "react";
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
-import AccordionMenu from "common/components/AccordionMenu/AccordionMenu";
+import AccordionMenu, {
+  CustomAccordion,
+} from "common/components/AccordionMenu/AccordionMenu";
+import RoundLabel from "common/components/_base/RoundLabel";
 
 const Container = (props: PropsWithChildren) => {
   return (
@@ -13,9 +16,9 @@ const Container = (props: PropsWithChildren) => {
   );
 };
 
-const FilterItem = (props) => {
+const FilterItem = (props: any) => {
   return (
-    <span className="w-[35px] h-[35px] border border-beige  hover:border-primary-dark cursor-pointer  grid place-items-center">
+    <span className="grid h-[35px] w-[35px] cursor-pointer  place-items-center border  border-beige hover:border-primary-dark">
       {props.children}
     </span>
   );
@@ -26,7 +29,7 @@ const DropdownFilter = () => {
 
   return (
     <DropdownMenu.Root>
-      <DropdownMenu.Trigger className="border-[1px] border-beige w-[185px] py-[8px] px-[15px] text-left group">
+      <DropdownMenu.Trigger className="group w-[185px] border-[1px] border-beige py-[8px] px-[15px] text-left">
         <div className="flex justify-between">
           <Typography variant="sm" color="primaryDark">
             Размер
@@ -49,8 +52,8 @@ const DropdownFilter = () => {
         </div>
       </DropdownMenu.Trigger>
       <DropdownMenu.Portal>
-        <DropdownMenu.Content className="bg-white border-l-[1px] border-r-[1px] w-[185px] border-r-beige border-l-beige">
-          <DropdownMenu.Group className=" pt-[10px] px-[7px] pb-[20px] grid grid-cols-4 gap-[10px]">
+        <DropdownMenu.Content className="w-[185px] border-l-[1px] border-r-[1px] border-r-beige border-l-beige bg-white">
+          <DropdownMenu.Group className=" grid grid-cols-4 gap-[10px] px-[7px] pt-[10px] pb-[20px]">
             {sizes.map((item) => {
               return (
                 <DropdownMenu.CheckboxItem
@@ -66,7 +69,7 @@ const DropdownFilter = () => {
           </DropdownMenu.Group>
           <DropdownMenu.Item>
             <button
-              className="bg-primary-dark w-full py-[8px]"
+              className="w-full bg-primary-dark py-[8px]"
               onClick={(e) => e.preventDefault()}
             >
               <Typography uppercase className="text-beige">
@@ -83,7 +86,7 @@ const DropdownFilter = () => {
 const ProductsPage = () => {
   const categories = [
     {
-      name: "ОДЕЖДА",
+      title: "ОДЕЖДА",
       content: [
         "Свитера толcтовки",
         "Платья юбки",
@@ -95,11 +98,11 @@ const ProductsPage = () => {
       ],
     },
     {
-      name: "Обувь",
+      title: "Обувь",
       content: ["Кроссовки", "Шлепанцы"],
     },
     {
-      name: "СУМКИ",
+      title: "СУМКИ",
       content: [
         "Сумки",
         "Рюкзаки",
@@ -110,7 +113,7 @@ const ProductsPage = () => {
       ],
     },
     {
-      name: "АКСЕСУАРЫ",
+      title: "АКСЕСУАРЫ",
       content: [
         "Головные уборы",
         "Перчатки",
@@ -120,13 +123,15 @@ const ProductsPage = () => {
       ],
     },
     {
-      name: "БЕЛЬЕ",
+      title: "БЕЛЬЕ",
       content: ["Разное"],
     },
   ];
 
   return (
     <>
+      <header className="mb-[8px] h-[60px] bg-beige">header</header>
+      <div className="mb-[23px] h-[14px] bg-beige p-0"></div>
       <Container>
         <div className={cn("flex gap-[25px]")}>
           <aside className={cn("w-[220px]")}>
@@ -139,7 +144,8 @@ const ProductsPage = () => {
                   "text-center",
                   "border-b-[2px]",
                   "border-accent",
-                  "font-[400]"
+                  "font-[400]",
+                  "pb-[10px]"
                 )}
               >
                 женщины
@@ -152,27 +158,33 @@ const ProductsPage = () => {
                   "text-center",
                   "border-b-[1px]",
                   "border-beige",
-                  "font-[400]"
+                  "font-[400]",
+                  "pb-[10px]"
                 )}
               >
                 МУЖЧИНЫ
               </Typography>
             </div>
             <AccordionMenu categories={categories} />
+
+            {/* <CustomAccordion items={categories} /> */}
           </aside>
           <section>
             <Typography
               uppercase
               variant="xl"
               color="primaryDark"
+              as="h1"
               bold
+              className="mb-[45px] text-[25px]"
             >
               Кофти та піджаки
             </Typography>
-            <div>
-              <span className="mr-5">FILTER</span>
-              <DropdownFilter></DropdownFilter>
+            <div className="mb-[24px] h-[40px] bg-beige">
+              <span>FILTER</span>
             </div>
+
+            <div className=" mb-[18px] h-[24px] bg-beige"></div>
             <div
               className={cn(
                 "grid",
@@ -240,7 +252,8 @@ const ProductCard = ({
           "absolute",
           "right-[10px]",
           "top-[10px]",
-          "text-white"
+          "text-white",
+          "z-10"
         )}
       >
         40%
@@ -265,7 +278,7 @@ const ProductCard = ({
         </Typography>
         <Typography
           color="primaryDark"
-          variant="md"
+          // variant="md"
           className={cn("mt-[1px]")}
         >
           {name}
