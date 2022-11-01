@@ -16,6 +16,7 @@ type LabelProps = LabelOwnProps &
 const RoundLabel = ({
   children,
   color = "accent",
+  className,
   ...props
 }: PropsWithChildren<LabelProps>) => {
   return (
@@ -23,7 +24,15 @@ const RoundLabel = ({
       {...props}
       className={cn(
         labelConfig[color],
-        "flex h-12 w-12 items-center justify-center rounded-full py-3 px-[6px]"
+        "flex",
+        "h-12",
+        "w-12 ",
+        "items-center",
+        "justify-center ",
+        "rounded-full",
+        "py-3",
+        "px-[6px]",
+        className
       )}
     >
       {children}
