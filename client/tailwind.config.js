@@ -4,6 +4,11 @@ module.exports = {
 	content: ['src/**/*.{js,jsx,ts,tsx}'],
 	theme: {
 		extend: {
+			screens: {
+				'xs': {'max': '375px'},
+				'mds': {'max': '768px'},
+				'lgs': {'max': '1024px'},
+			},
 			colors: {
 				primary: '#254A5A',
 				'primary-dark': '#0F303F',
@@ -15,6 +20,7 @@ module.exports = {
 			fontFamily: {
 				decor: ['Cormorant Garamond', 'serif'],
 				normal: ['Jost', 'sans-serif'],
+				avenir: ['Avenir', 'serif'],
 			},
 			fontSize: {
 				'2xl': '90px',
