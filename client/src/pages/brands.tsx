@@ -6,16 +6,16 @@ const Brands = () => {
 	const { t } = useTranslation('brands')
 	return (
 		<section className="vintageBrand relative uppercase px-1 pb-28 mds:px-[15px]">
-			<div className="vintageIntroduction text-center text-beige pt-56 relative z-10 space-y-1 > * font-decor h-[600px] mb-[120px] mds:h-[460px] mds:pt-40 mds:mb-[50px]">
-				<div className="vintageIntroductionWrapper xs:mb-10">
+			<div className="vintageIntroduction text-center text-beige pt-56 relative z-10 space-y-1 font-decor h-[600px] mb-[120px] mds:h-[460px] mds:pt-40 mds:mb-[50px]">
+				<div className="vintageIntroductionWrapper">
 					<p className="vintageAnnotation text-[25px] xs:text-base">
 						{t('brand')}
 					</p>
-					<h1 className="vintageTitle text-4xl xs:text-lg">
+					<h1 className="vintageTitle text-xl mds:text-lg">
 						{t('vintageBrand')}
 					</h1>
 				</div>
-				<p className="vintageSubtitle m-auto font-avenir md:w-[637px] xs:w-50%">
+				<p className="vintageSubtitle m-auto font-avenir normal-case md:w-[637px] xs:w-50%">
 					{t('vintageDescriprion')}
 				</p>
 			</div>

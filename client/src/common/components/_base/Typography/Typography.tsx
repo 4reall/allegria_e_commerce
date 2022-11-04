@@ -5,11 +5,13 @@ const typographyConfig = {
 	type: {
 		decor: 'font-decor',
 		normal: 'font-normal',
+		avenir: 'font-avenir',
 	},
 	color: {
 		primary: 'text-primary',
 		primaryDark: 'text-primary-dark',
 		gray: 'text-gray',
+		beige: 'text-beige',
 	},
 	variant: {
 		'2xl': 'text-2xl',
