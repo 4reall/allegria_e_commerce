@@ -1,6 +1,9 @@
 import { Prop, raw, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
-import { Variant, VariantSchema } from 'src/product/schemas/variant.schema';
+import {
+  Variant,
+  VariantSchema,
+} from 'src/modules/product/schemas/variant.schema';
 import { ApiProperty } from '@nestjs/swagger';
 
 export type ProductDocument = Product & Document;

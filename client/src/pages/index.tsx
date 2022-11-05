@@ -9,11 +9,19 @@ import Checkbox from 'common/components/_base/Checkbox/Checkbox';
 import RadioButtons from 'common/components/_base/RadioButtons/RadioButtons';
 import RoundLabel from 'common/components/_base/RoundLabel';
 import { HeartIcon } from '@radix-ui/react-icons';
+import { useSession } from 'next-auth/react';
+import { useEffect } from 'react';
 
 const options = ['option 1', 'option 2', 'option 3'];
 
 const Home: NextPage = () => {
-	return <div className="p-4"></div>;
+	const { data } = useSession();
+
+	useEffect(() => {
+		console.log(data);
+	}, [data]);
+
+	return <div className="p-4">{data ? 'authorized' : 'unauthorized'}</div>;
 };
 
 export async function getStaticProps({ locale }: GetStaticPropsContext) {

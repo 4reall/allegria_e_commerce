@@ -1,7 +1,7 @@
 import { Prop, raw, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { ApiProperty } from '@nestjs/swagger';
 
-@Schema({ _id: false })
+@Schema()
 export class Variant {
   @ApiProperty({
     type: {
@@ -28,7 +28,7 @@ export class Variant {
   size: string;
 
   @ApiProperty({
-    type: String,
+    type: Number,
     required: true,
   })
   @Prop({ required: true, default: 0 })

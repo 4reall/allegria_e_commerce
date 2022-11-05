@@ -39,7 +39,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
 		};
 
 		return (
-			<div className={cn('relative block h-8')}>
+			<div className={cn('relative block h-8', props.className)}>
 				<input
 					ref={ref}
 					{...props}
@@ -51,7 +51,8 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
 						'focus:outline-[2px] focus:outline-offset-4',
 						value && 'placeholder:text-transparent',
 						!passwordVisible && value && isPassword && 'font-mono',
-						error ? 'outline-red-500' : 'outline-beige'
+						error ? 'outline-red-500' : 'outline-beige',
+						(passwordVisible || isPassword) && 'pr-8'
 					)}
 				/>
 				{isPassword && (

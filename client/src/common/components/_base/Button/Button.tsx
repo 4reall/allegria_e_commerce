@@ -28,7 +28,8 @@ const Button = ({ children, variant = 'primary', ...props }: ButtonProps) => {
 			{...props}
 			className={cn(
 				'border-[1px] px-12 py-3 transition-all duration-200',
-				buttonConfig[variant]
+				buttonConfig[variant],
+				props.className
 			)}
 		>
 			{children}

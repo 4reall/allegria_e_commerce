@@ -2,10 +2,19 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from 'src/app.module';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { ValidationPipe } from '@nestjs/common';
+import * as cookieParser from 'cookie-parser';
 
 const bootstrap = async () => {
   const PORT = process.env.PORT || 5500;
   const app = await NestFactory.create(AppModule);
+
+  app.setGlobalPrefix('api');
+  app.use(cookieParser());
+  app.enableCors({
+    credentials: true,
+    origin: 'http://localhost:3000',
+    methods: ['GET', 'POST'],
+  });
 
   const config = new DocumentBuilder()
     .setTitle('E-commerce api')

@@ -8,7 +8,7 @@ import {
   IsString,
 } from 'class-validator';
 import { Transform } from 'class-transformer';
-import { Sizes } from 'src/product/constants';
+import { Sizes } from 'src/modules/product/constants';
 import { ApiPropertyOptional } from '@nestjs/swagger';
 
 export class GetProductsDto {
@@ -17,7 +17,7 @@ export class GetProductsDto {
   @IsOptional()
   @IsEnum(Sizes)
   @Transform(({ value }) => value.toUpperCase())
-  size?: Sizes;
+  readonly size?: Sizes;
 
   @ApiPropertyOptional({
     type: String,
@@ -26,7 +26,7 @@ export class GetProductsDto {
   })
   @IsString()
   @IsOptional()
-  orderBy?: '1' | '-1' | 'asc' | 'desc' = '1';
+  readonly orderBy?: '1' | '-1' | 'asc' | 'desc' = '1';
 
   @ApiPropertyOptional({
     type: String,
@@ -36,7 +36,7 @@ export class GetProductsDto {
   @IsString()
   @Transform(({ value }) => value.toLowerCase())
   @IsIn(['new', 'old'])
-  relevance?: string = 'new';
+  readonly relevance?: string = 'new';
 
   @ApiPropertyOptional({
     type: Number,
@@ -48,11 +48,16 @@ export class GetProductsDto {
   @Transform(({ value }) => value.split(',').map((val) => +val))
   @IsArray()
   @IsNumber({}, { each: true })
-  price?: number[] = [];
+  readonly price?: number[] = [];
 
   @ApiPropertyOptional({ type: String })
   @IsString()
   @IsOptional()
   @IsAlpha()
-  color?: string;
+  readonly color?: string;
+
+  @ApiPropertyOptional({ type: String })
+  @IsString()
+  @IsOptional()
+  readonly q?: string;
 }
