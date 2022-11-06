@@ -27,7 +27,7 @@ function App({ Component, pageProps }: AppProps<PageProps>) {
 					// refetchInterval={14}
 					session={pageProps.session}
 				>
-					<Header />
+					{/*<Header />*/}
 					<Component {...pageProps} />
 				</SessionProvider>
 			</Hydrate>

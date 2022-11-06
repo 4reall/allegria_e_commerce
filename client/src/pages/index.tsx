@@ -1,27 +1,15 @@
 import type { GetStaticPropsContext, NextPage } from 'next';
-import Typography from 'common/components/_base/Typography/Typography';
-import cn from 'classnames';
-import Input from 'common/components/_base/Input/Input';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import Image from 'next/image';
-import Button from 'common/components/_base/Button/Button';
-import Checkbox from 'common/components/_base/Checkbox/Checkbox';
-import RadioButtons from 'common/components/_base/RadioButtons/RadioButtons';
-import RoundLabel from 'common/components/_base/RoundLabel';
-import { HeartIcon } from '@radix-ui/react-icons';
 import { useSession } from 'next-auth/react';
 import { useEffect } from 'react';
+import { useTranslation } from 'next-i18next';
 
 const options = ['option 1', 'option 2', 'option 3'];
 
 const Home: NextPage = () => {
-	const { data } = useSession();
+	const { t } = useTranslation('about');
 
-	useEffect(() => {
-		console.log(data);
-	}, [data]);
-
-	return <div className="p-4">{data ? 'authorized' : 'unauthorized'}</div>;
+	return <div className="p-4">{t('title')}</div>;
 };
 
 export async function getStaticProps({ locale }: GetStaticPropsContext) {

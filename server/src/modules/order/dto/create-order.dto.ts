@@ -1,7 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
 import * as dayjs from 'dayjs';
 import {
-  IsDate,
   IsDateString,
   IsMongoId,
   IsString,

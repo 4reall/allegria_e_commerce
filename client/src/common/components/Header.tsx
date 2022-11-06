@@ -3,19 +3,28 @@ import Button from 'common/components/_base/Button/Button';
 import { useState } from 'react';
 import { signIn, useSession } from 'next-auth/react';
 import Input from 'common/components/_base/Input/Input';
+import Form from 'common/components/_base/Form';
+import InputField from 'common/components/InputField/InputField';
+import { SubmitHandler } from 'react-hook-form';
+
+interface FormValues {
+	email: string;
+	password: string;
+}
 
 const Header = () => {
 	const [login, setLogin] = useState('');
 	const [password, setPassword] = useState('');
 	const { data } = useSession();
 
-	const onSubmit = async (e: SubmitEvent) => {
-		e.preventDefault();
-		const response = await signIn('credentials', {
-			email: login,
-			password,
-			redirect: false,
-		});
+	const onSubmit: SubmitHandler<FormValues> = async (data, event) => {
+		event?.preventDefault();
+		// const response = await signIn('credentials', {
+		// 	email: login,
+		// 	password,
+		// 	redirect: false,
+		// });
+		console.log(data);
 	};
 
 	return (
@@ -25,23 +34,18 @@ const Header = () => {
 			</Dialog.Trigger>
 			<Dialog.Overlay />
 			<Dialog.Content className={'h-96 w-72'}>
-				<form
+				<Form
+					options={{}}
 					className="bg-beige-dark flex h-full w-full flex-col items-center justify-center"
-					onSubmit={(e) => onSubmit(e as any)}
+					onSubmit={onSubmit}
 				>
 					<div className="w-1/2">
-						<Input
+						<InputField name="login" className={'mt-4'} />
+						<InputField
+							name="password"
 							className={'mt-4'}
-							value={login}
-							onChange={(e) => setLogin(e.target.value)}
+							password
 						/>
-						<Input
-							type="password"
-							className={'mt-4'}
-							value={password}
-							onChange={(e) => setPassword(e.target.value)}
-						/>
-						{/*<Button onClick={logTokens}>get acces</Button>*/}
 						<Button
 							className={'mt-4'}
 							type="submit"
@@ -50,7 +54,7 @@ const Header = () => {
 							login
 						</Button>
 					</div>
-				</form>
+				</Form>
 			</Dialog.Content>
 		</Dialog.Root>
 	);

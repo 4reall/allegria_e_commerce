@@ -1,4 +1,4 @@
-import { ComponentProps, PropsWithChildren } from 'react';
+import { ComponentProps, forwardRef, PropsWithChildren } from 'react';
 import cn from 'classnames';
 
 const buttonConfig = {
@@ -17,24 +17,29 @@ const buttonConfig = {
 
 interface ButtonOwnProps {
 	variant?: keyof typeof buttonConfig;
+	full?: boolean;
 }
 
 type ButtonProps = PropsWithChildren<ButtonOwnProps> &
 	Omit<ComponentProps<'button'>, keyof ButtonOwnProps>;
 
-const Button = ({ children, variant = 'primary', ...props }: ButtonProps) => {
-	return (
-		<button
-			{...props}
-			className={cn(
-				'border-[1px] px-12 py-3 transition-all duration-200',
-				buttonConfig[variant],
-				props.className
-			)}
-		>
-			{children}
-		</button>
-	);
-};
+const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+	({ children, variant = 'primary', full, ...props }, ref) => {
+		return (
+			<button
+				ref={ref}
+				{...props}
+				className={cn(
+					'border-[1px] px-12 py-3 transition-all duration-200',
+					buttonConfig[variant],
+					props.className,
+					full && 'w-full'
+				)}
+			>
+				{children}
+			</button>
+		);
+	}
+);
 
 export default Button;

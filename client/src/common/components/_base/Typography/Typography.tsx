@@ -12,6 +12,7 @@ const typographyConfig = {
 		gray: 'text-gray',
 		beige: 'text-beige',
 		accent: 'text-accent',
+		error: 'text-error',
 	},
 	variant: {
 		'2xl': 'text-2xl',

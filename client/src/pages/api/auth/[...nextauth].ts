@@ -1,6 +1,24 @@
-import NextAuth, { Session, User } from 'next-auth';
+import NextAuth, {
+	CallbacksOptions,
+	Session,
+	SessionOptions,
+	User,
+} from 'next-auth';
 import Credentials from 'next-auth/providers/credentials';
 import { authService } from 'modules/auth/services/AuthService';
+import { JWT, JWTOptions } from 'next-auth/jwt';
+import { IUser } from 'common/models/User';
+import { ErrorType } from 'next-auth/core/pages/error';
+import { AxiosError } from 'axios';
+
+interface JWTParams {
+	token: JWT;
+	user: User;
+}
+interface SessionParams {
+	session: Session;
+	token: JWT;
+}
 
 export const authOptions = {
 	providers: [
@@ -15,27 +33,22 @@ export const authOptions = {
 				try {
 					const response = await authService.login(credentials!);
 
-					const user = response.data;
-					console.log('auth\n', user);
+					const user = response.data as User;
+
 					if (user) {
 						return user;
 					}
 					return null;
 				} catch (e) {
-					const errorMessage = e.response.data.message;
-					throw new Error(
-						errorMessage + '&email=' + credentials.email
-					);
+					console.log(e);
+					return null;
 				}
 			},
 		}),
 	],
 	secret: process.env.NEXTAUTH_URL,
-	// pages: {
-	// 	signIn: '/login',
-	// },
 	callbacks: {
-		async jwt({ token, user }) {
+		async jwt({ token, user }: JWTParams) {
 			if (user) {
 				return {
 					accessToken: user.accessToken,
@@ -60,7 +73,7 @@ export const authOptions = {
 			};
 		},
 
-		async session({ session, token }) {
+		async session({ session, token }: SessionParams) {
 			session.user = token.user;
 			session.accessToken = token.accessToken;
 			return session;

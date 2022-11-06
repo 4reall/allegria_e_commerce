@@ -7,15 +7,16 @@ export interface LoginProps {
 	password: string;
 }
 
-interface LoginResponse {
+interface BaseResponse {
 	user: IUser;
 	accessToken: string;
+	refreshToken: string;
 }
 
 class AuthService {
-	async login(props: LoginProps): Promise<AxiosResponse<LoginResponse>> {
+	async login(props: LoginProps): Promise<AxiosResponse<BaseResponse>> {
 		try {
-			return axios.post<LoginResponse>('/login', props, {
+			return axios.post<BaseResponse>('/login', props, {
 				withCredentials: true,
 			});
 		} catch (e) {
@@ -25,14 +26,12 @@ class AuthService {
 	}
 	async refreshAccessToken(
 		refreshToken: string
-	): Promise<AxiosResponse<LoginResponse>> {
+	): Promise<AxiosResponse<BaseResponse>> {
 		try {
-			return axios.post<LoginResponse>(
+			return axios.post<BaseResponse>(
 				'/refresh',
 				{ refreshToken },
-				{
-					withCredentials: true,
-				}
+				{ withCredentials: true }
 			);
 		} catch (e) {
 			console.log(e);

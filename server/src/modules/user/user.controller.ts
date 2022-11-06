@@ -22,16 +22,11 @@ export class UserController {
   }
 
   @Post('/login')
-  async login(
+  async dlogin(
     @Body() userLoginDto: UserLoginDto,
     @Res({ passthrough: true }) res: Response,
   ) {
-    const { user, ...tokens } = await this.userService.login(userLoginDto);
-    // res.cookie('refreshToken', userData.tokens.refreshToken, {
-    //   httpOnly: true,
-    //   maxAge: 30 * 24 * 60 * 60 * 1000,
-    // });
-    return { user, ...tokens };
+    return this.userService.login(userLoginDto);
   }
 
   @Post('/logout')
@@ -40,29 +35,16 @@ export class UserController {
     @Body() refreshToken: string,
     @Res({ passthrough: true }) res: Response,
   ) {
-    // const refreshToken = req.cookies['refreshToken'];
     await this.userService.logout(refreshToken);
-    // res.clearCookie('refreshToken');
     return { message: 'logout succeed' };
   }
 
   @Post('/refresh')
   async refresh(
-    @Req() req: Request,
     @Body() body: { refreshToken: string },
     @Res({ passthrough: true }) res: Response,
   ) {
-    // const refreshToken = req.cookies['refreshToken'];
-    // console.log(refreshToken);
-    console.log(body.refreshToken);
-
-    const userData = await this.userService.refresh(body.refreshToken);
-    // res.cookie('refreshToken', userData.tokens.refreshToken, {
-    //   httpOnly: true,
-    //   maxAge: 30 * 24 * 60 * 60 * 1000,
-    // });
-    // console.log(userData);
-    return { user: userData.user, accessToken: userData.accessToken };
+    return this.userService.refresh(body.refreshToken);
   }
 
   @Get('/test')

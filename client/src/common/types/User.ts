@@ -1,4 +1,4 @@
-import { IProduct } from 'common/models/Product';
+import { IProduct } from 'common/types/Product';
 
 export interface IUser {
 	_id: string;

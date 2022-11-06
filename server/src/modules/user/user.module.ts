@@ -13,7 +13,6 @@ import { Role, RoleSchema } from 'src/modules/role/role.schema';
 import { Order, OrderSchema } from 'src/modules/order/order.schema';
 import { TokenService } from 'src/modules/user/services/token.service';
 import { Token, TokenSchema } from 'src/modules/user/schemas/token.schema';
-import { AuthMiddleware } from 'src/modules/user/auth.middleware';
 
 @Module({
   imports: [
@@ -28,10 +27,4 @@ import { AuthMiddleware } from 'src/modules/user/auth.middleware';
   controllers: [UserController],
   providers: [UserService, TokenService],
 })
-export class UserModule implements NestModule {
-  configure(consumer: MiddlewareConsumer) {
-    consumer
-      .apply(AuthMiddleware)
-      .forRoutes({ path: '/test', method: RequestMethod.GET });
-  }
-}
+export class UserModule {}

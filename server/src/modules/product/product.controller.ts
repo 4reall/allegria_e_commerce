@@ -1,6 +1,6 @@
-import { Body, Controller, Get, Param, Post, Query } from '@nestjs/common';
+import { Controller, Get, Param, Query } from '@nestjs/common';
 import { ProductService } from 'src/modules/product/product.service';
-import { ApiOperation, ApiParam, ApiQuery, ApiResponse } from '@nestjs/swagger';
+import { ApiOperation, ApiResponse } from '@nestjs/swagger';
 import { Product } from 'src/modules/product/schemas/product.schema';
 import { GetProductsDto } from 'src/modules/product/dto/get-products.dto';
 
@@ -26,7 +26,6 @@ export class ProductController {
 
   @Get('/_upload')
   async uploadResource() {
-    const products = await this.productService._uploadResource();
-    return products;
+    return this.productService._uploadResource();
   }
 }

@@ -1,5 +1,5 @@
 import { IsBoolean, IsDefined, IsMongoId, IsString } from 'class-validator';
-import { User, UserDocument } from 'src/modules/user/schemas/user.schema';
+import { UserDocument } from 'src/modules/user/schemas/user.schema';
 
 export class UserTokenDto {
   @IsDefined()

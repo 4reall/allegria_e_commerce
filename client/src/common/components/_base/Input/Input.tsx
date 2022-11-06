@@ -39,7 +39,16 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
 		};
 
 		return (
-			<div className={cn('relative block h-8', props.className)}>
+			<Label
+				tabIndex={1}
+				className={cn(
+					'relative block h-8 w-full rounded-sm',
+					props.className,
+					error
+						? 'ring ring-[2px] !ring-red-500 !ring-offset-2'
+						: 'ring-beige ring-offset-2 focus-within:ring-[2px]'
+				)}
+			>
 				<input
 					ref={ref}
 					{...props}
@@ -47,28 +56,26 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
 					onChange={handleChange}
 					type={isPassword ? password : type}
 					className={cn(
-						'border-primaryDark h-full w-full border-b-[1px] py-1 px-[2px] text-sm tracking-wider',
-						'focus:outline-[2px] focus:outline-offset-4',
+						'border-primaryDark h-full w-full border-b-[1px] bg-transparent py-1 px-2',
+						'text-sm tracking-wider outline-none',
 						value && 'placeholder:text-transparent',
 						!passwordVisible && value && isPassword && 'font-mono',
-						error ? 'outline-red-500' : 'outline-beige',
-						(passwordVisible || isPassword) && 'pr-8'
+						(passwordVisible || isPassword) && 'pr-6'
 					)}
 				/>
 				{isPassword && (
-					<Label
-						htmlFor={props.id}
+					<span
 						tabIndex={1}
 						onClick={handleClick}
 						onKeyDown={handleSpacePress}
 						className={cn(
-							'absolute right-2 top-1/2 block -translate-y-[45%] p-1'
+							'absolute right-0 top-1/2 z-10 block -translate-y-[50%] p-1'
 						)}
 					>
 						<Logo />
-					</Label>
+					</span>
 				)}
-			</div>
+			</Label>
 		);
 	}
 );

@@ -14,7 +14,6 @@ import { GetProductsDto } from 'src/modules/product/dto/get-products.dto';
 export class ProductService {
   constructor(
     @InjectModel(Product.name) private productModel: Model<ProductDocument>,
-    private readonly httpService: HttpService,
   ) {}
 
   async getProducts(getProductsDto: GetProductsDto): Promise<Product[]> {
@@ -25,7 +24,7 @@ export class ProductService {
     const validColor = color ? new RegExp(`${color}`, 'i') : undefined;
     const validQuery = q ? new RegExp(q, 'im') : undefined;
 
-    const products = await this.productModel
+    return this.productModel
       .find({
         name: validQuery,
         'price.value': validPrice,
@@ -36,7 +35,6 @@ export class ProductService {
         'relevance.value': relevance === 'new' ? -1 : 1,
         price: orderBy as SortOrder,
       });
-    return products;
   }
 
   async getProduct(id: string): Promise<Product> {

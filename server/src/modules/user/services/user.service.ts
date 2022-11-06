@@ -15,15 +15,15 @@ import { v4 } from 'uuid';
 import { UserTokenDto } from 'src/modules/user/dtos/user-token.dto';
 import { UserLoginDto } from 'src/modules/user/dtos/user-login.dto';
 
-interface BaseResponse {
+type BaseResponse = {
   user: UserDocument;
   accessToken: string;
-}
-interface FullResponse {
+};
+type FullResponse = {
   user: UserDocument;
   accessToken: string;
   refreshToken: string;
-}
+};
 
 @Injectable()
 export class UserService {
@@ -96,11 +96,8 @@ export class UserService {
     if (!refreshToken) {
       throw new UnauthorizedException();
     }
-    console.log(refreshToken);
     const tokenPayload = this.tokenService.validateRefreshToken(refreshToken);
-    console.log('validation\n', tokenPayload);
     const tokenFromDb = await this.tokenService.findToken(refreshToken);
-    console.log('db\n', tokenFromDb);
     if (!tokenPayload || !tokenFromDb) {
       throw new UnauthorizedException();
     }

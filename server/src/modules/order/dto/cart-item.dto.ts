@@ -1,5 +1,4 @@
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
-import { Prop } from '@nestjs/mongoose';
 import {
   IsDefined,
   IsEnum,
@@ -7,7 +6,6 @@ import {
   IsMongoId,
   IsNumber,
   IsOptional,
-  IsRgbColor,
   IsString,
   ValidateNested,
 } from 'class-validator';

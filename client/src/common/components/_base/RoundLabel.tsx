@@ -1,4 +1,4 @@
-import { ComponentProps, PropsWithChildren } from 'react';
+import { ComponentProps, ElementType, PropsWithChildren } from 'react';
 import cn from 'classnames';
 
 const labelConfig = {
@@ -6,20 +6,25 @@ const labelConfig = {
 	white: 'bg-white [&>*]:!text-primaryDark',
 };
 
-interface LabelOwnProps {
+interface LabelOwnProps<T extends ElementType = ElementType> {
 	color?: keyof typeof labelConfig;
+	as?: T;
 }
 
-type LabelProps = LabelOwnProps &
-	Omit<ComponentProps<'span'>, keyof LabelOwnProps>;
+type LabelProps<T extends ElementType> = LabelOwnProps<T> &
+	Omit<ComponentProps<T>, keyof LabelOwnProps>;
 
-const RoundLabel = ({
+const baseTag = 'span';
+
+const RoundLabel = <T extends ElementType = typeof baseTag>({
 	children,
 	color = 'accent',
+	as,
 	...props
-}: PropsWithChildren<LabelProps>) => {
+}: PropsWithChildren<LabelProps<T>>) => {
+	const Tag = as || baseTag;
 	return (
-		<span
+		<Tag
 			{...props}
 			className={cn(
 				labelConfig[color],
@@ -27,7 +32,7 @@ const RoundLabel = ({
 			)}
 		>
 			{children}
-		</span>
+		</Tag>
 	);
 };
 
