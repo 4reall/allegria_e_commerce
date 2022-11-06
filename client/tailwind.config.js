@@ -9,6 +9,14 @@ module.exports = {
 				'mds': {'max': '768px'},
 				'lgs': {'max': '1024px'},
 			},
+			spacing: {
+				'2%': '2%',
+				'6%': '6%',
+				'10%': '10%',
+				'20%': '20%',
+				'50%': '50%',
+
+			},
 			colors: {
 				primary: '#254A5A',
 				'primary-dark': '#0F303F',
@@ -20,7 +28,6 @@ module.exports = {
 			fontFamily: {
 				decor: ['Cormorant Garamond', 'serif'],
 				normal: ['Jost', 'sans-serif'],
-				avenir: ['Avenir', 'serif'],
 			},
 			fontSize: {
 				'2xl': '90px',
