@@ -31,7 +31,7 @@ const RoundLabel = ({
         "justify-center ",
         "rounded-full",
         "py-3",
-        "px-[6px]",
+        "px-1.5",
         className
       )}
     >

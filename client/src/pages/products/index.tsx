@@ -1,12 +1,11 @@
 import Typography from "common/components/_base/Typography/Typography";
-import cn from "classnames";
-
-import React, { PropsWithChildren } from "react";
-import CustomAccordion from "common/components/AccordionMenu/AccordionMenu";
+import React from "react";
+import CustomAccordion from "common/components/CustomAccordion/CustomAccordion";
 import RoundLabel from "common/components/_base/RoundLabel";
 import PageContainer from "common/components/_base/PageContainer";
 import ProductCard from "common/components/ProductCard/ProductCard";
 import { HeartIcon } from "@radix-ui/react-icons";
+import AccordionItem from "common/components/CustomAccordion/AccordionItem";
 
 export const DummyHeader = () => {
   return (
@@ -114,31 +113,50 @@ const ProductsPage = () => {
       <DummyHeader />
       <DummyBread />
       <PageContainer>
-        <div className="flex justify-center gap-[25px]">
-          <aside className="hidden h-[440px] w-[220px] lg:block ">
-            <CustomAccordion items={categories} />
+        <div className="flex justify-center gap-6">
+          <aside className="hidden  w-1/6 lg:block ">
+            <CustomAccordion
+              content={categories}
+              renderItem={(item, index) => (
+                <AccordionItem
+                  item={item}
+                  index={index}
+                  isUppercase={true}
+                />
+              )}
+            />
           </aside>
-          <section className="w-[345px]  md:w-[728px] lg:w-[840px]">
-            <h2 className="mb-[45px] text-[25px] uppercase">
+          <section className="w-full max-w-4xl">
+            <Typography
+              as="h2"
+              uppercase
+              className="mb-11"
+              variant="2xl"
+            >
               Кофты и пиджаки
-            </h2>
+            </Typography>
             <DummyFilterSection />
             <DummyInfoSection />
 
-            <div className="grid grid-cols-2 gap-x-[15px] gap-y-[40px] md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-2 gap-x-3.5 gap-y-10 md:grid-cols-3 lg:grid-cols-3">
               {PRODUCTS.map((item, index) => (
-                <ProductCard key={index} {...item}>
-                  <RoundLabel className="absolute top-[10px] right-[10px] z-10 text-white">
-                    40%
-                  </RoundLabel>
-
-                  <RoundLabel
-                    color="white"
-                    className="absolute bottom-[120px] right-[10px] z-10"
-                  >
-                    <HeartIcon width={20} height={20} />
-                  </RoundLabel>
-                </ProductCard>
+                <ProductCard
+                  key={index}
+                  {...item}
+                  topLabel={
+                    <RoundLabel className="absolute top-2.5 right-2.5 z-10 text-white">
+                      40%
+                    </RoundLabel>
+                  }
+                  bottomLabel={
+                    <RoundLabel
+                      color="white"
+                      className="absolute bottom-2.5 right-2.5 z-10"
+                    >
+                      <HeartIcon width={20} height={20} />
+                    </RoundLabel>
+                  }
+                />
               ))}
             </div>
           </section>
