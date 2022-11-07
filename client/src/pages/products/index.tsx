@@ -1,11 +1,11 @@
 import Typography from 'common/components/_base/Typography/Typography';
 import React from 'react';
-import CustomAccordion from 'common/components/CustomAccordion/CustomAccordion';
+import Accordion from 'common/components/Accordion/Accordion';
 import RoundLabel from 'common/components/_base/RoundLabel';
 import PageContainer from 'common/components/_base/PageContainer';
 import ProductCard from 'common/components/ProductCard/ProductCard';
 import { HeartIcon } from '@radix-ui/react-icons';
-import AccordionItem from 'common/components/CustomAccordion/AccordionItem';
+import AccordionItem from 'common/components/Accordion/AccordionItem';
 
 export const DummyHeader = () => {
 	return (
@@ -111,7 +111,7 @@ const ProductsPage = () => {
 			<PageContainer>
 				<div className="flex justify-center gap-6">
 					<aside className="hidden  w-1/6 lg:block ">
-						<CustomAccordion
+						<Accordion
 							content={categories}
 							renderItem={(item, index) => (
 								<AccordionItem
