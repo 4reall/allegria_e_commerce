@@ -15,7 +15,6 @@ const Login = () => {
 				{/*<SignInForm />*/}
 				{/*<ResetPasswordForm />*/}
 				<SignUpForm />
-				<RoundLabel as="button" />
 			</div>
 		</div>
 	);

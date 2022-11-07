@@ -6,10 +6,7 @@ import NextAuth, {
 } from 'next-auth';
 import Credentials from 'next-auth/providers/credentials';
 import { authService } from 'modules/auth/services/AuthService';
-import { JWT, JWTOptions } from 'next-auth/jwt';
-import { IUser } from 'common/models/User';
-import { ErrorType } from 'next-auth/core/pages/error';
-import { AxiosError } from 'axios';
+import { JWT } from 'next-auth/jwt';
 
 interface JWTParams {
 	token: JWT;
