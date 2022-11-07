@@ -6,6 +6,9 @@ module.exports = {
 	content: ['src/**/*.{js,jsx,ts,tsx}'],
 	theme: {
 		extend: {
+			screens: {
+				xs: '480px',
+			},
 			colors: {
 				primary: '#254A5A',
 				'primary-dark': '#0F303F',
@@ -15,14 +18,24 @@ module.exports = {
 				'beige-dark': '#CEC6C4',
 				gray: '#B7C1C5',
 			},
+
 			fontFamily: {
 				decor: ['Cormorant Garamond', 'serif'],
 				normal: ['Jost', 'sans-serif'],
+				inter: ['Inter', 'sans-serif'],
 			},
-			fontSize: {
-				'2xl': ['5.625rem', 1],
-				xl: ['3.125rem', 1],
-				lg: ['1.875rem', '2.25rem'],
+			extend: {
+				fontSize: {
+					xxs: ['0.625rem', '0.875rem'],
+					xs: ['0.75rem', 1],
+					sm: ['0.875rem', '1.25rem'],
+					md: ['1rem', '1.375rem'],
+					lg: ['1.125rem', '1.5625rem'],
+					xl: ['1.25rem', '1.5rem'],
+					'2xl': ['1.5625rem', '2.125rem'],
+					'3xl': ['1.875rem', 1],
+					'4xl': ['5.625rem', 1],
+				},
 			},
 			keyframes: {
 				'scale-in': {
