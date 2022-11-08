@@ -1,6 +1,4 @@
 // /** @type {import("tailwindcss").Config} */
-
-const theme = require('tailwindcss/defaultTheme');
 const colors = require('tailwindcss/colors');
 module.exports = {
 	content: ['src/**/*.{js,jsx,ts,tsx}'],
@@ -38,6 +36,7 @@ module.exports = {
 				},
 			},
 			keyframes: {
+				// dropdown
 				'scale-in': {
 					'0%': { opacity: 0, transform: 'scale(0)' },
 					'100%': { opacity: 1, transform: 'scale(1)' },
@@ -50,11 +49,23 @@ module.exports = {
 					'0%': { opacity: 0, transform: 'translateY(10px)' },
 					'100%': { opacity: 1, transform: 'translateY(0)' },
 				},
+				// accordion
+				'slide-up-accordion': {
+					'0%': { height: 'var(--radix-accordion-content-height)' },
+					'100%': { height: 0 },
+				},
+				'slide-down-accordion': {
+					'0%': { height: 0 },
+					'100%': { height: 'var(--radix-accordion-content-height)' },
+				},
 			},
 			animation: {
 				'scale-in': 'scale-in 0.2s ease-in-out',
 				'slide-down': 'slide-down 0.6s cubic-bezier(0.16, 1, 0.3, 1)',
 				'slide-up': 'slide-up 0.6s cubic-bezier(0.16, 1, 0.3, 1)',
+				'slide-up-accordion': 'slide-up-accordion 0.15s linear',
+				'slide-down-accordion':
+					'slide-down-accordion 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
 			},
 		},
 	},

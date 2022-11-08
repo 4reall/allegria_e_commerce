@@ -2,17 +2,12 @@ import * as RCheckbox from '@radix-ui/react-checkbox';
 import { Label } from '@radix-ui/react-label';
 import cn from 'classnames';
 import { CheckIcon } from '@radix-ui/react-icons';
-import {
-	ComponentProps,
-	forwardRef,
-	PropsWithChildren,
-	ReactNode,
-} from 'react';
+import { forwardRef, ReactNode } from 'react';
 
 interface CheckboxProps {
 	label?: ReactNode | string;
-	value: boolean;
-	onChange: (checked: boolean) => void;
+	value?: boolean;
+	onChange?: (checked: boolean) => void;
 }
 
 const Checkbox = forwardRef<HTMLButtonElement, CheckboxProps>(

@@ -1,7 +1,7 @@
-import { Transition } from 'react-transition-group';
+import { CSSTransition } from 'react-transition-group';
 import * as DialogPrimitive from '@radix-ui/react-dialog';
 import cn from 'classnames';
-import React, { Fragment, PropsWithChildren, useRef, useState } from 'react';
+import { PropsWithChildren, useState } from 'react';
 import CloseButton from '../CloseButton';
 
 interface ModalProps {
@@ -11,19 +11,6 @@ interface ModalProps {
 	setIsOpen?: () => void;
 }
 
-const duration = 300;
-const defaultStyle = {
-	transition: `opacity ${duration}ms ease-in-out`,
-	opacity: 0,
-};
-
-const transitionStyles = {
-	entering: { opacity: 1 },
-	entered: { opacity: 1 },
-	exiting: { opacity: 0 },
-	exited: { opacity: 0 },
-};
-
 const Modal = ({
 	trigger,
 	isOpen,
@@ -31,54 +18,60 @@ const Modal = ({
 	children,
 }: PropsWithChildren<ModalProps>) => {
 	const [isOpen_, setIsOpen_] = useState(false);
-	const nodeRef = useRef(null);
+
+	const hasIsOpen = isOpen !== undefined;
+	const hasSetIsOpen = setIsOpen !== undefined;
+
+	const handleClose = () => setIsOpen_(false);
 
 	return (
-		<Transition
-			nodeRef={nodeRef}
-			in={isOpen === undefined ? isOpen : isOpen_}
-			timeout={duration}
+		<DialogPrimitive.Root
+			open={hasIsOpen ? isOpen : isOpen_}
+			onOpenChange={hasSetIsOpen ? setIsOpen : setIsOpen_}
 		>
-			{(state) => (
-				<DialogPrimitive.Root
-					open={isOpen === undefined ? isOpen : isOpen_}
-					onOpenChange={
-						setIsOpen === undefined ? setIsOpen : setIsOpen_
-					}
-				>
-					<DialogPrimitive.Trigger asChild>
-						{trigger}
-					</DialogPrimitive.Trigger>
-
-					<DialogPrimitive.Portal>
+			<DialogPrimitive.Trigger asChild>{trigger}</DialogPrimitive.Trigger>
+			<CSSTransition
+				in={hasIsOpen ? isOpen : isOpen_}
+				timeout={300}
+				classNames={{
+					enter: 'opacity-0',
+					enterActive: '!opacity-100 duration-200 transition-all',
+					enterDone: '!opacity-100',
+					exit: 'opacity-100',
+					exitActive: '!opacity-0 duration-200 transition-all',
+					exitDone: '!opacity-0',
+				}}
+				mountOnEnter
+				unmountOnExit
+			>
+				<DialogPrimitive.Portal forceMount>
+					<div>
 						<DialogPrimitive.Overlay
 							forceMount
-							className="fixed inset-0 z-20 bg-black/20"
+							className="fixed inset-0 z-10 bg-black/40"
 						/>
 						<DialogPrimitive.Content
-							ref={nodeRef}
+							forceMount
 							className={cn(
-								'fixed z-50',
+								'fixed z-50 border-none bg-white',
 								'h-[100vh] w-[100vw] max-w-lg py-7 px-10 md:h-auto md:w-auto',
-								'top-[50%] left-[50%]  -translate-x-[50%] -translate-y-[50%] ',
-								' bg-white',
-								'border-none',
-								{ ...defaultStyle },
-								{ ...transitionStyles }
+								'top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] '
 							)}
 						>
-							<DialogPrimitive.Description>
-								{children}
-							</DialogPrimitive.Description>
-
-							<DialogPrimitive.Close>
-								<CloseButton className="absolute right-7 top-7" />
+							{children}
+							<DialogPrimitive.Close asChild>
+								<CloseButton
+									onClick={
+										hasSetIsOpen ? setIsOpen : handleClose
+									}
+									className="absolute right-7 top-7"
+								/>
 							</DialogPrimitive.Close>
 						</DialogPrimitive.Content>
-					</DialogPrimitive.Portal>
-				</DialogPrimitive.Root>
-			)}
-		</Transition>
+					</div>
+				</DialogPrimitive.Portal>
+			</CSSTransition>
+		</DialogPrimitive.Root>
 	);
 };
 

@@ -1,21 +1,22 @@
-import * as AccordionR from '@radix-ui/react-accordion';
-import { ReactNode } from 'react';
+import * as AccordionPrimitive from '@radix-ui/react-accordion';
+import AccordionItem from 'common/components/Accordion/AccordionItem';
 
-interface ContentItem {
+export interface ContentItem {
 	title: string;
 	content: string[];
 }
 
 interface CustomAccordionProps {
-	renderItem: (item: ContentItem, index: number) => ReactNode;
 	content: ContentItem[];
 }
 
-const Accordion = ({ content, renderItem }: CustomAccordionProps) => {
+const Accordion = ({ content }: CustomAccordionProps) => {
 	return (
-		<AccordionR.Root type="single" collapsible>
-			{content.map((item, index) => renderItem(item, index))}
-		</AccordionR.Root>
+		<AccordionPrimitive.Root type="single" collapsible>
+			{content.map((contentItem, index) => (
+				<AccordionItem {...contentItem} index={index} />
+			))}
+		</AccordionPrimitive.Root>
 	);
 };
 

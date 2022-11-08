@@ -5,7 +5,6 @@ import RoundLabel from 'common/components/_base/RoundLabel';
 import PageContainer from 'common/components/_base/PageContainer';
 import ProductCard from 'common/components/ProductCard/ProductCard';
 import { HeartIcon } from '@radix-ui/react-icons';
-import AccordionItem from 'common/components/Accordion/AccordionItem';
 
 export const DummyHeader = () => {
 	return (
@@ -111,16 +110,7 @@ const ProductsPage = () => {
 			<PageContainer>
 				<div className="flex justify-center gap-6">
 					<aside className="hidden  w-1/6 lg:block ">
-						<Accordion
-							content={categories}
-							renderItem={(item, index) => (
-								<AccordionItem
-									item={item}
-									index={index}
-									isUppercase={true}
-								/>
-							)}
-						/>
+						<Accordion content={categories} />
 					</aside>
 					<section className="w-full max-w-4xl">
 						<Typography

@@ -2,7 +2,6 @@ import cn from 'classnames';
 import {
 	ComponentProps,
 	useState,
-	useRef,
 	forwardRef,
 	ChangeEvent,
 	KeyboardEvent,
@@ -40,7 +39,6 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
 
 		return (
 			<Label
-				tabIndex={1}
 				className={cn(
 					'relative block h-8 w-full rounded-sm',
 					props.className,
@@ -65,11 +63,12 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
 				/>
 				{isPassword && (
 					<span
-						tabIndex={1}
+						tabIndex={0}
 						onClick={handleClick}
 						onKeyDown={handleSpacePress}
 						className={cn(
-							'absolute right-0 top-1/2 z-10 block -translate-y-[50%] p-1'
+							'absolute right-0 top-1/2 z-10 block -translate-y-[50%] p-1 outline-none',
+							'focus-visible:ring-beige focus-visible:ring-[2px]'
 						)}
 					>
 						<Logo />
