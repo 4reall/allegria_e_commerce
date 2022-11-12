@@ -1,14 +1,23 @@
-import type { NextPage } from 'next';
-import Typography from 'common/components/_base/Typography/Typography';
-import cn from 'classnames';
-import Input from 'common/components/_base/Input/Input';
+import type { GetStaticPropsContext, NextPage } from 'next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useSession } from 'next-auth/react';
+import { useEffect } from 'react';
+import { useTranslation } from 'next-i18next';
+
+const options = ['option 1', 'option 2', 'option 3'];
 
 const Home: NextPage = () => {
-	return (
-		<div className="text-6xl text-blue-500">
-			<Input align="start" />
-		</div>
-	);
+	const { t } = useTranslation('about');
+
+	return <div className="p-4">{t('title')}</div>;
 };
+
+export async function getStaticProps({ locale }: GetStaticPropsContext) {
+	return {
+		props: {
+			...(await serverSideTranslations(locale || 'ru', ['about'])),
+		},
+	};
+}
 
 export default Home;

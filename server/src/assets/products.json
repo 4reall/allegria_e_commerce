@@ -1,0 +1,1819 @@
+[
+	{
+		"name": "Shimmery Pants",
+		"sex": "female",
+		"brand": "H&M",
+		"relevance": {
+			"name":"new",
+			"value": 1
+		},
+		"category": "trousers",
+		"thumbnailsUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]"
+		],
+		"price": {
+			"currencyIso": "USD",
+			"value": 50,
+			"saleValue": 30
+		},
+		"variants": [
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XS",
+				"stock": 0
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "S",
+				"stock": 1
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "M",
+				"stock": 3
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "L",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XL",
+				"stock": 0
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XXL",
+				"stock": 0
+			}
+		],
+		"imagesUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/f6/22/f62213f2a60fc9eb99d6070e63300780cab542b4.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/e6/b1/e6b17fc7f061d8285bda8693bd6542e4a875a516.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/a6/55/a6557de6403545f7b553a7f33f24701dce8e2e30.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/29/0c/290c567256e798bbaf33b696e0d4165eb9ed053b.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/4d/41/4d41e4b4bae2ae06e95eb7ec73f997e11f2d3be3.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/ef/f8/eff8fce0173ccb0ce05be7617b7ea0217d7b3fb7.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/fb/28/fb2807f7ac9bc8cdba1d22edcc685c96e0f1ce8f.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/58/c5/58c541a5dfbb17b74e7fb58f6553778917b959ff.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]"
+		]
+	},
+	{
+		"name": "Shimmery Pants",
+		"sex": "female",
+		"brand": "H&M",
+		"relevance": {
+			"name":"new",
+			"value": 1
+		},
+		"category": "trousers",
+		"thumbnailsUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]"
+		],
+		"price": {
+			"currencyIso": "USD",
+			"value": 159,
+			"saleValue": 0
+		},
+		"variants": [
+			{
+				"color": {
+					"name": "Red",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XS",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Red",
+					"rgb": "#C3C4C8"
+				},
+				"size": "S",
+				"stock": 1
+			},
+			{
+				"color": {
+					"name": "Red",
+					"rgb": "#C3C4C8"
+				},
+				"size": "M",
+				"stock": 0
+			},
+			{
+				"color": {
+					"name": "Red",
+					"rgb": "#C3C4C8"
+				},
+				"size": "L",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Red",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XL",
+				"stock": 1
+			},
+			{
+				"color": {
+					"name": "Red",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XXL",
+				"stock": 0
+			}
+		],
+		"imagesUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/f6/22/f62213f2a60fc9eb99d6070e63300780cab542b4.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/e6/b1/e6b17fc7f061d8285bda8693bd6542e4a875a516.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/a6/55/a6557de6403545f7b553a7f33f24701dce8e2e30.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/29/0c/290c567256e798bbaf33b696e0d4165eb9ed053b.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/4d/41/4d41e4b4bae2ae06e95eb7ec73f997e11f2d3be3.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/ef/f8/eff8fce0173ccb0ce05be7617b7ea0217d7b3fb7.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/fb/28/fb2807f7ac9bc8cdba1d22edcc685c96e0f1ce8f.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/58/c5/58c541a5dfbb17b74e7fb58f6553778917b959ff.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]"
+		]
+	},
+	{
+		"name": "Shimmery Pants",
+		"sex": "female",
+		"brand": "H&M",
+		"relevance": {
+			"name":"old",
+			"value": -1
+		},
+		"category": "trousers",
+		"thumbnailsUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]"
+		],
+		"price": {
+			"currencyIso": "USD",
+			"value": 119,
+			"saleValue": 30
+		},
+		"variants": [
+			{
+				"color": {
+					"name": "Blue",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XS",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Blue",
+					"rgb": "#C3C4C8"
+				},
+				"size": "S",
+				"stock": 4
+			},
+			{
+				"color": {
+					"name": "Blue",
+					"rgb": "#C3C4C8"
+				},
+				"size": "M",
+				"stock": 3
+			},
+			{
+				"color": {
+					"name": "Blue",
+					"rgb": "#C3C4C8"
+				},
+				"size": "L",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Blue",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XL",
+				"stock": 1
+			},
+			{
+				"color": {
+					"name": "Blue",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XXL",
+				"stock": 0
+			}
+		],
+		"imagesUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/f6/22/f62213f2a60fc9eb99d6070e63300780cab542b4.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/e6/b1/e6b17fc7f061d8285bda8693bd6542e4a875a516.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/a6/55/a6557de6403545f7b553a7f33f24701dce8e2e30.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/29/0c/290c567256e798bbaf33b696e0d4165eb9ed053b.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/4d/41/4d41e4b4bae2ae06e95eb7ec73f997e11f2d3be3.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/ef/f8/eff8fce0173ccb0ce05be7617b7ea0217d7b3fb7.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/fb/28/fb2807f7ac9bc8cdba1d22edcc685c96e0f1ce8f.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/58/c5/58c541a5dfbb17b74e7fb58f6553778917b959ff.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]"
+		]
+	},
+	{
+		"name": "Shimmery Pants",
+		"sex": "female",
+		"brand": "H&M",
+		"relevance": {
+			"name":"old",
+			"value": -1
+		},
+		"category": "trousers",
+		"thumbnailsUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]"
+		],
+		"price": {
+			"currencyIso": "USD",
+			"value": 119,
+			"saleValue": 30
+		},
+		"variants": [
+			{
+				"color": {
+					"name": "Green",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XS",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Green",
+					"rgb": "#C3C4C8"
+				},
+				"size": "S",
+				"stock": 4
+			},
+			{
+				"color": {
+					"name": "Green",
+					"rgb": "#C3C4C8"
+				},
+				"size": "M",
+				"stock": 3
+			},
+			{
+				"color": {
+					"name": "Green",
+					"rgb": "#C3C4C8"
+				},
+				"size": "L",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Green",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XL",
+				"stock": 1
+			},
+			{
+				"color": {
+					"name": "Green",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XXL",
+				"stock": 0
+			}
+		],
+		"imagesUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/f6/22/f62213f2a60fc9eb99d6070e63300780cab542b4.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/e6/b1/e6b17fc7f061d8285bda8693bd6542e4a875a516.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/a6/55/a6557de6403545f7b553a7f33f24701dce8e2e30.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/29/0c/290c567256e798bbaf33b696e0d4165eb9ed053b.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/4d/41/4d41e4b4bae2ae06e95eb7ec73f997e11f2d3be3.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/ef/f8/eff8fce0173ccb0ce05be7617b7ea0217d7b3fb7.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/fb/28/fb2807f7ac9bc8cdba1d22edcc685c96e0f1ce8f.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/58/c5/58c541a5dfbb17b74e7fb58f6553778917b959ff.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]"
+		]
+	},
+	{
+		"name": "Shimmery Pants",
+		"sex": "female",
+		"brand": "H&M",
+		"relevance": {
+			"name":"new",
+			"value": 1
+		},
+		"category": "trousers",
+		"thumbnailsUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]"
+		],
+		"price": {
+			"currencyIso": "USD",
+			"value": 19,
+			"saleValue": 30
+		},
+		"variants": [
+			{
+				"color": {
+					"name": "Black",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XS",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Black",
+					"rgb": "#C3C4C8"
+				},
+				"size": "S",
+				"stock": 4
+			},
+			{
+				"color": {
+					"name": "Black",
+					"rgb": "#C3C4C8"
+				},
+				"size": "M",
+				"stock": 3
+			},
+			{
+				"color": {
+					"name": "Black",
+					"rgb": "#C3C4C8"
+				},
+				"size": "L",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Black",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XL",
+				"stock": 1
+			},
+			{
+				"color": {
+					"name": "Black",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XXL",
+				"stock": 0
+			}
+		],
+		"imagesUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/f6/22/f62213f2a60fc9eb99d6070e63300780cab542b4.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/e6/b1/e6b17fc7f061d8285bda8693bd6542e4a875a516.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/a6/55/a6557de6403545f7b553a7f33f24701dce8e2e30.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/29/0c/290c567256e798bbaf33b696e0d4165eb9ed053b.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/4d/41/4d41e4b4bae2ae06e95eb7ec73f997e11f2d3be3.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/ef/f8/eff8fce0173ccb0ce05be7617b7ea0217d7b3fb7.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/fb/28/fb2807f7ac9bc8cdba1d22edcc685c96e0f1ce8f.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/58/c5/58c541a5dfbb17b74e7fb58f6553778917b959ff.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]"
+		]
+	},
+	{
+		"name": "Shimmery Pants",
+		"sex": "female",
+		"brand": "H&M",
+		"relevance": {
+			"name":"new",
+			"value": 1
+		},
+		"category": "trousers",
+		"thumbnailsUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]"
+		],
+		"price": {
+			"currencyIso": "USD",
+			"value": 11,
+			"saleValue": 30
+		},
+		"variants": [
+			{
+				"color": {
+					"name": "Black",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XS",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Black",
+					"rgb": "#C3C4C8"
+				},
+				"size": "S",
+				"stock": 4
+			},
+			{
+				"color": {
+					"name": "Black",
+					"rgb": "#C3C4C8"
+				},
+				"size": "M",
+				"stock": 3
+			},
+			{
+				"color": {
+					"name": "Black",
+					"rgb": "#C3C4C8"
+				},
+				"size": "L",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Black",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XL",
+				"stock": 1
+			},
+			{
+				"color": {
+					"name": "Black",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XXL",
+				"stock": 0
+			}
+		],
+		"imagesUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/f6/22/f62213f2a60fc9eb99d6070e63300780cab542b4.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/e6/b1/e6b17fc7f061d8285bda8693bd6542e4a875a516.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/a6/55/a6557de6403545f7b553a7f33f24701dce8e2e30.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/29/0c/290c567256e798bbaf33b696e0d4165eb9ed053b.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/4d/41/4d41e4b4bae2ae06e95eb7ec73f997e11f2d3be3.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/ef/f8/eff8fce0173ccb0ce05be7617b7ea0217d7b3fb7.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/fb/28/fb2807f7ac9bc8cdba1d22edcc685c96e0f1ce8f.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/58/c5/58c541a5dfbb17b74e7fb58f6553778917b959ff.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]"
+		]
+	},
+	{
+		"name": "Shimmery Pants",
+		"sex": "female",
+		"brand": "H&M",
+		"relevance": {
+			"name":"new",
+			"value": 1
+		},
+		"category": "trousers",
+		"thumbnailsUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]"
+		],
+		"price": {
+			"currencyIso": "USD",
+			"value": 119,
+			"saleValue": 30
+		},
+		"variants": [
+			{
+				"color": {
+					"name": "Green",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XS",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Green",
+					"rgb": "#C3C4C8"
+				},
+				"size": "S",
+				"stock": 4
+			},
+			{
+				"color": {
+					"name": "Green",
+					"rgb": "#C3C4C8"
+				},
+				"size": "M",
+				"stock": 3
+			},
+			{
+				"color": {
+					"name": "Green",
+					"rgb": "#C3C4C8"
+				},
+				"size": "L",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Green",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XL",
+				"stock": 1
+			},
+			{
+				"color": {
+					"name": "Green",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XXL",
+				"stock": 0
+			}
+		],
+		"imagesUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/f6/22/f62213f2a60fc9eb99d6070e63300780cab542b4.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/e6/b1/e6b17fc7f061d8285bda8693bd6542e4a875a516.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/a6/55/a6557de6403545f7b553a7f33f24701dce8e2e30.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/29/0c/290c567256e798bbaf33b696e0d4165eb9ed053b.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/4d/41/4d41e4b4bae2ae06e95eb7ec73f997e11f2d3be3.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/ef/f8/eff8fce0173ccb0ce05be7617b7ea0217d7b3fb7.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/fb/28/fb2807f7ac9bc8cdba1d22edcc685c96e0f1ce8f.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/58/c5/58c541a5dfbb17b74e7fb58f6553778917b959ff.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]"
+		]
+	},
+	{
+		"name": "Shimmery Pants",
+		"sex": "female",
+		"brand": "H&M",
+		"relevance": {
+			"name":"old",
+			"value": -1
+		},
+		"category": "trousers",
+		"thumbnailsUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]"
+		],
+		"price": {
+			"currencyIso": "USD",
+			"value": 9,
+			"saleValue": 30
+		},
+		"variants": [
+			{
+				"color": {
+					"name": "Green",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XS",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Green",
+					"rgb": "#C3C4C8"
+				},
+				"size": "S",
+				"stock": 4
+			},
+			{
+				"color": {
+					"name": "Green",
+					"rgb": "#C3C4C8"
+				},
+				"size": "M",
+				"stock": 3
+			},
+			{
+				"color": {
+					"name": "Green",
+					"rgb": "#C3C4C8"
+				},
+				"size": "L",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Green",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XL",
+				"stock": 1
+			},
+			{
+				"color": {
+					"name": "Green",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XXL",
+				"stock": 0
+			}
+		],
+		"imagesUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/f6/22/f62213f2a60fc9eb99d6070e63300780cab542b4.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/e6/b1/e6b17fc7f061d8285bda8693bd6542e4a875a516.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/a6/55/a6557de6403545f7b553a7f33f24701dce8e2e30.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/29/0c/290c567256e798bbaf33b696e0d4165eb9ed053b.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/4d/41/4d41e4b4bae2ae06e95eb7ec73f997e11f2d3be3.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/ef/f8/eff8fce0173ccb0ce05be7617b7ea0217d7b3fb7.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/fb/28/fb2807f7ac9bc8cdba1d22edcc685c96e0f1ce8f.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/58/c5/58c541a5dfbb17b74e7fb58f6553778917b959ff.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]"
+		]
+	},
+	{
+		"name": "Shimmery Pants",
+		"sex": "female",
+		"brand": "H&M",
+		"relevance": {
+			"name":"new",
+			"value": 1
+		},
+		"category": "trousers",
+		"thumbnailsUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]"
+		],
+		"price": {
+			"currencyIso": "USD",
+			"value": 119,
+			"saleValue": 30
+		},
+		"variants": [
+			{
+				"color": {
+					"name": "Pink",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XS",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Pink",
+					"rgb": "#C3C4C8"
+				},
+				"size": "S",
+				"stock": 4
+			},
+			{
+				"color": {
+					"name": "Pink",
+					"rgb": "#C3C4C8"
+				},
+				"size": "M",
+				"stock": 3
+			},
+			{
+				"color": {
+					"name": "Pink",
+					"rgb": "#C3C4C8"
+				},
+				"size": "L",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Pink",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XL",
+				"stock": 1
+			},
+			{
+				"color": {
+					"name": "Pink",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XXL",
+				"stock": 0
+			}
+		],
+		"imagesUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/f6/22/f62213f2a60fc9eb99d6070e63300780cab542b4.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/e6/b1/e6b17fc7f061d8285bda8693bd6542e4a875a516.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/a6/55/a6557de6403545f7b553a7f33f24701dce8e2e30.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/29/0c/290c567256e798bbaf33b696e0d4165eb9ed053b.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/4d/41/4d41e4b4bae2ae06e95eb7ec73f997e11f2d3be3.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/ef/f8/eff8fce0173ccb0ce05be7617b7ea0217d7b3fb7.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/fb/28/fb2807f7ac9bc8cdba1d22edcc685c96e0f1ce8f.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/58/c5/58c541a5dfbb17b74e7fb58f6553778917b959ff.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]"
+		]
+	},
+	{
+		"name": "Shimmery Pants",
+		"sex": "female",
+		"brand": "H&M",
+		"relevance": {
+			"name":"new",
+			"value": 1
+		},
+		"category": "trousers",
+		"thumbnailsUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]"
+		],
+		"price": {
+			"currencyIso": "USD",
+			"value": 70,
+			"saleValue": 30
+		},
+		"variants": [
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XS",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "S",
+				"stock": 4
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "M",
+				"stock": 3
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "L",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XL",
+				"stock": 1
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XXL",
+				"stock": 0
+			}
+		],
+		"imagesUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/f6/22/f62213f2a60fc9eb99d6070e63300780cab542b4.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/e6/b1/e6b17fc7f061d8285bda8693bd6542e4a875a516.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/a6/55/a6557de6403545f7b553a7f33f24701dce8e2e30.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/29/0c/290c567256e798bbaf33b696e0d4165eb9ed053b.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/4d/41/4d41e4b4bae2ae06e95eb7ec73f997e11f2d3be3.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/ef/f8/eff8fce0173ccb0ce05be7617b7ea0217d7b3fb7.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/fb/28/fb2807f7ac9bc8cdba1d22edcc685c96e0f1ce8f.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/58/c5/58c541a5dfbb17b74e7fb58f6553778917b959ff.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]"
+		]
+	},
+	{
+		"name": "Shimmery Pants",
+		"sex": "female",
+		"brand": "H&M",
+		"relevance": {
+			"name":"new",
+			"value": 1
+		},
+		"category": "trousers",
+		"thumbnailsUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]"
+		],
+		"price": {
+			"currencyIso": "USD",
+			"value": 119,
+			"saleValue": 30
+		},
+		"variants": [
+			{
+				"color": {
+					"name": "Black",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XS",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Black",
+					"rgb": "#C3C4C8"
+				},
+				"size": "S",
+				"stock": 4
+			},
+			{
+				"color": {
+					"name": "Black",
+					"rgb": "#C3C4C8"
+				},
+				"size": "M",
+				"stock": 3
+			},
+			{
+				"color": {
+					"name": "Black",
+					"rgb": "#C3C4C8"
+				},
+				"size": "L",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Black",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XL",
+				"stock": 1
+			},
+			{
+				"color": {
+					"name": "Black",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XXL",
+				"stock": 0
+			}
+		],
+		"imagesUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/f6/22/f62213f2a60fc9eb99d6070e63300780cab542b4.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/e6/b1/e6b17fc7f061d8285bda8693bd6542e4a875a516.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/a6/55/a6557de6403545f7b553a7f33f24701dce8e2e30.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/29/0c/290c567256e798bbaf33b696e0d4165eb9ed053b.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/4d/41/4d41e4b4bae2ae06e95eb7ec73f997e11f2d3be3.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/ef/f8/eff8fce0173ccb0ce05be7617b7ea0217d7b3fb7.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/fb/28/fb2807f7ac9bc8cdba1d22edcc685c96e0f1ce8f.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/58/c5/58c541a5dfbb17b74e7fb58f6553778917b959ff.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]"
+		]
+	},
+	{
+		"name": "Shimmery Pants",
+		"sex": "female",
+		"brand": "H&M",
+		"relevance": {
+			"name":"new",
+			"value": 1
+		},
+		"category": "trousers",
+		"thumbnailsUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]"
+		],
+		"price": {
+			"currencyIso": "USD",
+			"value": 119,
+			"saleValue": 30
+		},
+		"variants": [
+			{
+				"color": {
+					"name": "Black",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XS",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Black",
+					"rgb": "#C3C4C8"
+				},
+				"size": "S",
+				"stock": 4
+			},
+			{
+				"color": {
+					"name": "Black",
+					"rgb": "#C3C4C8"
+				},
+				"size": "M",
+				"stock": 3
+			},
+			{
+				"color": {
+					"name": "Black",
+					"rgb": "#C3C4C8"
+				},
+				"size": "L",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Black",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XL",
+				"stock": 1
+			},
+			{
+				"color": {
+					"name": "Black",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XXL",
+				"stock": 0
+			}
+		],
+		"imagesUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/f6/22/f62213f2a60fc9eb99d6070e63300780cab542b4.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/e6/b1/e6b17fc7f061d8285bda8693bd6542e4a875a516.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/a6/55/a6557de6403545f7b553a7f33f24701dce8e2e30.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/29/0c/290c567256e798bbaf33b696e0d4165eb9ed053b.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/4d/41/4d41e4b4bae2ae06e95eb7ec73f997e11f2d3be3.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/ef/f8/eff8fce0173ccb0ce05be7617b7ea0217d7b3fb7.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/fb/28/fb2807f7ac9bc8cdba1d22edcc685c96e0f1ce8f.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/58/c5/58c541a5dfbb17b74e7fb58f6553778917b959ff.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]"
+		]
+	},
+	{
+		"name": "Shimmery Pants",
+		"sex": "female",
+		"brand": "H&M",
+		"relevance": {
+			"name":"new",
+			"value": 1
+		},
+		"category": "trousers",
+		"thumbnailsUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]"
+		],
+		"price": {
+			"currencyIso": "USD",
+			"value": 119,
+			"saleValue": 30
+		},
+		"variants": [
+			{
+				"color": {
+					"name": "Blue",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XS",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Blue",
+					"rgb": "#C3C4C8"
+				},
+				"size": "S",
+				"stock": 4
+			},
+			{
+				"color": {
+					"name": "Blue",
+					"rgb": "#C3C4C8"
+				},
+				"size": "M",
+				"stock": 3
+			},
+			{
+				"color": {
+					"name": "Blue",
+					"rgb": "#C3C4C8"
+				},
+				"size": "L",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Blue",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XL",
+				"stock": 1
+			},
+			{
+				"color": {
+					"name": "Blue",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XXL",
+				"stock": 0
+			}
+		],
+		"imagesUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/f6/22/f62213f2a60fc9eb99d6070e63300780cab542b4.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/e6/b1/e6b17fc7f061d8285bda8693bd6542e4a875a516.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/a6/55/a6557de6403545f7b553a7f33f24701dce8e2e30.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/29/0c/290c567256e798bbaf33b696e0d4165eb9ed053b.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/4d/41/4d41e4b4bae2ae06e95eb7ec73f997e11f2d3be3.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/ef/f8/eff8fce0173ccb0ce05be7617b7ea0217d7b3fb7.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/fb/28/fb2807f7ac9bc8cdba1d22edcc685c96e0f1ce8f.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/58/c5/58c541a5dfbb17b74e7fb58f6553778917b959ff.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]"
+		]
+	},
+	{
+		"name": "Shimmery Pants",
+		"sex": "female",
+		"brand": "H&M",
+		"relevance": {
+			"name":"new",
+			"value": 1
+		},
+		"category": "trousers",
+		"thumbnailsUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]"
+		],
+		"price": {
+			"currencyIso": "USD",
+			"value": 119,
+			"saleValue": 30
+		},
+		"variants": [
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XS",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "S",
+				"stock": 4
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "M",
+				"stock": 3
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "L",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XL",
+				"stock": 1
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XXL",
+				"stock": 0
+			}
+		],
+		"imagesUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/f6/22/f62213f2a60fc9eb99d6070e63300780cab542b4.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/e6/b1/e6b17fc7f061d8285bda8693bd6542e4a875a516.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/a6/55/a6557de6403545f7b553a7f33f24701dce8e2e30.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/29/0c/290c567256e798bbaf33b696e0d4165eb9ed053b.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/4d/41/4d41e4b4bae2ae06e95eb7ec73f997e11f2d3be3.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/ef/f8/eff8fce0173ccb0ce05be7617b7ea0217d7b3fb7.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/fb/28/fb2807f7ac9bc8cdba1d22edcc685c96e0f1ce8f.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/58/c5/58c541a5dfbb17b74e7fb58f6553778917b959ff.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]"
+		]
+	},
+	{
+		"name": "Shimmery Pants",
+		"sex": "female",
+		"brand": "H&M",
+		"relevance": {
+			"name":"new",
+			"value": 1
+		},
+		"category": "trousers",
+		"thumbnailsUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]"
+		],
+		"price": {
+			"currencyIso": "USD",
+			"value": 14,
+			"saleValue": 30
+		},
+		"variants": [
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XS",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "S",
+				"stock": 4
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "M",
+				"stock": 3
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "L",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XL",
+				"stock": 1
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XXL",
+				"stock": 0
+			}
+		],
+		"imagesUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/f6/22/f62213f2a60fc9eb99d6070e63300780cab542b4.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/e6/b1/e6b17fc7f061d8285bda8693bd6542e4a875a516.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/a6/55/a6557de6403545f7b553a7f33f24701dce8e2e30.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/29/0c/290c567256e798bbaf33b696e0d4165eb9ed053b.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/4d/41/4d41e4b4bae2ae06e95eb7ec73f997e11f2d3be3.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/ef/f8/eff8fce0173ccb0ce05be7617b7ea0217d7b3fb7.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/fb/28/fb2807f7ac9bc8cdba1d22edcc685c96e0f1ce8f.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/58/c5/58c541a5dfbb17b74e7fb58f6553778917b959ff.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]"
+		]
+	},
+	{
+		"name": "Shimmery Pants",
+		"sex": "female",
+		"brand": "H&M",
+		"relevance": {
+			"name":"new",
+			"value": 1
+		},
+		"category": "trousers",
+		"thumbnailsUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]"
+		],
+		"price": {
+			"currencyIso": "USD",
+			"value": 19,
+			"saleValue": 30
+		},
+		"variants": [
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XS",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "S",
+				"stock": 4
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "M",
+				"stock": 3
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "L",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XL",
+				"stock": 1
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XXL",
+				"stock": 0
+			}
+		],
+		"imagesUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/f6/22/f62213f2a60fc9eb99d6070e63300780cab542b4.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/e6/b1/e6b17fc7f061d8285bda8693bd6542e4a875a516.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/a6/55/a6557de6403545f7b553a7f33f24701dce8e2e30.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/29/0c/290c567256e798bbaf33b696e0d4165eb9ed053b.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/4d/41/4d41e4b4bae2ae06e95eb7ec73f997e11f2d3be3.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/ef/f8/eff8fce0173ccb0ce05be7617b7ea0217d7b3fb7.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/fb/28/fb2807f7ac9bc8cdba1d22edcc685c96e0f1ce8f.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/58/c5/58c541a5dfbb17b74e7fb58f6553778917b959ff.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]"
+		]
+	},
+	{
+		"name": "Shimmery Pants",
+		"sex": "female",
+		"brand": "H&M",
+		"relevance": {
+			"name":"new",
+			"value": -1
+		},
+		"category": "trousers",
+		"thumbnailsUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]"
+		],
+		"price": {
+			"currencyIso": "USD",
+			"value": 119,
+			"saleValue": 30
+		},
+		"variants": [
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XS",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "S",
+				"stock": 4
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "M",
+				"stock": 3
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "L",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XL",
+				"stock": 1
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XXL",
+				"stock": 0
+			}
+		],
+		"imagesUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/f6/22/f62213f2a60fc9eb99d6070e63300780cab542b4.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/e6/b1/e6b17fc7f061d8285bda8693bd6542e4a875a516.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/a6/55/a6557de6403545f7b553a7f33f24701dce8e2e30.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/29/0c/290c567256e798bbaf33b696e0d4165eb9ed053b.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/4d/41/4d41e4b4bae2ae06e95eb7ec73f997e11f2d3be3.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/ef/f8/eff8fce0173ccb0ce05be7617b7ea0217d7b3fb7.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/fb/28/fb2807f7ac9bc8cdba1d22edcc685c96e0f1ce8f.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/58/c5/58c541a5dfbb17b74e7fb58f6553778917b959ff.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]"
+		]
+	},
+	{
+		"name": "Shimmery Pants",
+		"sex": "female",
+		"brand": "H&M",
+		"relevance": {
+			"name":"new",
+			"value": -1
+		},
+		"category": "trousers",
+		"thumbnailsUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]"
+		],
+		"price": {
+			"currencyIso": "USD",
+			"value": 119,
+			"saleValue": 30
+		},
+		"variants": [
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XS",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "S",
+				"stock": 4
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "M",
+				"stock": 3
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "L",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XL",
+				"stock": 1
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XXL",
+				"stock": 0
+			}
+		],
+		"imagesUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/f6/22/f62213f2a60fc9eb99d6070e63300780cab542b4.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/e6/b1/e6b17fc7f061d8285bda8693bd6542e4a875a516.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/a6/55/a6557de6403545f7b553a7f33f24701dce8e2e30.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/29/0c/290c567256e798bbaf33b696e0d4165eb9ed053b.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/4d/41/4d41e4b4bae2ae06e95eb7ec73f997e11f2d3be3.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/ef/f8/eff8fce0173ccb0ce05be7617b7ea0217d7b3fb7.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/fb/28/fb2807f7ac9bc8cdba1d22edcc685c96e0f1ce8f.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/58/c5/58c541a5dfbb17b74e7fb58f6553778917b959ff.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]"
+		]
+	},
+	{
+		"name": "Shimmery Pants",
+		"sex": "female",
+		"brand": "H&M",
+		"relevance": {
+			"name":"new",
+			"value": -1
+		},
+		"category": "trousers",
+		"thumbnailsUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]"
+		],
+		"price": {
+			"currencyIso": "USD",
+			"value": 119,
+			"saleValue": 30
+		},
+		"variants": [
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XS",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "S",
+				"stock": 4
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "M",
+				"stock": 3
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "L",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XL",
+				"stock": 1
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XXL",
+				"stock": 0
+			}
+		],
+		"imagesUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/f6/22/f62213f2a60fc9eb99d6070e63300780cab542b4.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/e6/b1/e6b17fc7f061d8285bda8693bd6542e4a875a516.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/a6/55/a6557de6403545f7b553a7f33f24701dce8e2e30.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/29/0c/290c567256e798bbaf33b696e0d4165eb9ed053b.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/4d/41/4d41e4b4bae2ae06e95eb7ec73f997e11f2d3be3.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/ef/f8/eff8fce0173ccb0ce05be7617b7ea0217d7b3fb7.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/fb/28/fb2807f7ac9bc8cdba1d22edcc685c96e0f1ce8f.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/58/c5/58c541a5dfbb17b74e7fb58f6553778917b959ff.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]"
+		]
+	},
+	{
+		"name": "Shimmery Pants",
+		"sex": "female",
+		"brand": "H&M",
+		"relevance": {
+			"name":"new",
+			"value": 1
+		},
+		"category": "trousers",
+		"thumbnailsUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]"
+		],
+		"price": {
+			"currencyIso": "USD",
+			"value": 100,
+			"saleValue": 30
+		},
+		"variants": [
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XS",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "S",
+				"stock": 4
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "M",
+				"stock": 3
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "L",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XL",
+				"stock": 1
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XXL",
+				"stock": 0
+			}
+		],
+		"imagesUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/f6/22/f62213f2a60fc9eb99d6070e63300780cab542b4.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/e6/b1/e6b17fc7f061d8285bda8693bd6542e4a875a516.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/a6/55/a6557de6403545f7b553a7f33f24701dce8e2e30.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/29/0c/290c567256e798bbaf33b696e0d4165eb9ed053b.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/4d/41/4d41e4b4bae2ae06e95eb7ec73f997e11f2d3be3.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/ef/f8/eff8fce0173ccb0ce05be7617b7ea0217d7b3fb7.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/fb/28/fb2807f7ac9bc8cdba1d22edcc685c96e0f1ce8f.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/58/c5/58c541a5dfbb17b74e7fb58f6553778917b959ff.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]"
+		]
+	},
+	{
+		"name": "Shimmery Pants",
+		"sex": "female",
+		"brand": "H&M",
+		"relevance": {
+			"name":"new",
+			"value": 1
+		},
+		"category": "trousers",
+		"thumbnailsUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]"
+		],
+		"price": {
+			"currencyIso": "USD",
+			"value": 180,
+			"saleValue": 30
+		},
+		"variants": [
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XS",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "S",
+				"stock": 4
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "M",
+				"stock": 3
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "L",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XL",
+				"stock": 1
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XXL",
+				"stock": 0
+			}
+		],
+		"imagesUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/f6/22/f62213f2a60fc9eb99d6070e63300780cab542b4.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/e6/b1/e6b17fc7f061d8285bda8693bd6542e4a875a516.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/a6/55/a6557de6403545f7b553a7f33f24701dce8e2e30.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/29/0c/290c567256e798bbaf33b696e0d4165eb9ed053b.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/4d/41/4d41e4b4bae2ae06e95eb7ec73f997e11f2d3be3.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/ef/f8/eff8fce0173ccb0ce05be7617b7ea0217d7b3fb7.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/fb/28/fb2807f7ac9bc8cdba1d22edcc685c96e0f1ce8f.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/58/c5/58c541a5dfbb17b74e7fb58f6553778917b959ff.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]"
+		]
+	},
+	{
+		"name": "Shimmery Pants",
+		"sex": "female",
+		"brand": "H&M",
+		"relevance": {
+			"name":"new",
+			"value": -1
+		},
+		"category": "trousers",
+		"thumbnailsUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]"
+		],
+		"price": {
+			"currencyIso": "USD",
+			"value": 36,
+			"saleValue": 30
+		},
+		"variants": [
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XS",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "S",
+				"stock": 4
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "M",
+				"stock": 3
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "L",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XL",
+				"stock": 1
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XXL",
+				"stock": 0
+			}
+		],
+		"imagesUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/f6/22/f62213f2a60fc9eb99d6070e63300780cab542b4.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/e6/b1/e6b17fc7f061d8285bda8693bd6542e4a875a516.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/a6/55/a6557de6403545f7b553a7f33f24701dce8e2e30.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/29/0c/290c567256e798bbaf33b696e0d4165eb9ed053b.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/4d/41/4d41e4b4bae2ae06e95eb7ec73f997e11f2d3be3.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/ef/f8/eff8fce0173ccb0ce05be7617b7ea0217d7b3fb7.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/fb/28/fb2807f7ac9bc8cdba1d22edcc685c96e0f1ce8f.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/58/c5/58c541a5dfbb17b74e7fb58f6553778917b959ff.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]"
+		]
+	},
+	{
+		"name": "Shimmery Pants",
+		"sex": "female",
+		"brand": "H&M",
+		"relevance": {
+			"name":"new",
+			"value": -1
+		},
+		"category": "trousers",
+		"thumbnailsUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]"
+		],
+		"price": {
+			"currencyIso": "USD",
+			"value": 159,
+			"saleValue": 30
+		},
+		"variants": [
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XS",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "S",
+				"stock": 4
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "M",
+				"stock": 3
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "L",
+				"stock": 2
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XL",
+				"stock": 1
+			},
+			{
+				"color": {
+					"name": "Silver",
+					"rgb": "#C3C4C8"
+				},
+				"size": "XXL",
+				"stock": 0
+			}
+		],
+		"imagesUrls": [
+			"https://lp2.hm.com/hmgoepprod?set=source[/d3/8a/d38a103597fd11493cba2ce1a5f6af061b3ad0bb.jpg],origin[dam],category[],type[DESCRIPTIVESTILLLIFE],res[m],hmver[2]&call=url[file:/product/style]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/f6/22/f62213f2a60fc9eb99d6070e63300780cab542b4.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/e6/b1/e6b17fc7f061d8285bda8693bd6542e4a875a516.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/a6/55/a6557de6403545f7b553a7f33f24701dce8e2e30.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/29/0c/290c567256e798bbaf33b696e0d4165eb9ed053b.jpg],origin[dam],category[],type[DESCRIPTIVEDETAIL],res[m],hmver[2]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/4d/41/4d41e4b4bae2ae06e95eb7ec73f997e11f2d3be3.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/ef/f8/eff8fce0173ccb0ce05be7617b7ea0217d7b3fb7.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/fb/28/fb2807f7ac9bc8cdba1d22edcc685c96e0f1ce8f.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]",
+			"https://lp2.hm.com/hmgoepprod?set=source[/58/c5/58c541a5dfbb17b74e7fb58f6553778917b959ff.jpg],origin[dam],category[],type[LOOKBOOK],res[m],hmver[1]&call=url[file:/product/main]"
+		]
+	}
+]

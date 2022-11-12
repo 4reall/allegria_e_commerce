@@ -1,5 +1,7 @@
-/** @type {import("tailwindcss").Config} */
+// /** @type {import("tailwindcss").Config} */
 
+const theme = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors');
 module.exports = {
 	content: ['src/**/*.{js,jsx,ts,tsx}'],
 	theme: {
@@ -22,6 +24,7 @@ module.exports = {
 				'primary-dark': '#0F303F',
 				beige: '#EAE9E8',
 				accent: '#E64926',
+				error: colors.red['500'],
 				'beige-dark': '#CEC6C4',
 				gray: '#B7C1C5',
 			},
@@ -30,12 +33,9 @@ module.exports = {
 				normal: ['Jost', 'sans-serif'],
 			},
 			fontSize: {
-				'2xl': '90px',
-				xl: '50px',
-				lg: '30px',
-				md: '16px',
-				sm: '14px',
-				xs: '12px',
+				'2xl': ['5.625rem', 1],
+				xl: ['3.125rem', 1],
+				lg: ['1.875rem', '2.25rem'],
 			},
 			keyframes: {
 				'scale-in': {

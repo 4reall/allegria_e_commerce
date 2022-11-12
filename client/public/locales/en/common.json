@@ -1,0 +1,13 @@
+{
+ "form": {
+  "name": "Name",
+  "email": "E-mail",
+  "password": "Password",
+  "tel": "Phone number",
+  "surname": "Surname",
+  "repeatPassword": "Repeat password",
+  "mailing": "Subscribe on mailing",
+  "agree": "I agree with ",
+  "policy": "Privacy Policy"
+ }
+}
