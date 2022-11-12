@@ -6,17 +6,14 @@ module.exports = {
 	content: ['src/**/*.{js,jsx,ts,tsx}'],
 	theme: {
 		extend: {
-			screens: {
-				'xs': {'max': '375px'},
-				'mds': {'max': '768px'},
-				'lgs': {'max': '1024px'},
-			},
 			spacing: {
 				'2%': '2%',
 				'6%': '6%',
 				'10%': '10%',
 				'20%': '20%',
 				'50%': '50%',
+				'60%': '60%',
+				
 
 			},
 			colors: {

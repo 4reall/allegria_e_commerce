@@ -1,22 +1,10 @@
 import type { AppProps } from 'next/app';
 import 'common/styles/global.css';
 import { appWithTranslation } from 'next-i18next';
+import "../../public/assets/icons/fonts/Avenir.css";
 
-
-	return (
-		<QueryClientProvider client={queryClient}>
-			<Hydrate state={pageProps.dehydratedState}>
-				<SessionProvider
-					// refetchInterval={14}
-					session={pageProps.session}
-				>
-					{/*<Header />*/}
-					<Component {...pageProps} />
-				</SessionProvider>
-			</Hydrate>
-		</QueryClientProvider>
-	);
+function App({ Component, pageProps }: AppProps) {
+	return <Component {...pageProps} />;
 }
 
-// @ts-ignore
 export default appWithTranslation(App);
