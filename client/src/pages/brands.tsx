@@ -27,7 +27,7 @@ const Brands = () => {
 					<Typography type="decor" color="beige" className="block">
 						{t('brand')}
 					</Typography>
-					<Typography type="decor" color="beige" className="text-3xl md:text-xl block">
+					<Typography type="decor" color="beige" className="text-4xl md:text-xl block">
 						{t('vintageBrand')}
 					</Typography>
 					<Typography type="decor" color="beige" className="m-auto normal-case px-2 block md:w-[630px]">
@@ -62,7 +62,7 @@ const Brands = () => {
 					<Typography type="decor" color="beige" className="block">
 						{t('brand')}
 					</Typography>
-					<Typography type="decor" color="beige" className="text-3xl md:text-xl block ">
+					<Typography type="decor" color="beige" className="text-4xl md:text-xl block ">
 						{t('dehaBrand')}
 					</Typography>
 					<Typography type="decor" color="beige" className="m-auto normal-case px-2 block md:w-[630px]">
@@ -71,22 +71,24 @@ const Brands = () => {
 				</div>
 			</div>
 
-			<section className="relative uppercase px-4 pb-20 md:pb-40 xl:px-40 ">
+			<section className="relative uppercase px-4 pb-20 md:pb-28 xl:px-40 ">
 				<div className="flex flex-col-reverse  max-w-[1200px] gap-16 px-2 xl:mx-auto md:flex-row md:mb-12">
-					<div className="flex flex-col justify-center mb-20 mx-auto max-w-[600px] md:text-left md:mb-0">
+					<div className="flex flex-col justify-center md:pt-12 mb-20 mx-auto max-w-[600px] md:text-left md:mb-0">
 						<Typography type="decor" variant="lg" color="primaryDark" className="mb-5 text-center">
 							{t('dehaBrand')}
 						</Typography>
-						<Typography variant="sm" type="decor" className="text-center">
-							{t('dehaText')}
-						</Typography>
+						<div className="text-center">
+							<Typography variant="sm" type="decor" className="mb-10 block">
+								{t('dehaText')}
+							</Typography>
+							<div className="hidden mx-auto md:block">
+								<Image src={dehaUnderTextPic} alt="Deha under text pic" />
+							</div>
+						</div>
 					</div>
-					<div className="relative m-auto w-64 h-56 shrink-0 hidden xl:h-80 xl:w-96 md:block">
+					<div className="relative w-64 h-56 shrink-0 hidden xl:h-80 xl:w-96 md:block">
 						<Image layout="fill" src={dehaTextPic} alt="Deha text pic" />
 					</div>
-				</div>
-				<div className="hidden ml-[18%] md:block">
-					<Image src={dehaUnderTextPic} alt="Deha under text pic" />
 				</div>
 				<div className="mx-auto w-fit mb-12 md:hidden">
 					<Image width={280} height={280} src={dehaWomanLayingSmallScreen} alt="Deha woman laying small screen" />
@@ -101,7 +103,7 @@ const Brands = () => {
 					<Typography type="decor" color="primaryDark" className="block">
 						{t('brand')}
 					</Typography>
-					<Typography type="decor" color="primaryDark" className="text-3xl md:text-xl block">
+					<Typography type="decor" color="primaryDark" className="text-4xl md:text-xl block">
 						{t('ginaLucyBrand')}
 					</Typography>
 					<Typography type="decor" color="primaryDark" className="m-auto normal-case px-2 block md:w-[630px]">
@@ -133,7 +135,7 @@ const Brands = () => {
 					<Typography type="decor" color="beige" className="block">
 						{t('brand')}
 					</Typography>
-					<Typography type="decor" color="beige" className="text-3xl md:text-xl block">
+					<Typography type="decor" color="beige" className="text-4xl md:text-xl block">
 						{t('birkenstockBrand')}
 					</Typography>
 					<Typography type="decor" color="beige" className="m-auto normal-case px-2 block md:w-[630px]">
@@ -144,21 +146,24 @@ const Brands = () => {
 
 			<section className="relative uppercase px-4 pb-20 xl:px-40 ">
 				<div className="flex flex-col-reverse  max-w-[1200px] gap-16 px-2 xl:mx-auto md:flex-row md:mb-12">
-					<div className="flex flex-col justify-center mb-20  mx-auto max-w-[600px] md:text-left md:mb-0">
+					<div className="flex flex-col justify-center mb-20  mx-auto max-w-[600px] md:pt-12 md:text-left md:mb-0">
 						<Typography type="decor" variant="lg" color="primaryDark" className="mb-5 text-center">
 							{t('birkenstockBrand')}
 						</Typography>
-						<Typography variant="sm" type="decor" className="text-center">
-							{t('birkenstockText')}
-						</Typography>
+						<div className="text-center flex flex-col">
+							<Typography variant="sm" type="decor" className="text-center mb-10">
+								{t('birkenstockText')}
+							</Typography>
+							<div className="w-fit mx-auto ">
+								<Image src={birkenstockUnderTextPic} alt="birkenstock under text pic" />
+							</div>
+						</div>
 					</div>
-					<div className="relative m-auto w-64 h-56 shrink-0 hidden xl:h-80 xl:w-96 md:block">
+					<div className="relative  w-64 h-56 shrink-0 hidden xl:h-80 xl:w-96 md:block">
 						<Image layout="fill" src={birkenstockTextPic} alt="birkenstock text pic" />
 					</div>
 				</div>
-				<div className="w-fit mx-auto md:ml-[18%]">
-					<Image src={birkenstockUnderTextPic} alt="birkenstock under text pic" />
-				</div>
+
 			</section>
 
 		</main>
