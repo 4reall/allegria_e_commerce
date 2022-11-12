@@ -5,6 +5,7 @@ const typographyConfig = {
 	type: {
 		decor: 'font-decor',
 		normal: 'font-normal',
+		inter: "font-inter",
 	},
 	color: {
 		primary: 'text-primary',

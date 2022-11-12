@@ -30,7 +30,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 				ref={ref}
 				{...props}
 				className={cn(
-					'border-[1px] px-12 py-3 transition-all duration-200',
+					'max-h-14 border-[1px] px-12 py-3 transition-all duration-200',
 					buttonConfig[variant],
 					props.className,
 					full && 'w-full'
@@ -41,5 +41,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 		);
 	}
 );
+
+Button.displayName = 'Button';
 
 export default Button;

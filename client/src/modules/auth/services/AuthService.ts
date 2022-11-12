@@ -1,6 +1,6 @@
-import { IUser } from 'common/models/User';
-import { AxiosError, AxiosResponse } from 'axios';
+import { AxiosResponse } from 'axios';
 import axios from 'common/configs/axios';
+import { IUser } from 'common/types/User';
 
 export interface LoginProps {
 	email: string;
