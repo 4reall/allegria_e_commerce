@@ -11,6 +11,7 @@ import {
 import { SessionProvider } from 'next-auth/react';
 import { Session } from 'next-auth';
 import Header from 'common/components/Header';
+import { ReactQueryDevtools } from 'react-query/devtools';
 
 interface PageProps {
 	dehydratedState: DehydratedState;
@@ -31,6 +32,7 @@ function App({ Component, pageProps }: AppProps<PageProps>) {
 					<Component {...pageProps} />
 				</SessionProvider>
 			</Hydrate>
+			<ReactQueryDevtools initialIsOpen={false} />
 		</QueryClientProvider>
 	);
 }

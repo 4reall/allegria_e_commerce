@@ -2,7 +2,7 @@ import { AxiosResponse } from 'axios';
 import axios from 'common/configs/axios';
 import { IUser } from 'common/types/User';
 
-export interface LoginProps {
+interface LoginProps {
 	email: string;
 	password: string;
 }
@@ -13,7 +13,14 @@ interface BaseResponse {
 	refreshToken: string;
 }
 
-class AuthService {
+export class AuthService {
+	private static _instance: AuthService | null = null;
+
+	static getInstance() {
+		if (this._instance === null) this._instance = new AuthService();
+		return this._instance;
+	}
+
 	async login(props: LoginProps): Promise<AxiosResponse<BaseResponse>> {
 		try {
 			return axios.post<BaseResponse>('/login', props, {
@@ -39,5 +46,3 @@ class AuthService {
 		}
 	}
 }
-
-export const authService = new AuthService();

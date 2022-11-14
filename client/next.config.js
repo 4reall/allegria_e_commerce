@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 
-const { i18n } = require("./next-i18next.config");
+const { i18n } = require('./next-i18next.config');
 
 const nextConfig = {
 	reactStrictMode: true,
@@ -12,10 +12,10 @@ const nextConfig = {
 				protocol: 'https',
 				hostname: 'image.uniqlo.com',
 			},
-      {
-        protocol: "https",
-        hostname: "img.ltwebstatic.com",
-      },
+			{
+				protocol: 'https',
+				hostname: 'lp2.hm.com',
+			},
 		],
 	},
 	webpack(config) {

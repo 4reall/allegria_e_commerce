@@ -14,7 +14,7 @@ const Accordion = ({ content }: CustomAccordionProps) => {
 	return (
 		<AccordionPrimitive.Root type="single" collapsible>
 			{content.map((contentItem, index) => (
-				<AccordionItem {...contentItem} index={index} />
+				<AccordionItem key={index} {...contentItem} index={index} />
 			))}
 		</AccordionPrimitive.Root>
 	);

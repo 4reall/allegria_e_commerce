@@ -7,17 +7,18 @@ import {
   IsOptional,
   IsString,
 } from 'class-validator';
-import { Transform } from 'class-transformer';
+import { Transform, Type } from 'class-transformer';
 import { Sizes } from 'src/modules/product/constants';
 import { ApiPropertyOptional } from '@nestjs/swagger';
 
 export class GetProductsDto {
   @ApiPropertyOptional({ enum: Sizes })
-  @IsString()
   @IsOptional()
-  @IsEnum(Sizes)
-  @Transform(({ value }) => value.toUpperCase())
-  readonly size?: Sizes;
+  @IsEnum(Sizes, {
+    each: true,
+  })
+  @Transform(({ value }) => value.toUpperCase().split(','))
+  readonly sizes?: Sizes[];
 
   @ApiPropertyOptional({
     type: String,
@@ -46,18 +47,29 @@ export class GetProductsDto {
   })
   @IsOptional()
   @Transform(({ value }) => value.split(',').map((val) => +val))
-  @IsArray()
   @IsNumber({}, { each: true })
   readonly price?: number[] = [];
 
   @ApiPropertyOptional({ type: String })
-  @IsString()
   @IsOptional()
-  @IsAlpha()
-  readonly color?: string;
+  @IsString({ each: true })
+  @Transform(({ value }) => value.toUpperCase().split(','))
+  readonly colors?: string[];
 
   @ApiPropertyOptional({ type: String })
   @IsString()
   @IsOptional()
   readonly q?: string;
+
+  @ApiPropertyOptional({ type: Number })
+  @IsNumber()
+  @Type(() => Number)
+  @IsOptional()
+  readonly page?: number = 1;
+
+  @ApiPropertyOptional({ type: Number })
+  @IsNumber()
+  @Type(() => Number)
+  @IsOptional()
+  readonly limit?: number = 10;
 }

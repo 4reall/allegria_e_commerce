@@ -1,12 +1,15 @@
 // /** @type {import("tailwindcss").Config} */
 const colors = require('tailwindcss/colors');
+const { screens } = require('tailwindcss/defaultTheme');
+
 module.exports = {
 	content: ['src/**/*.{js,jsx,ts,tsx}'],
 	theme: {
+		screens: {
+			xs: '480px',
+			...screens,
+		},
 		extend: {
-			screens: {
-				xs: '480px',
-			},
 			colors: {
 				primary: '#254A5A',
 				'primary-dark': '#0F303F',

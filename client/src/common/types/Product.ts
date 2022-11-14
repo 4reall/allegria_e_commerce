@@ -11,7 +11,7 @@ export interface IPrice {
 
 export interface IColor {
 	name: string;
-	rgb: string;
+	hex: string;
 }
 
 export interface IVariant {
@@ -21,6 +21,7 @@ export interface IVariant {
 }
 
 export interface IProduct {
+	_id: string;
 	imagesUrls: string[];
 	thumbnailsUrls: string[];
 	name: string;
@@ -30,4 +31,10 @@ export interface IProduct {
 	relevance: Relevance;
 	brand: string;
 	variants: IVariant[];
+}
+
+export interface IProductsInfo {
+	categories: IProduct['category'][];
+	brands: IProduct['brand'][];
+	colors: IColor[];
 }

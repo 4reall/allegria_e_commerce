@@ -1,5 +1,6 @@
 import { ComponentProps, forwardRef, PropsWithChildren } from 'react';
 import cn from 'classnames';
+import Typography from 'common/components/_base/Typography/Typography';
 
 const buttonConfig = {
 	outline: cn(
@@ -18,13 +19,14 @@ const buttonConfig = {
 interface ButtonOwnProps {
 	variant?: keyof typeof buttonConfig;
 	full?: boolean;
+	text: string;
 }
 
 type ButtonProps = PropsWithChildren<ButtonOwnProps> &
 	Omit<ComponentProps<'button'>, keyof ButtonOwnProps>;
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-	({ children, variant = 'primary', full, ...props }, ref) => {
+	({ children, variant = 'primary', full, text, ...props }, ref) => {
 		return (
 			<button
 				ref={ref}
@@ -36,7 +38,12 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
 					full && 'w-full'
 				)}
 			>
-				{children}
+				<Typography
+					uppercase
+					color={variant === 'primary' ? 'beige' : 'primaryDark'}
+				>
+					{text}
+				</Typography>
 			</button>
 		);
 	}

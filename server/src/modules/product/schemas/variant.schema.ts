@@ -6,19 +6,19 @@ export class Variant {
   @ApiProperty({
     type: {
       name: { type: String, required: true },
-      rgb: { type: String },
+      hex: { type: String },
     },
     required: true,
   })
   @Prop({
     type: {
       name: { type: String, required: true },
-      rgb: { type: String },
+      hex: { type: String, required: true },
     },
     _id: false,
     required: true,
   })
-  color: Record<string, any>;
+  color: { hex: string; name: string };
 
   @ApiProperty({
     type: String,

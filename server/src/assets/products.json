@@ -20,7 +20,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XS",
 				"stock": 0
@@ -28,7 +28,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "S",
 				"stock": 1
@@ -36,7 +36,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "M",
 				"stock": 3
@@ -44,7 +44,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "L",
 				"stock": 2
@@ -52,7 +52,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XL",
 				"stock": 0
@@ -60,7 +60,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XXL",
 				"stock": 0
@@ -99,7 +99,7 @@
 			{
 				"color": {
 					"name": "Red",
-					"rgb": "#C3C4C8"
+					"hex": "red"
 				},
 				"size": "XS",
 				"stock": 2
@@ -107,7 +107,7 @@
 			{
 				"color": {
 					"name": "Red",
-					"rgb": "#C3C4C8"
+					"hex": "red"
 				},
 				"size": "S",
 				"stock": 1
@@ -115,7 +115,7 @@
 			{
 				"color": {
 					"name": "Red",
-					"rgb": "#C3C4C8"
+					"hex": "red"
 				},
 				"size": "M",
 				"stock": 0
@@ -123,7 +123,7 @@
 			{
 				"color": {
 					"name": "Red",
-					"rgb": "#C3C4C8"
+					"hex": "red"
 				},
 				"size": "L",
 				"stock": 2
@@ -131,7 +131,7 @@
 			{
 				"color": {
 					"name": "Red",
-					"rgb": "#C3C4C8"
+					"hex": "red"
 				},
 				"size": "XL",
 				"stock": 1
@@ -139,7 +139,7 @@
 			{
 				"color": {
 					"name": "Red",
-					"rgb": "#C3C4C8"
+					"hex": "red"
 				},
 				"size": "XXL",
 				"stock": 0
@@ -178,7 +178,7 @@
 			{
 				"color": {
 					"name": "Blue",
-					"rgb": "#C3C4C8"
+					"hex": "blue"
 				},
 				"size": "XS",
 				"stock": 2
@@ -186,7 +186,7 @@
 			{
 				"color": {
 					"name": "Blue",
-					"rgb": "#C3C4C8"
+					"hex": "blue"
 				},
 				"size": "S",
 				"stock": 4
@@ -194,7 +194,7 @@
 			{
 				"color": {
 					"name": "Blue",
-					"rgb": "#C3C4C8"
+					"hex": "blue"
 				},
 				"size": "M",
 				"stock": 3
@@ -202,7 +202,7 @@
 			{
 				"color": {
 					"name": "Blue",
-					"rgb": "#C3C4C8"
+					"hex": "blue"
 				},
 				"size": "L",
 				"stock": 2
@@ -210,7 +210,7 @@
 			{
 				"color": {
 					"name": "Blue",
-					"rgb": "#C3C4C8"
+					"hex": "blue"
 				},
 				"size": "XL",
 				"stock": 1
@@ -218,7 +218,7 @@
 			{
 				"color": {
 					"name": "Blue",
-					"rgb": "#C3C4C8"
+					"hex": "blue"
 				},
 				"size": "XXL",
 				"stock": 0
@@ -257,7 +257,7 @@
 			{
 				"color": {
 					"name": "Green",
-					"rgb": "#C3C4C8"
+					"hex": "green"
 				},
 				"size": "XS",
 				"stock": 2
@@ -265,7 +265,7 @@
 			{
 				"color": {
 					"name": "Green",
-					"rgb": "#C3C4C8"
+					"hex": "green"
 				},
 				"size": "S",
 				"stock": 4
@@ -273,7 +273,7 @@
 			{
 				"color": {
 					"name": "Green",
-					"rgb": "#C3C4C8"
+					"hex": "green"
 				},
 				"size": "M",
 				"stock": 3
@@ -281,7 +281,7 @@
 			{
 				"color": {
 					"name": "Green",
-					"rgb": "#C3C4C8"
+					"hex": "green"
 				},
 				"size": "L",
 				"stock": 2
@@ -289,7 +289,7 @@
 			{
 				"color": {
 					"name": "Green",
-					"rgb": "#C3C4C8"
+					"hex": "green"
 				},
 				"size": "XL",
 				"stock": 1
@@ -297,7 +297,7 @@
 			{
 				"color": {
 					"name": "Green",
-					"rgb": "#C3C4C8"
+					"hex": "green"
 				},
 				"size": "XXL",
 				"stock": 0
@@ -336,7 +336,7 @@
 			{
 				"color": {
 					"name": "Black",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XS",
 				"stock": 2
@@ -344,7 +344,7 @@
 			{
 				"color": {
 					"name": "Black",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "S",
 				"stock": 4
@@ -352,7 +352,7 @@
 			{
 				"color": {
 					"name": "Black",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "M",
 				"stock": 3
@@ -360,7 +360,7 @@
 			{
 				"color": {
 					"name": "Black",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "L",
 				"stock": 2
@@ -368,7 +368,7 @@
 			{
 				"color": {
 					"name": "Black",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XL",
 				"stock": 1
@@ -376,7 +376,7 @@
 			{
 				"color": {
 					"name": "Black",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XXL",
 				"stock": 0
@@ -415,7 +415,7 @@
 			{
 				"color": {
 					"name": "Black",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XS",
 				"stock": 2
@@ -423,7 +423,7 @@
 			{
 				"color": {
 					"name": "Black",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "S",
 				"stock": 4
@@ -431,7 +431,7 @@
 			{
 				"color": {
 					"name": "Black",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "M",
 				"stock": 3
@@ -439,7 +439,7 @@
 			{
 				"color": {
 					"name": "Black",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "L",
 				"stock": 2
@@ -447,7 +447,7 @@
 			{
 				"color": {
 					"name": "Black",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XL",
 				"stock": 1
@@ -455,7 +455,7 @@
 			{
 				"color": {
 					"name": "Black",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XXL",
 				"stock": 0
@@ -494,7 +494,7 @@
 			{
 				"color": {
 					"name": "Green",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XS",
 				"stock": 2
@@ -502,7 +502,7 @@
 			{
 				"color": {
 					"name": "Green",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "S",
 				"stock": 4
@@ -510,7 +510,7 @@
 			{
 				"color": {
 					"name": "Green",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "M",
 				"stock": 3
@@ -518,7 +518,7 @@
 			{
 				"color": {
 					"name": "Green",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "L",
 				"stock": 2
@@ -526,7 +526,7 @@
 			{
 				"color": {
 					"name": "Green",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XL",
 				"stock": 1
@@ -534,7 +534,7 @@
 			{
 				"color": {
 					"name": "Green",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XXL",
 				"stock": 0
@@ -573,7 +573,7 @@
 			{
 				"color": {
 					"name": "Green",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XS",
 				"stock": 2
@@ -581,7 +581,7 @@
 			{
 				"color": {
 					"name": "Green",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "S",
 				"stock": 4
@@ -589,7 +589,7 @@
 			{
 				"color": {
 					"name": "Green",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "M",
 				"stock": 3
@@ -597,7 +597,7 @@
 			{
 				"color": {
 					"name": "Green",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "L",
 				"stock": 2
@@ -605,7 +605,7 @@
 			{
 				"color": {
 					"name": "Green",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XL",
 				"stock": 1
@@ -613,7 +613,7 @@
 			{
 				"color": {
 					"name": "Green",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XXL",
 				"stock": 0
@@ -652,7 +652,7 @@
 			{
 				"color": {
 					"name": "Pink",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XS",
 				"stock": 2
@@ -660,7 +660,7 @@
 			{
 				"color": {
 					"name": "Pink",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "S",
 				"stock": 4
@@ -668,7 +668,7 @@
 			{
 				"color": {
 					"name": "Pink",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "M",
 				"stock": 3
@@ -676,7 +676,7 @@
 			{
 				"color": {
 					"name": "Pink",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "L",
 				"stock": 2
@@ -684,7 +684,7 @@
 			{
 				"color": {
 					"name": "Pink",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XL",
 				"stock": 1
@@ -692,7 +692,7 @@
 			{
 				"color": {
 					"name": "Pink",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XXL",
 				"stock": 0
@@ -731,7 +731,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XS",
 				"stock": 2
@@ -739,7 +739,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "S",
 				"stock": 4
@@ -747,7 +747,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "M",
 				"stock": 3
@@ -755,7 +755,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "L",
 				"stock": 2
@@ -763,7 +763,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XL",
 				"stock": 1
@@ -771,7 +771,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XXL",
 				"stock": 0
@@ -810,7 +810,7 @@
 			{
 				"color": {
 					"name": "Black",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XS",
 				"stock": 2
@@ -818,7 +818,7 @@
 			{
 				"color": {
 					"name": "Black",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "S",
 				"stock": 4
@@ -826,7 +826,7 @@
 			{
 				"color": {
 					"name": "Black",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "M",
 				"stock": 3
@@ -834,7 +834,7 @@
 			{
 				"color": {
 					"name": "Black",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "L",
 				"stock": 2
@@ -842,7 +842,7 @@
 			{
 				"color": {
 					"name": "Black",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XL",
 				"stock": 1
@@ -850,7 +850,7 @@
 			{
 				"color": {
 					"name": "Black",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XXL",
 				"stock": 0
@@ -889,7 +889,7 @@
 			{
 				"color": {
 					"name": "Black",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XS",
 				"stock": 2
@@ -897,7 +897,7 @@
 			{
 				"color": {
 					"name": "Black",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "S",
 				"stock": 4
@@ -905,7 +905,7 @@
 			{
 				"color": {
 					"name": "Black",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "M",
 				"stock": 3
@@ -913,7 +913,7 @@
 			{
 				"color": {
 					"name": "Black",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "L",
 				"stock": 2
@@ -921,7 +921,7 @@
 			{
 				"color": {
 					"name": "Black",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XL",
 				"stock": 1
@@ -929,7 +929,7 @@
 			{
 				"color": {
 					"name": "Black",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XXL",
 				"stock": 0
@@ -968,7 +968,7 @@
 			{
 				"color": {
 					"name": "Blue",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XS",
 				"stock": 2
@@ -976,7 +976,7 @@
 			{
 				"color": {
 					"name": "Blue",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "S",
 				"stock": 4
@@ -984,7 +984,7 @@
 			{
 				"color": {
 					"name": "Blue",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "M",
 				"stock": 3
@@ -992,7 +992,7 @@
 			{
 				"color": {
 					"name": "Blue",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "L",
 				"stock": 2
@@ -1000,7 +1000,7 @@
 			{
 				"color": {
 					"name": "Blue",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XL",
 				"stock": 1
@@ -1008,7 +1008,7 @@
 			{
 				"color": {
 					"name": "Blue",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XXL",
 				"stock": 0
@@ -1047,7 +1047,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XS",
 				"stock": 2
@@ -1055,7 +1055,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "S",
 				"stock": 4
@@ -1063,7 +1063,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "M",
 				"stock": 3
@@ -1071,7 +1071,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "L",
 				"stock": 2
@@ -1079,7 +1079,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XL",
 				"stock": 1
@@ -1087,7 +1087,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XXL",
 				"stock": 0
@@ -1126,7 +1126,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XS",
 				"stock": 2
@@ -1134,7 +1134,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "S",
 				"stock": 4
@@ -1142,7 +1142,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "M",
 				"stock": 3
@@ -1150,7 +1150,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "L",
 				"stock": 2
@@ -1158,7 +1158,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XL",
 				"stock": 1
@@ -1166,7 +1166,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XXL",
 				"stock": 0
@@ -1205,7 +1205,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XS",
 				"stock": 2
@@ -1213,7 +1213,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "S",
 				"stock": 4
@@ -1221,7 +1221,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "M",
 				"stock": 3
@@ -1229,7 +1229,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "L",
 				"stock": 2
@@ -1237,7 +1237,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XL",
 				"stock": 1
@@ -1245,7 +1245,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XXL",
 				"stock": 0
@@ -1284,7 +1284,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XS",
 				"stock": 2
@@ -1292,7 +1292,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "S",
 				"stock": 4
@@ -1300,7 +1300,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "M",
 				"stock": 3
@@ -1308,7 +1308,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "L",
 				"stock": 2
@@ -1316,7 +1316,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XL",
 				"stock": 1
@@ -1324,7 +1324,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XXL",
 				"stock": 0
@@ -1363,7 +1363,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XS",
 				"stock": 2
@@ -1371,7 +1371,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "S",
 				"stock": 4
@@ -1379,7 +1379,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "M",
 				"stock": 3
@@ -1387,7 +1387,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "L",
 				"stock": 2
@@ -1395,7 +1395,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XL",
 				"stock": 1
@@ -1403,7 +1403,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XXL",
 				"stock": 0
@@ -1442,7 +1442,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XS",
 				"stock": 2
@@ -1450,7 +1450,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "S",
 				"stock": 4
@@ -1458,7 +1458,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "M",
 				"stock": 3
@@ -1466,7 +1466,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "L",
 				"stock": 2
@@ -1474,7 +1474,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XL",
 				"stock": 1
@@ -1482,7 +1482,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XXL",
 				"stock": 0
@@ -1521,7 +1521,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XS",
 				"stock": 2
@@ -1529,7 +1529,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "S",
 				"stock": 4
@@ -1537,7 +1537,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "M",
 				"stock": 3
@@ -1545,7 +1545,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "L",
 				"stock": 2
@@ -1553,7 +1553,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XL",
 				"stock": 1
@@ -1561,7 +1561,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XXL",
 				"stock": 0
@@ -1600,7 +1600,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XS",
 				"stock": 2
@@ -1608,7 +1608,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "S",
 				"stock": 4
@@ -1616,7 +1616,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "M",
 				"stock": 3
@@ -1624,7 +1624,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "L",
 				"stock": 2
@@ -1632,7 +1632,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XL",
 				"stock": 1
@@ -1640,7 +1640,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XXL",
 				"stock": 0
@@ -1679,7 +1679,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XS",
 				"stock": 2
@@ -1687,7 +1687,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "S",
 				"stock": 4
@@ -1695,7 +1695,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "M",
 				"stock": 3
@@ -1703,7 +1703,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "L",
 				"stock": 2
@@ -1711,7 +1711,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XL",
 				"stock": 1
@@ -1719,7 +1719,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XXL",
 				"stock": 0
@@ -1758,7 +1758,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XS",
 				"stock": 2
@@ -1766,7 +1766,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "S",
 				"stock": 4
@@ -1774,7 +1774,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "M",
 				"stock": 3
@@ -1782,7 +1782,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "L",
 				"stock": 2
@@ -1790,7 +1790,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XL",
 				"stock": 1
@@ -1798,7 +1798,7 @@
 			{
 				"color": {
 					"name": "Silver",
-					"rgb": "#C3C4C8"
+					"hex": "#C3C4C8"
 				},
 				"size": "XXL",
 				"stock": 0

@@ -20,14 +20,14 @@ class ColorDto {
 
   @IsDefined()
   @IsHexColor()
-  rgb: string;
+  hex: string;
 }
 
 export class CartItemDto {
   @ApiProperty({
     type: {
       name: { type: String, required: true },
-      rgb: { type: String },
+      hex: { type: String },
     },
     required: true,
   })

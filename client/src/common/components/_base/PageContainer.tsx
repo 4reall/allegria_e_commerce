@@ -1,19 +1,12 @@
-import cn from "classnames";
+import cn from 'classnames';
+import { PropsWithChildren } from 'react';
 
-const PageContainer = (props: any) => {
-  return (
-    <div
-      className={cn(
-        "w-full",
-        "mx-auto",
-        "px-4",
-        "md:px-5",
-        "lg:px-12.5"
-      )}
-    >
-      {props.children}
-    </div>
-  );
+const PageContainer = ({ children }: PropsWithChildren<{}>) => {
+	return (
+		<div className={cn('mx-auto w-full px-4 md:px-5 lg:px-12')}>
+			{children}
+		</div>
+	);
 };
 
 export default PageContainer;

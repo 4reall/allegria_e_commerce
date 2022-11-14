@@ -3,7 +3,9 @@ import { UserDto } from 'src/modules/user/dtos/user.dto';
 import { UserService } from 'src/modules/user/services/user.service';
 import { Response, Request } from 'express';
 import { UserLoginDto } from 'src/modules/user/dtos/user-login.dto';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('user')
 @Controller()
 export class UserController {
   constructor(private userService: UserService) {}
@@ -14,10 +16,6 @@ export class UserController {
     @Res({ passthrough: true }) res: Response,
   ) {
     const { user, ...tokens } = await this.userService.registration(userDto);
-    // res.cookie('refreshToken', userData.tokens.refreshToken, {
-    //   httpOnly: true,
-    //   maxAge: 30 * 24 * 60 * 60 * 1000,
-    // });
     return { user, ...tokens };
   }
 

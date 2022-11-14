@@ -58,7 +58,11 @@ const AccordionItem = ({ title, content, index }: AccordionItemProps) => {
 				)}
 			>
 				{content.map((item, index) => (
-					<Typography className="block" type="inter" key={index}>
+					<Typography
+						className="hover:!text-accent block cursor-pointer"
+						type="inter"
+						key={index}
+					>
 						{item}
 					</Typography>
 				))}
