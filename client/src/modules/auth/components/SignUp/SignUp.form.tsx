@@ -1,14 +1,16 @@
+import { z } from 'zod';
 import cn from 'classnames';
-import Form from 'common/components/_base/Form';
-import { useLocalStorage } from 'common/hooks/useLocalStorage';
+import { useEffect } from 'react';
+import { signIn } from 'next-auth/react';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { SubmitHandler, useForm, useWatch } from 'react-hook-form';
+
 import { useValidation } from 'modules/auth/components/SignUp/useValidation';
 import { authService } from 'modules/auth/index';
-import { signIn, useSession } from 'next-auth/react';
-import { useEffect } from 'react';
-import { SubmitHandler, useForm, useWatch } from 'react-hook-form';
 import SignUpLayout from 'modules/auth/components/SignUp/SignUp.layout';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { z } from 'zod';
+
+import { useLocalStorage } from 'common/hooks/useLocalStorage';
+import Form from 'common/components/_base/Form';
 
 interface SignUpFormProps {
 	className?: string;

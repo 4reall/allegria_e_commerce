@@ -2,7 +2,7 @@ import * as RCheckbox from '@radix-ui/react-checkbox';
 import { Label } from '@radix-ui/react-label';
 import cn from 'classnames';
 import { CheckIcon } from '@radix-ui/react-icons';
-import { forwardRef, ReactNode, useEffect, useState, ChangeEvent } from 'react';
+import { forwardRef, ReactNode, useEffect, useState } from 'react';
 
 interface CheckboxProps {
 	label?: ReactNode | string;

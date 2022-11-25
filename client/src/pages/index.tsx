@@ -1,9 +1,10 @@
-import Button from 'common/components/_base/Button/Button';
-import Select from 'common/components/_base/Select/Select';
-import SignInModal from 'modules/auth/components/SignInModal';
 import type { GetStaticPropsContext, NextPage } from 'next';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
+import SignInModal from 'modules/auth/components/SignInModal';
+import Button from 'common/components/_base/Button/Button';
+
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 // const options = ['option 1', 'option 2', 'option 3'];

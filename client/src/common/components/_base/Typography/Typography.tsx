@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { ComponentProps, ElementType, PropsWithChildren } from 'react';
+import { ComponentProps, ElementType } from 'react';
 
 const typographyConfig = {
 	font: {

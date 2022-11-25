@@ -1,12 +1,8 @@
-import {
-	ComponentProps,
-	ComponentPropsWithoutRef,
-	CSSProperties,
-	PropsWithChildren,
-} from 'react';
-import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
-import Typography from 'common/components/_base/Typography/Typography';
+import { ComponentProps, PropsWithChildren } from 'react';
 import cn from 'classnames';
+import * as DropdownMenu from '@radix-ui/react-dropdown-menu';
+
+import Typography from 'common/components/_base/Typography/Typography';
 
 interface DropdownOwnProps {
 	triggerLabel: string;

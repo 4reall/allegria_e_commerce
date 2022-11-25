@@ -1,16 +1,15 @@
 import { ErrorMessage } from '@hookform/error-message';
-import Input from 'common/components/_base/Input/Input';
-import Typography from 'common/components/_base/Typography/Typography';
 import {
 	FieldValues,
 	Path,
-	PathValue,
 	useController,
 	useFormContext,
-	useWatch,
 } from 'react-hook-form';
-import { ComponentProps, useEffect } from 'react';
+import { ComponentProps } from 'react';
 import cn from 'classnames';
+
+import Typography from 'common/components/_base/Typography/Typography';
+import Input from 'common/components/_base/Input/Input';
 
 interface InputFieldProps<T extends FieldValues = FieldValues> {
 	name: Path<T>;

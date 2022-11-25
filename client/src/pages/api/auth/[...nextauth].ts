@@ -1,11 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next';
-import NextAuth, {
-	CallbacksOptions,
-	NextAuthOptions,
-	Session,
-	SessionOptions,
-	User,
-} from 'next-auth';
+import NextAuth, { NextAuthOptions, Session, User } from 'next-auth';
 import Credentials from 'next-auth/providers/credentials';
 import { JWT } from 'next-auth/jwt';
 import { authService } from 'modules/auth';

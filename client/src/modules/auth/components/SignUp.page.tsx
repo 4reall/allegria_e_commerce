@@ -1,7 +1,7 @@
 import Button from 'common/components/_base/Button/Button';
 import PageContainer from 'common/components/_base/PageContainer';
 import Typography from 'common/components/_base/Typography/Typography';
-import { authService, SignUpForm } from 'modules/auth';
+import { SignUpForm } from 'modules/auth';
 import { useSession } from 'next-auth/react';
 
 const SignUpPage = () => {

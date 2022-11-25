@@ -1,4 +1,3 @@
-import Dropdown from 'common/components/_base/Dropdown/Dropdown';
 import React, { useEffect, useState } from 'react';
 
 import Accordion from 'common/components/Accordion/Accordion';

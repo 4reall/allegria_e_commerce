@@ -1,4 +1,4 @@
-import { AxiosError, AxiosResponse } from 'axios';
+import { AxiosResponse } from 'axios';
 import { IProduct, IProductsInfo } from 'common/types/Product';
 import axiosClient from 'common/configs/axios';
 import { Sizes } from 'common/utils/constants/Sizes';
