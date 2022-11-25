@@ -1,12 +1,19 @@
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
-import productService from 'modules/products/services/Product.service';
-import { ProductsPage, ProductsPageProps } from 'modules/products';
+import {
+	productService,
+	ProductsPage,
+	ProductsPageProps,
+} from 'modules/products';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-export const getStaticProps: GetStaticProps<ProductsPageProps> = async () => {
+export const getStaticProps: GetStaticProps<ProductsPageProps> = async ({
+	locale,
+}) => {
 	const { data } = await productService.getInfo();
 
 	return {
 		props: {
+			...(await serverSideTranslations(locale || 'ru', ['products'])),
 			productsInfo: data,
 		},
 	};

@@ -14,5 +14,5 @@ export interface IUser {
 	address: string;
 	wishList: IProduct[];
 	cart: IProduct[];
-	mailingSubscription: boolean;
+	mailing: boolean;
 }

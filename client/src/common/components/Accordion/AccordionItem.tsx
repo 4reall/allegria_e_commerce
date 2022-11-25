@@ -24,7 +24,7 @@ const AccordionItem = ({ title, content, index }: AccordionItemProps) => {
 						<Typography
 							bold
 							uppercase
-							type="inter"
+							font="inter"
 							color="primaryDark"
 						>
 							{title}
@@ -60,7 +60,7 @@ const AccordionItem = ({ title, content, index }: AccordionItemProps) => {
 				{content.map((item, index) => (
 					<Typography
 						className="hover:!text-accent block cursor-pointer"
-						type="inter"
+						font="inter"
 						key={index}
 					>
 						{item}

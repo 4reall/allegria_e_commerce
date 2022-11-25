@@ -1,4 +1,4 @@
-import { ApiProperty } from '@nestjs/swagger';
+import { ApiProperty, ApiTags } from '@nestjs/swagger';
 import {
   IsDefined,
   IsEmail,
@@ -7,6 +7,7 @@ import {
   MinLength,
 } from 'class-validator';
 
+@ApiTags('user')
 export class UserLoginDto {
   @ApiProperty({ type: String, required: true })
   @IsDefined()

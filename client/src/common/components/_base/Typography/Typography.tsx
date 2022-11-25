@@ -2,10 +2,10 @@ import cn from 'classnames';
 import { ComponentProps, ElementType, PropsWithChildren } from 'react';
 
 const typographyConfig = {
-	type: {
+	font: {
 		decor: 'font-decor',
 		normal: 'font-normal',
-		inter: "font-inter",
+		inter: 'font-inter',
 	},
 	color: {
 		primary: 'text-primary',
@@ -32,7 +32,7 @@ const typographyConfig = {
 
 interface TypographyOwnProps<TTag extends ElementType = ElementType> {
 	variant?: keyof typeof typographyConfig.variant;
-	type?: keyof typeof typographyConfig.type;
+	font?: keyof typeof typographyConfig.font;
 	color?: keyof typeof typographyConfig.color;
 	spacing?: keyof typeof typographyConfig.spacing;
 	uppercase?: boolean;
@@ -48,7 +48,7 @@ const baseTag = 'span';
 const Typography = <TTag extends ElementType = typeof baseTag>({
 	variant = 'base',
 	color = 'primary',
-	type = 'normal',
+	font = 'normal',
 	spacing = 'none',
 	uppercase,
 	bold,
@@ -63,7 +63,7 @@ const Typography = <TTag extends ElementType = typeof baseTag>({
 			className={cn(
 				typographyConfig.variant[variant],
 				typographyConfig.color[color],
-				typographyConfig.type[type],
+				typographyConfig.font[font],
 				typographyConfig.spacing[spacing],
 				bold && 'font-medium',
 				uppercase && 'uppercase',

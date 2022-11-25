@@ -39,7 +39,10 @@ module.exports = {
 				},
 			},
 			keyframes: {
-				// dropdown
+				'appear-in': {
+					'0%': { opacity: 0 },
+					'100%': { opacity: 1 },
+				},
 				'scale-in': {
 					'0%': { opacity: 0, transform: 'scale(0)' },
 					'100%': { opacity: 1, transform: 'scale(1)' },
@@ -63,6 +66,7 @@ module.exports = {
 				},
 			},
 			animation: {
+				'appear-in': 'appear-in 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
 				'scale-in': 'scale-in 0.2s ease-in-out',
 				'slide-down': 'slide-down 0.6s cubic-bezier(0.16, 1, 0.3, 1)',
 				'slide-up': 'slide-up 0.6s cubic-bezier(0.16, 1, 0.3, 1)',

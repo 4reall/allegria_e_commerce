@@ -1,13 +1,22 @@
 {
- "form": {
-  "name": "Name",
-  "email": "E-mail",
-  "password": "Password",
-  "tel": "Phone number",
-  "surname": "Surname",
-  "repeatPassword": "Repeat password",
-  "mailing": "Subscribe on mailing",
-  "agree": "I agree with ",
-  "policy": "Privacy Policy"
- }
+	"form": {
+		"name": "Name",
+		"email": "E-mail",
+		"password": "Password",
+		"tel": "Phone number",
+		"surname": "Surname",
+		"repeatPassword": "Repeat password",
+		"mailing": "Subscribe on mailing",
+		"agree": "I agree with ",
+		"policy": "Privacy Policy"
+	},
+	"errors": {
+		"min": "Minimal length is {{min}}",
+		"max": "Maximal length {{max}}",
+		"email": "Invalid e-mail",
+		"password": "Password should be more than or equal 4 characters and contains digits, letters",
+		"notEqual": "Passwords are not equal",
+		"required": "Required",
+		"tel": "Invalid phone number"
+	}
 }

@@ -1,12 +1,4 @@
-import {
-  IsAlpha,
-  IsArray,
-  IsEnum,
-  IsIn,
-  IsNumber,
-  IsOptional,
-  IsString,
-} from 'class-validator';
+import { IsEnum, IsIn, IsNumber, IsOptional, IsString } from 'class-validator';
 import { Transform, Type } from 'class-transformer';
 import { Sizes } from 'src/modules/product/constants';
 import { ApiPropertyOptional } from '@nestjs/swagger';
@@ -25,19 +17,21 @@ export class GetProductsDto {
     description:
       'Param accepts one of these values: 1 or "asc" for ascending order and -1 or "desc" for descending order',
   })
-  @IsString()
+  @Transform(({ value }) => (value === '1' || value === '-1' ? +value : value))
+  @IsIn([1, -1, 'asc', 'desc'])
   @IsOptional()
-  readonly orderBy?: '1' | '-1' | 'asc' | 'desc' = '1';
+  readonly orderBy?: 1 | -1 | 'asc' | 'desc' = -1;
 
   @ApiPropertyOptional({
     type: String,
-    description: 'Param accepts "new" or "old" values',
+    description:
+      'Param accepts "relevance" or "price" values, -1 orderBy value shows new products first',
   })
   @IsOptional()
   @IsString()
   @Transform(({ value }) => value.toLowerCase())
-  @IsIn(['new', 'old'])
-  readonly relevance?: string = 'new';
+  @IsIn(['relevance', 'price'])
+  readonly sortBy?: string = 'relevance';
 
   @ApiPropertyOptional({
     type: Number,

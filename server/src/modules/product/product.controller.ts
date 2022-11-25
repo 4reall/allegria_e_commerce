@@ -12,7 +12,7 @@ import { GetProductsDto } from 'src/modules/product/dto/get-products.dto';
 export class ProductController {
   constructor(private productService: ProductService) {}
 
-  @ApiOperation({ summary: 'allow you get products' })
+  @ApiOperation({ summary: 'allow you to get products' })
   @ApiResponse({ status: 200, type: [Product] })
   @Get()
   async getProducts(

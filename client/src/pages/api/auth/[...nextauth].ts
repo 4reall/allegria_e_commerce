@@ -1,23 +1,30 @@
+import { NextApiRequest, NextApiResponse } from 'next';
 import NextAuth, {
 	CallbacksOptions,
+	NextAuthOptions,
 	Session,
 	SessionOptions,
 	User,
 } from 'next-auth';
 import Credentials from 'next-auth/providers/credentials';
-import { authService } from 'modules/auth/services/AuthService';
 import { JWT } from 'next-auth/jwt';
+import { authService } from 'modules/auth';
 
 interface JWTParams {
 	token: JWT;
-	user: User;
+	user?: User;
 }
 interface SessionParams {
 	session: Session;
 	token: JWT;
 }
 
-export const authOptions = {
+type NextAuthOptionsCallback = (
+	req: NextApiRequest,
+	res: NextApiResponse
+) => NextAuthOptions;
+
+export const nextAuthOptions: NextAuthOptionsCallback = (req, res) => ({
 	providers: [
 		Credentials({
 			name: 'login',
@@ -28,7 +35,7 @@ export const authOptions = {
 
 			async authorize(credentials) {
 				try {
-					const response = await authService.login(credentials!);
+					const response = await authService.signIn(credentials!);
 
 					const user = response.data as User;
 
@@ -76,7 +83,11 @@ export const authOptions = {
 			return session;
 		},
 	},
-};
+});
 
 // @ts-ignore
-export default NextAuth(authOptions);
+// export default NextAuth(authOptions);
+
+export default (req: NextApiRequest, res: NextApiResponse) => {
+	return NextAuth(req, res, nextAuthOptions(req, res));
+};

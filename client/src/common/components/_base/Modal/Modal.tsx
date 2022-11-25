@@ -1,38 +1,42 @@
 import { CSSTransition } from 'react-transition-group';
 import * as DialogPrimitive from '@radix-ui/react-dialog';
 import cn from 'classnames';
-import { PropsWithChildren, useState } from 'react';
+import { PropsWithChildren, ReactNode, useState } from 'react';
 import CloseButton from '../CloseButton';
 
 interface ModalProps {
-	trigger: React.ReactNode;
-	closeHandler?: () => void;
+	trigger: ReactNode;
 	isOpen?: boolean;
-	setIsOpen?: () => void;
+	handleOpenChange?: (open?: boolean) => void;
+	className?: string;
 }
+
+const DURATION = 300;
 
 const Modal = ({
 	trigger,
 	isOpen,
-	setIsOpen,
+	handleOpenChange,
 	children,
+	className,
 }: PropsWithChildren<ModalProps>) => {
 	const [isOpen_, setIsOpen_] = useState(false);
 
-	const hasIsOpen = isOpen !== undefined;
-	const hasSetIsOpen = setIsOpen !== undefined;
-
-	const handleClose = () => setIsOpen_(false);
+	const handleOpenChange_ = (open: boolean) => {
+		if (handleOpenChange !== undefined)
+			setTimeout(() => handleOpenChange(open), DURATION);
+		setIsOpen_(open);
+	};
 
 	return (
 		<DialogPrimitive.Root
-			open={hasIsOpen ? isOpen : isOpen_}
-			onOpenChange={hasSetIsOpen ? setIsOpen : setIsOpen_}
+			open={isOpen ?? isOpen_}
+			onOpenChange={handleOpenChange_}
 		>
 			<DialogPrimitive.Trigger asChild>{trigger}</DialogPrimitive.Trigger>
 			<CSSTransition
-				in={hasIsOpen ? isOpen : isOpen_}
-				timeout={300}
+				in={isOpen ?? isOpen_}
+				timeout={DURATION}
 				classNames={{
 					enter: 'opacity-0',
 					enterActive: '!opacity-100 duration-200 transition-all',
@@ -53,17 +57,16 @@ const Modal = ({
 						<DialogPrimitive.Content
 							forceMount
 							className={cn(
-								'fixed z-50 border-none bg-white',
-								'h-[100vh] w-[100vw] max-w-lg py-7 px-10 md:h-auto md:w-auto',
-								'top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] '
+								'fixed z-50 flex flex-col items-center',
+								'justify-center border-none bg-white py-7 px-10',
+								'top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] ',
+								className
 							)}
 						>
 							{children}
 							<DialogPrimitive.Close asChild>
 								<CloseButton
-									onClick={
-										hasSetIsOpen ? setIsOpen : handleClose
-									}
+									onClick={() => handleOpenChange_(false)}
 									className="absolute right-7 top-7"
 								/>
 							</DialogPrimitive.Close>

@@ -4,8 +4,7 @@ import {
   Product,
   ProductDocument,
 } from 'src/modules/product/schemas/product.schema';
-import { Model, SortOrder } from 'mongoose';
-import { HttpService } from '@nestjs/axios';
+import { Model } from 'mongoose';
 import * as fs from 'fs';
 import * as path from 'path';
 import { GetProductsDto } from 'src/modules/product/dto/get-products.dto';
@@ -31,7 +30,7 @@ export class ProductService {
   ) {}
 
   async getProducts(getProductsDto: GetProductsDto): Promise<ProductsResponse> {
-    const { sizes, orderBy, price, relevance, colors, q, page, limit } =
+    const { sizes, orderBy, price, sortBy, colors, q, page, limit } =
       getProductsDto;
 
     const validPrice =
@@ -41,22 +40,27 @@ export class ProductService {
       : undefined;
     const validQuery = q ? new RegExp(q, 'im') : undefined;
     const validSizes = sizes ? { $in: sizes } : undefined;
+    const sortOptionsMap = {
+      relevance: { 'relevance.value': orderBy },
+      price: { 'price.value': orderBy },
+    };
+
+    const query = {
+      name: validQuery,
+      'price.value': validPrice,
+      'variants.color.name': validColors,
+      'variants.size': validSizes,
+    };
+    const products = await this.productModel
+      .find(query)
+      .sort(sortOptionsMap[sortBy])
+      .skip((page - 1) * limit)
+      .limit(limit);
+    const totalCount = await this.productModel.find(query).count();
 
     return {
-      totalCount: await this.productModel.count(),
-      products: await this.productModel
-        .find({
-          name: validQuery,
-          'price.value': validPrice,
-          'variants.color.name': validColors,
-          'variants.size': validSizes,
-        })
-        .sort({
-          'relevance.value': relevance === 'new' ? -1 : 1,
-          price: orderBy as SortOrder,
-        })
-        .skip((page - 1) * limit)
-        .limit(limit),
+      totalCount,
+      products,
     };
   }
 

@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import { useInfiniteQuery } from 'react-query';
-import productService from 'modules/products/services/Product.service';
+import { productService } from '../services/Product.service';
 
 export const useInfiniteProducts = (limit: number) => {
 	const router = useRouter();
@@ -24,15 +24,21 @@ export const useInfiniteProducts = (limit: number) => {
 			keepPreviousData: true,
 			getNextPageParam: (lastPage, allPages) => {
 				if (!lastPage) return 0;
-				return lastPage.products.length === limit
-					? allPages.length + 1
-					: undefined;
+
+				const isLastPage =
+					lastPage.totalCount <= allPages.length * limit;
+				return !isLastPage ? allPages.length + 1 : undefined;
 			},
 		}
 	);
 
 	return {
-		data: data ? data.pages.map((page) => page.products) : data,
+		data: data
+			? {
+					totalCount: data.pages[0].totalCount,
+					products: data.pages.map((page) => page.products),
+			  }
+			: data,
 		...rest,
 	};
 };

@@ -1,6 +1,8 @@
 import { IsBoolean, IsDefined, IsMongoId, IsString } from 'class-validator';
 import { UserDocument } from 'src/modules/user/schemas/user.schema';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('user')
 export class UserTokenDto {
   @IsDefined()
   @IsString({ each: true })

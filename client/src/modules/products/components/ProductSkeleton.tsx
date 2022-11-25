@@ -1,5 +1,4 @@
 import ContentLoader from 'react-content-loader';
-import { v4 } from 'uuid';
 import { useId } from 'react';
 
 const ProductSkeleton = () => {

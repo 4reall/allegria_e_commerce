@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import { ParsedUrlQuery } from 'querystring';
 
 export const useUrl = () => {
 	const router = useRouter();
@@ -16,22 +17,29 @@ export const useUrl = () => {
 		return newQuery.length > 1 ? newQuery.join(',') : newQuery.join('');
 	};
 
-	const handleQueryChange = (key: string, query: string) => {
+	const handleQueryChange = (
+		key: string,
+		query: string,
+		multiple: boolean = true
+	) => {
 		const q = queries[key];
-		if (!q) {
+		if (!q || !multiple) {
+			console.log('key', key, 'query', query);
 			router.replace({
 				query: {
 					...router.query,
 					[key]: query,
 				},
 			});
-			console.log(q);
 			return;
 		}
 
+		console.log('a');
+
+		// if chosen an active query it should be removed
 		if (isUrlContains(key, query)) {
 			const newQuery = removeParam(q as string, query);
-			console.log(newQuery);
+			// if there are extra queries after removing
 			if (newQuery) {
 				router.replace({
 					query: {
@@ -39,7 +47,9 @@ export const useUrl = () => {
 						[key]: newQuery,
 					},
 				});
+				return;
 			} else {
+				// if that was the last query
 				const newQueries = Object.fromEntries(
 					Object.entries(queries).filter((entry) => entry[0] !== key)
 				);
@@ -61,6 +71,13 @@ export const useUrl = () => {
 			});
 		}
 	};
+	const setQueryObject = (query: ParsedUrlQuery, clear: boolean = false) => {
+		if (clear) {
+			router.replace({ query: { ...query } });
+		} else {
+			router.replace({ query: { ...router.query, ...query } });
+		}
+	};
 
-	return { isUrlContains, handleQueryChange };
+	return { isUrlContains, handleQueryChange, setQueryObject };
 };

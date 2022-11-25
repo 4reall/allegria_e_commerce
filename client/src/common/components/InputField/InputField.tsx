@@ -1,8 +1,15 @@
 import { ErrorMessage } from '@hookform/error-message';
 import Input from 'common/components/_base/Input/Input';
 import Typography from 'common/components/_base/Typography/Typography';
-import { FieldValues, Path, useFormContext } from 'react-hook-form';
-import { ComponentProps } from 'react';
+import {
+	FieldValues,
+	Path,
+	PathValue,
+	useController,
+	useFormContext,
+	useWatch,
+} from 'react-hook-form';
+import { ComponentProps, useEffect } from 'react';
 import cn from 'classnames';
 
 interface InputFieldProps<T extends FieldValues = FieldValues> {
@@ -11,6 +18,8 @@ interface InputFieldProps<T extends FieldValues = FieldValues> {
 	className?: ComponentProps<'div'>['className'];
 	full?: boolean;
 	placeholder?: string;
+	type?: ComponentProps<'input'>['type'];
+	persist?: boolean;
 }
 
 const InputField = <T extends FieldValues>({
@@ -19,21 +28,29 @@ const InputField = <T extends FieldValues>({
 	className,
 	full = true,
 	placeholder,
+	type,
 }: InputFieldProps<T>) => {
-	const { formState, register } = useFormContext<T>();
+	const { formState, control } = useFormContext<T>();
+	const { field } = useController({ control, name });
 	const { errors } = formState;
+
 	return (
 		<div className={cn(className, full && 'w-full')}>
 			<Input
 				error={!!errors[name]}
 				placeholder={placeholder}
-				type={password ? 'password' : ''}
-				{...register(name)}
+				type={password ? 'password' : type}
+				className="mb-[2px]"
+				{...field}
 			/>
 			<ErrorMessage
 				errors={errors}
 				name={name as any}
-				render={({ message }) => <Typography>message</Typography>}
+				render={({ message }) => (
+					<Typography variant="sm" color="error">
+						{message}
+					</Typography>
+				)}
 			/>
 		</div>
 	);

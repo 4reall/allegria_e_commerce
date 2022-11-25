@@ -1,12 +1,15 @@
-import { useInfiniteProducts } from 'modules/products/hooks/useInfiniteProducts';
+import Dropdown from 'common/components/_base/Dropdown/Dropdown';
+import React, { useEffect, useState } from 'react';
+
 import Accordion from 'common/components/Accordion/Accordion';
 import Typography from 'common/components/_base/Typography/Typography';
-import Filters from 'modules/products/components/Filters';
-import ProductsList from 'modules/products/components/ProductsList';
+import Button from 'common/components/_base/Button/Button';
 import PageContainer from 'common/components/_base/PageContainer';
-import React from 'react';
 import { IProductsInfo } from 'common/types/Product';
-import { AuthService } from 'modules/auth/services/AuthService';
+
+import Filters from './Filters';
+import ProductsList from './ProductsList';
+import { useInfiniteProducts } from '../hooks/useInfiniteProducts';
 
 const LIMIT = 10;
 
@@ -59,10 +62,13 @@ export interface ProductsPageProps {
 }
 
 const ProductsPage = ({ productsInfo }: ProductsPageProps) => {
+	const [disabled, setDisabled] = useState(false);
 	const { data, fetchNextPage, isFetching, isLoading, hasNextPage } =
 		useInfiniteProducts(LIMIT);
 
-	const isDisabled = hasNextPage || isLoading || isFetching;
+	useEffect(() => {
+		setDisabled(!hasNextPage || isLoading || isFetching);
+	}, [hasNextPage]);
 	return (
 		<PageContainer>
 			<div className="flex justify-center gap-6">
@@ -78,12 +84,13 @@ const ProductsPage = ({ productsInfo }: ProductsPageProps) => {
 					>
 						Кофты и пиджаки
 					</Typography>
-					<Filters {...productsInfo} />
-					<ProductsList
-						disabled={!isDisabled}
-						productPages={data}
-						fetchNextPage={() => fetchNextPage()}
-						limit={LIMIT}
+					<Filters totalCount={data?.totalCount} {...productsInfo} />
+					<ProductsList productPages={data?.products} limit={LIMIT} />
+					<Button
+						disabled={disabled}
+						onClick={() => fetchNextPage()}
+						className="mx-auto block"
+						text="load more"
 					/>
 				</section>
 			</div>

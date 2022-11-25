@@ -9,6 +9,7 @@ interface ProductCardProps {
 	price: number;
 	topLabel: ReactNode;
 	bottomLabel: ReactNode;
+	className?: string;
 }
 
 const ProductCard = ({
@@ -18,12 +19,21 @@ const ProductCard = ({
 	price,
 	topLabel,
 	bottomLabel,
+	className,
 }: ProductCardProps) => {
 	return (
-		<div>
-			<div className="relative -z-10 mx-auto w-fit">
+		<div className={className}>
+			<div className="relative -z-10 mx-auto w-full">
 				{topLabel}
-				<Image height={325} width={270} src={image} />
+				<Image
+					height={0}
+					width={0}
+					sizes={'100vh'}
+					className={'h-auto w-full'}
+					src={image}
+					alt="product image"
+					priority
+				/>
 				{bottomLabel}
 			</div>
 			<div className="mt-4 flex flex-col items-center ">

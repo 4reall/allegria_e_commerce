@@ -14,16 +14,10 @@ import { compare, hash } from 'bcrypt';
 import { v4 } from 'uuid';
 import { UserTokenDto } from 'src/modules/user/dtos/user-token.dto';
 import { UserLoginDto } from 'src/modules/user/dtos/user-login.dto';
-
-type BaseResponse = {
-  user: UserDocument;
-  accessToken: string;
-};
-type FullResponse = {
-  user: UserDocument;
-  accessToken: string;
-  refreshToken: string;
-};
+import {
+  IBaseResponse,
+  IFullResponse,
+} from 'src/modules/user/dtos/base-response.dto';
 
 @Injectable()
 export class UserService {
@@ -33,18 +27,32 @@ export class UserService {
     private tokenService: TokenService,
   ) {}
 
-  async registration(createUserDto: UserDto): Promise<FullResponse> {
-    const userCandidate = await this.userModel.findOne({
+  async registration(createUserDto: UserDto): Promise<IBaseResponse> {
+    const emailCandidate = await this.userModel.findOne({
       email: createUserDto.email,
     });
-    if (userCandidate) {
-      throw new ConflictException('user already exists');
+    if (emailCandidate) {
+      throw new ConflictException({
+        message: 'User already exists',
+        tag: 'NOT_UNIQUE',
+        field: 'email',
+      });
+    }
+    const telCandidate = await this.userModel.findOne({
+      tel: createUserDto.tel,
+    });
+    if (telCandidate) {
+      throw new ConflictException({
+        message: 'User already exists',
+        tag: 'NOT_UNIQUE',
+        field: 'tel',
+      });
     }
 
     const hashedPassword = await hash(createUserDto.password, 3);
     const activationLink = v4();
     const userRole = await this.roleModel.findOne({ value: 'user' });
-    const user = new this.userModel({
+    const user = await this.userModel.create({
       ...createUserDto,
       password: hashedPassword,
       activationLink,
@@ -55,15 +63,11 @@ export class UserService {
     const accessToken = this.tokenService.generateAccessToken({
       ...userTokenDto,
     });
-    const refreshToken = this.tokenService.generateRefreshToken({
-      ...userTokenDto,
-    });
-    await this.tokenService.save(userTokenDto.userId, refreshToken);
-    await user.save();
-    return { accessToken, refreshToken, user };
+
+    return { accessToken, user };
   }
 
-  async login(userLoginDto: UserLoginDto): Promise<FullResponse> {
+  async login(userLoginDto: UserLoginDto): Promise<IFullResponse> {
     const { email, password } = userLoginDto;
     const user = await this.userModel.findOne({
       email,
@@ -84,7 +88,9 @@ export class UserService {
     const refreshToken = this.tokenService.generateRefreshToken({
       ...userTokenDto,
     });
+
     await this.tokenService.save(userTokenDto.userId, refreshToken);
+
     return { accessToken, refreshToken, user };
   }
 
@@ -92,20 +98,24 @@ export class UserService {
     await this.tokenService.deleteToken(refreshToken);
   }
 
-  async refresh(refreshToken: string): Promise<BaseResponse> {
+  async refresh(refreshToken: string): Promise<IBaseResponse> {
     if (!refreshToken) {
       throw new UnauthorizedException();
     }
+
     const tokenPayload = this.tokenService.validateRefreshToken(refreshToken);
     const tokenFromDb = await this.tokenService.findToken(refreshToken);
+
     if (!tokenPayload || !tokenFromDb) {
       throw new UnauthorizedException();
     }
+
     const user = await this.userModel.findOne({ _id: tokenFromDb.userId });
     const userTokenDto = new UserTokenDto(user);
     const accessToken = this.tokenService.generateAccessToken({
       ...userTokenDto,
     });
+
     return { accessToken, user };
   }
 }

@@ -16,7 +16,7 @@ export default {
 	},
 	args: {
 		text: 'String',
-		type: 'normal',
+		font: 'normal',
 		uppercase: false,
 		variant: 'lg',
 		color: 'primaryDark',

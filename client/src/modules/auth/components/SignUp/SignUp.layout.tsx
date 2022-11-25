@@ -10,7 +10,7 @@ const SignUpLayout = () => {
 		<>
 			<InputField placeholder={t('name')} name="name" />
 			<InputField placeholder={t('surname')} name="surname" />
-			<InputField placeholder={t('tel')} name="tel" />
+			<InputField type="tel" placeholder={t('tel')} name="tel" />
 			<InputField placeholder={t('email')} name="email" />
 			<InputField password placeholder={t('password')} name="password" />
 			<InputField
@@ -33,7 +33,7 @@ const SignUpLayout = () => {
 				className="col-span-1 sm:col-span-2"
 				name={'privacy'}
 			/>
-			<Button type="submit">submit</Button>
+			<Button type="submit" text="submit" />
 		</>
 	);
 };

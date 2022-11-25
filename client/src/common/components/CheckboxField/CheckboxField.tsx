@@ -21,17 +21,19 @@ const CheckboxField = <T extends FieldValues>({
 	className,
 	label,
 }: InputFieldProps<T>) => {
-	const { formState, register, control } = useFormContext<T>();
+	const { formState, control } = useFormContext<T>();
 	const { errors } = formState;
 	const { field } = useController({ name, control });
 	return (
-		<div className={cn('flex', className)}>
+		<div className={cn(className)}>
 			<Checkbox label={label} {...field} />
 			<ErrorMessage
 				errors={errors}
 				name={name as any}
 				render={({ message }) => (
-					<Typography color="error">{message}</Typography>
+					<Typography color="error" variant="sm" className="block">
+						{message}
+					</Typography>
 				)}
 			/>
 		</div>

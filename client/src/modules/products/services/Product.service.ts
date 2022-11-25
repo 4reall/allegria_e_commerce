@@ -15,11 +15,18 @@ interface GetProductsProps {
 }
 
 interface GetProductsResponse {
-	totalCount: string;
+	totalCount: number;
 	products: IProduct[];
 }
 
 class ProductService {
+	private static _instance: ProductService | null = null;
+
+	static getInstance() {
+		if (this._instance === null) this._instance = new ProductService();
+		return this._instance;
+	}
+
 	async getInfo(): Promise<AxiosResponse<IProductsInfo>> {
 		try {
 			return axiosClient.get('products/info');
@@ -40,4 +47,4 @@ class ProductService {
 	}
 }
 
-export default new ProductService();
+export const productService = ProductService.getInstance();

@@ -1,4 +1,5 @@
 import {
+  IsBoolean,
   IsDefined,
   IsEmail,
   IsPhoneNumber,
@@ -6,15 +7,14 @@ import {
   MaxLength,
   MinLength,
 } from 'class-validator';
-import { ApiProperty } from '@nestjs/swagger';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('user')
 export class UserDto {
-  @ApiProperty({ type: String, required: true })
   @IsDefined()
   @IsEmail()
   readonly email: string;
 
-  @ApiProperty({ type: String, required: true })
   @IsDefined()
   @IsString()
   @MinLength(4)
@@ -24,18 +24,18 @@ export class UserDto {
   // })
   readonly password: string;
 
-  @ApiProperty({ type: String, required: true })
   @IsDefined()
   @IsString()
   readonly name: string;
 
-  @ApiProperty({ type: String, required: true })
   @IsDefined()
   @IsString()
   readonly surname: string;
 
-  @ApiProperty({ type: String, required: true })
   @IsDefined()
   @IsPhoneNumber()
   readonly tel: string;
+
+  @IsBoolean()
+  readonly mailing: string;
 }

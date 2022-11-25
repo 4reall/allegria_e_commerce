@@ -1,0 +1,9 @@
+{
+	"filters": {
+		"sortBy": {
+			"new": "New arrives",
+			"lowHigh": "Price: Low to High",
+			"highLow": "Price: High to Low"
+		}
+	}
+}

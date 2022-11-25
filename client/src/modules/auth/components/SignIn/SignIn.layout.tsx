@@ -12,11 +12,13 @@ const SignInLayout = () => {
 				className={'mt-4'}
 				password
 			/>
-			<Button full className={'mt-4'} type="submit" variant="primary">
-				<Typography color="beige" uppercase>
-					login
-				</Typography>
-			</Button>
+			<Button
+				full
+				className={'mt-4'}
+				type="submit"
+				variant="primary"
+				text="login"
+			/>
 		</>
 	);
 };

@@ -29,11 +29,7 @@ const SignInForm = () => {
 	}, [data]);
 
 	return (
-		<Form
-			options={{}}
-			className="flex w-full flex-col items-center justify-center"
-			onSubmit={onSubmit}
-		>
+		<Form className="w-full" onSubmit={onSubmit}>
 			<SignInLayout />
 		</Form>
 	);

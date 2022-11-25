@@ -1,5 +1,5 @@
-import ProductsPage, {
-	ProductsPageProps,
-} from 'modules/products/components/Products.page';
-export { ProductsPage };
+import ProductsPage, { ProductsPageProps } from './components/Products.page';
+import { productService } from './services/Product.service';
+
+export { ProductsPage, productService };
 export type { ProductsPageProps };

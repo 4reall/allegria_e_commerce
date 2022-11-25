@@ -2,7 +2,7 @@ import * as RCheckbox from '@radix-ui/react-checkbox';
 import { Label } from '@radix-ui/react-label';
 import cn from 'classnames';
 import { CheckIcon } from '@radix-ui/react-icons';
-import { forwardRef, ReactNode } from 'react';
+import { forwardRef, ReactNode, useEffect, useState, ChangeEvent } from 'react';
 
 interface CheckboxProps {
 	label?: ReactNode | string;
@@ -12,11 +12,22 @@ interface CheckboxProps {
 
 const Checkbox = forwardRef<HTMLButtonElement, CheckboxProps>(
 	({ label, value, onChange }, ref) => {
+		const [checked, setChecked] = useState(false);
+
+		useEffect(() => {
+			setChecked(value ?? false);
+		}, [value]);
+
+		const handleChange = (checked: boolean) => {
+			if (onChange) onChange(checked);
+			else setChecked(checked);
+		};
+
 		return (
 			<Label className="flex items-center">
 				<RCheckbox.Root
-					checked={value}
-					onCheckedChange={onChange}
+					checked={checked}
+					onCheckedChange={handleChange}
 					ref={ref}
 				>
 					<RCheckbox.Indicator
