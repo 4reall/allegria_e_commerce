@@ -4,10 +4,10 @@ import {
 	ChevronUpIcon,
 } from '@radix-ui/react-icons';
 import { SelectProps } from '@radix-ui/react-select';
+import cn from 'classnames';
 import { ComponentProps, PropsWithChildren } from 'react';
 import * as SelectPrimitive from '@radix-ui/react-select';
 import Typography from 'common/components/_base/Typography/Typography';
-import cn from 'classnames';
 
 export interface IOption {
 	name: string;
@@ -27,7 +27,6 @@ interface SelectOwnProps<T> {
 // type SelectProps = SelectOwnProps;
 
 const Select = <T,>({
-	label,
 	options,
 	borderColor = 'beige',
 	bgColor = 'bg-white',

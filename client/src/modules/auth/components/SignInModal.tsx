@@ -1,8 +1,7 @@
-import Button from 'common/components/_base/Button/Button';
+import { ComponentProps, useState } from 'react';
+import { ResetPasswordForm, SignInForm } from 'modules/auth';
 import Modal from 'common/components/_base/Modal/Modal';
 import Typography from 'common/components/_base/Typography/Typography';
-import { ResetPasswordForm, SignInForm } from 'modules/auth';
-import { ComponentProps, ReactNode, useState } from 'react';
 
 interface SignInModalProps {
 	trigger: ComponentProps<typeof Modal>['trigger'];

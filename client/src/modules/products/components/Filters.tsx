@@ -1,6 +1,6 @@
 import ColorLabel from 'common/components/_base/ColorLabel';
 import Dropdown from 'common/components/_base/Dropdown/Dropdown';
-import Select, { IOption } from 'common/components/_base/Select/Select';
+import Select from 'common/components/_base/Select/Select';
 import Typography from 'common/components/_base/Typography/Typography';
 import ScrollArea from 'common/components/_base/ScrollArea/ScrollArea';
 import cn from 'classnames';

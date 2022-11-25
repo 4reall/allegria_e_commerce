@@ -1,7 +1,6 @@
-import { SignUpPage } from 'modules/auth';
 import { GetStaticPropsContext } from 'next';
-import { useSession } from 'next-auth/react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { SignUpPage } from 'modules/auth';
 
 const Registration = () => {
 	return <SignUpPage />;
