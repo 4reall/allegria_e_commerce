@@ -1,19 +1,13 @@
-// /** @type {import("tailwindcss").Config} */
+const { screens } = require('tailwindcss/defaultTheme');
 const colors = require('tailwindcss/colors');
 module.exports = {
 	content: ['src/**/*.{js,jsx,ts,tsx}'],
 	theme: {
+		screens: {
+			xs: '480px',
+			...screens,
+		},
 		extend: {
-			spacing: {
-				'2%': '2%',
-				'6%': '6%',
-				'10%': '10%',
-				'20%': '20%',
-				'50%': '50%',
-				'60%': '60%',
-			screens: {
-				xs: '480px',
-			},
 			colors: {
 				primary: '#254A5A',
 				'primary-dark': '#0F303F',
@@ -43,7 +37,10 @@ module.exports = {
 				},
 			},
 			keyframes: {
-				// dropdown
+				'appear-in': {
+					'0%': { opacity: 0 },
+					'100%': { opacity: 1 },
+				},
 				'scale-in': {
 					'0%': { opacity: 0, transform: 'scale(0)' },
 					'100%': { opacity: 1, transform: 'scale(1)' },
@@ -67,6 +64,7 @@ module.exports = {
 				},
 			},
 			animation: {
+				'appear-in': 'appear-in 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
 				'scale-in': 'scale-in 0.2s ease-in-out',
 				'slide-down': 'slide-down 0.6s cubic-bezier(0.16, 1, 0.3, 1)',
 				'slide-up': 'slide-up 0.6s cubic-bezier(0.16, 1, 0.3, 1)',

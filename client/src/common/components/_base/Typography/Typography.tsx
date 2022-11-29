@@ -5,7 +5,7 @@ const typographyConfig = {
 	type: {
 		decor: 'font-decor',
 		normal: 'font-normal',
-		inter: "font-inter",
+		inter: 'font-inter',
 	},
 	color: {
 		primary: 'text-primary',
@@ -22,6 +22,7 @@ const typographyConfig = {
 		base: 'text-base',
 		sm: 'text-sm',
 		xs: 'text-xs',
+		none: '',
 	},
 	spacing: {
 		md: 'tracking-[0.2em]',
