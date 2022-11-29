@@ -4,7 +4,7 @@ import { useTranslation } from 'next-i18next';
 import Typography from 'common/components/_base/Typography/Typography';
 import Button from 'common/components/_base/Button/Button';
 
-const SignUpLayout = () => {
+const RegistrationLayout = () => {
 	const { t } = useTranslation('common', { keyPrefix: 'form' });
 	return (
 		<>
@@ -38,4 +38,4 @@ const SignUpLayout = () => {
 	);
 };
 
-export default SignUpLayout;
+export default RegistrationLayout;

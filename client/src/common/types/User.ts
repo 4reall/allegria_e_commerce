@@ -1,18 +1,19 @@
 import { IProduct } from 'common/types/Product';
 
-export interface IUser {
+export interface IUserBase {
 	_id: string;
 	email: string;
 	password: string;
 	isActivated: boolean;
-	activationLink: string;
 	roles: string[];
 	name: string;
 	surname: string;
 	tel: string;
-	// orders: Order[];
 	address: string;
+}
+
+export interface IUser extends IUserBase {
+	// orders: Order[];
 	wishList: IProduct[];
 	cart: IProduct[];
-	mailing: boolean;
 }

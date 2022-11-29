@@ -17,7 +17,9 @@ import { UserLoginDto } from 'src/modules/user/dtos/user-login.dto';
 import {
   IBaseResponse,
   IFullResponse,
-} from 'src/modules/user/dtos/base-response.dto';
+  IMessageResponse,
+  IUserResponse,
+} from 'src/modules/user/dtos/responses.dto';
 
 @Injectable()
 export class UserService {
@@ -27,15 +29,24 @@ export class UserService {
     private tokenService: TokenService,
   ) {}
 
-  async registration(createUserDto: UserDto): Promise<IBaseResponse> {
+  transformToUserResponse(user: UserDocument): IUserResponse {
+    return {
+      name: user.name,
+      surname: user.surname,
+      tel: user.tel,
+      isActivated: user.isActivated,
+      address: user.address,
+      roles: user.roles,
+    };
+  }
+
+  async registration(createUserDto: UserDto): Promise<IMessageResponse> {
     const emailCandidate = await this.userModel.findOne({
       email: createUserDto.email,
     });
     if (emailCandidate) {
       throw new ConflictException({
         message: 'User already exists',
-        tag: 'NOT_UNIQUE',
-        field: 'email',
       });
     }
     const telCandidate = await this.userModel.findOne({
@@ -44,27 +55,19 @@ export class UserService {
     if (telCandidate) {
       throw new ConflictException({
         message: 'User already exists',
-        tag: 'NOT_UNIQUE',
-        field: 'tel',
       });
     }
 
     const hashedPassword = await hash(createUserDto.password, 3);
     const activationLink = v4();
-    const userRole = await this.roleModel.findOne({ value: 'user' });
-    const user = await this.userModel.create({
+    await this.userModel.create({
       ...createUserDto,
       password: hashedPassword,
       activationLink,
-      roles: [userRole],
+      roles: ['user'],
     });
 
-    const userTokenDto = new UserTokenDto(user);
-    const accessToken = this.tokenService.generateAccessToken({
-      ...userTokenDto,
-    });
-
-    return { accessToken, user };
+    return { message: 'Successful registration' };
   }
 
   async login(userLoginDto: UserLoginDto): Promise<IFullResponse> {
@@ -91,11 +94,16 @@ export class UserService {
 
     await this.tokenService.save(userTokenDto.userId, refreshToken);
 
-    return { accessToken, refreshToken, user };
+    return {
+      accessToken,
+      refreshToken,
+      user: this.transformToUserResponse(user),
+    };
   }
 
-  async logout(refreshToken: string): Promise<void> {
+  async logout(refreshToken: string): Promise<IMessageResponse> {
     await this.tokenService.deleteToken(refreshToken);
+    return { message: 'Successful logout' };
   }
 
   async refresh(refreshToken: string): Promise<IBaseResponse> {
@@ -116,6 +124,6 @@ export class UserService {
       ...userTokenDto,
     });
 
-    return { accessToken, user };
+    return { accessToken, user: this.transformToUserResponse(user) };
   }
 }

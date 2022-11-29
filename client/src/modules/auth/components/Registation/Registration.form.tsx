@@ -5,9 +5,9 @@ import { signIn } from 'next-auth/react';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { SubmitHandler, useForm, useWatch } from 'react-hook-form';
 
-import { useValidation } from 'modules/auth/components/SignUp/useValidation';
+import { useValidation } from 'modules/auth/components/Registation/useValidation';
 import { authService } from 'modules/auth/index';
-import SignUpLayout from 'modules/auth/components/SignUp/SignUp.layout';
+import RegistrationLayout from 'modules/auth/components/Registation/Registration.layout';
 
 import { useLocalStorage } from 'common/hooks/useLocalStorage';
 import Form from 'common/components/_base/Form';
@@ -18,7 +18,7 @@ interface SignUpFormProps {
 
 const LOCAL_STORAGE_KEY = 'sign_in_form';
 
-const SignUpForm = ({ className }: SignUpFormProps) => {
+const RegistrationForm = ({ className }: SignUpFormProps) => {
 	const validationSchema = useValidation();
 	type FormValues = z.infer<typeof validationSchema>;
 
@@ -50,12 +50,12 @@ const SignUpForm = ({ className }: SignUpFormProps) => {
 		event?.preventDefault();
 		try {
 			const { repeatPassword, privacy, ...rest } = data;
-			const response = await authService.signUp(rest);
-			const res = await signIn('credentials', {
+			await authService.registration(rest);
+			await signIn('credentials', {
 				password: data.password,
 				email: data.email,
+				redirect: false,
 			});
-			console.log(response, res);
 		} catch (e) {
 			console.log(e);
 		}
@@ -70,9 +70,9 @@ const SignUpForm = ({ className }: SignUpFormProps) => {
 				className
 			)}
 		>
-			<SignUpLayout />
+			<RegistrationLayout />
 		</Form>
 	);
 };
 
-export default SignUpForm;
+export default RegistrationForm;

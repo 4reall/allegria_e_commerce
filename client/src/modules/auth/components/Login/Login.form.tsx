@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { signIn, useSession } from 'next-auth/react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
-import SignInLayout from 'modules/auth/components/SignIn/SignIn.layout';
+import LoginLayout from 'modules/auth/components/Login/Login.layout';
 import Form from 'common/components/_base/Form';
 
 interface FormValues {
@@ -10,7 +10,7 @@ interface FormValues {
 	password: string;
 }
 
-const SignInForm = () => {
+const LoginForm = () => {
 	const { data } = useSession();
 	const methods = useForm<FormValues>();
 
@@ -29,9 +29,9 @@ const SignInForm = () => {
 
 	return (
 		<Form methods={methods} className="w-full" onSubmit={onSubmit}>
-			<SignInLayout />
+			<LoginLayout />
 		</Form>
 	);
 };
 
-export default SignInForm;
+export default LoginForm;

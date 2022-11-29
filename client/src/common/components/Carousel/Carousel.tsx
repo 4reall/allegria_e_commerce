@@ -16,14 +16,24 @@ const Carousel = ({ images }: CarouselProps) => {
 			renderThumbs={() =>
 				images.map((image, i) => (
 					<div className="relative h-9 w-9">
-						<Image src={image} key={i} layout="fill" />
+						<Image
+							alt="thumb image"
+							src={image}
+							key={i}
+							layout="fill"
+						/>
 					</div>
 				))
 			}
 		>
 			{images.map((image, i) => (
 				<div className="relative h-72 w-full">
-					<Image src={image} key={i} layout="fill" />
+					<Image
+						alt="thumb image"
+						src={image}
+						key={i}
+						layout="fill"
+					/>
 				</div>
 			))}
 		</CarouselPrimitive>

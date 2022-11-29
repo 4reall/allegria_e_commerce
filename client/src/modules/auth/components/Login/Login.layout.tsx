@@ -1,7 +1,7 @@
 import InputField from 'common/components/InputField/InputField';
 import Button from 'common/components/_base/Button/Button';
 
-const SignInLayout = () => {
+const LoginLayout = () => {
 	return (
 		<>
 			<InputField placeholder="E-mail" name="email" className="mt-4" />
@@ -22,4 +22,4 @@ const SignInLayout = () => {
 	);
 };
 
-export default SignInLayout;
+export default LoginLayout;

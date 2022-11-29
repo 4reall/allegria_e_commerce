@@ -29,7 +29,7 @@ export const nextAuthOptions: NextAuthOptionsCallback = (req, res) => ({
 
 			async authorize(credentials) {
 				try {
-					const response = await authService.signIn(credentials!);
+					const response = await authService.login(credentials!);
 
 					const user = response.data as User;
 
@@ -45,6 +45,12 @@ export const nextAuthOptions: NextAuthOptionsCallback = (req, res) => ({
 		}),
 	],
 	secret: process.env.NEXTAUTH_URL,
+	events: {
+		async signOut({ token }: SessionParams) {
+			const response = await authService.logout(token.refreshToken);
+			console.log(response);
+		},
+	},
 	callbacks: {
 		async jwt({ token, user }: JWTParams) {
 			if (user) {
@@ -67,7 +73,7 @@ export const nextAuthOptions: NextAuthOptionsCallback = (req, res) => ({
 				accessToken: response.data.accessToken,
 				user: response.data.user,
 				accessTokenExpires: Date.now() + 15 * 1000,
-				refreshToken: response.data.refreshToken,
+				refreshToken: token.refreshToken,
 			};
 		},
 
@@ -78,9 +84,6 @@ export const nextAuthOptions: NextAuthOptionsCallback = (req, res) => ({
 		},
 	},
 });
-
-// @ts-ignore
-// export default NextAuth(authOptions);
 
 export default (req: NextApiRequest, res: NextApiResponse) => {
 	return NextAuth(req, res, nextAuthOptions(req, res));

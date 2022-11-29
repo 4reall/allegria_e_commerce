@@ -31,7 +31,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
 		}, [value]);
 
 		const handleClick = () => {
-			if (isPassword && _value) setPasswordVisible(!passwordVisible);
+			setPasswordVisible(!passwordVisible);
 		};
 
 		const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -64,7 +64,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
 						'border-primaryDark h-full w-full border-b-[1px] bg-transparent py-1 px-2',
 						'text-sm tracking-wider outline-none',
 						_value && 'placeholder:text-transparent',
-						!passwordVisible && 'font-mono',
+						!passwordVisible && isPassword && _value && 'font-mono',
 						isPassword && 'pr-6'
 					)}
 				/>

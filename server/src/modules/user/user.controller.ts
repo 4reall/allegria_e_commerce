@@ -1,14 +1,28 @@
-import { Body, Controller, Get, Post, Req, Res } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Get,
+  Param,
+  Post,
+  Req,
+  Res,
+  UseGuards,
+} from '@nestjs/common';
 import { UserDto } from 'src/modules/user/dtos/user.dto';
 import { UserService } from 'src/modules/user/services/user.service';
 import { Response, Request } from 'express';
 import { UserLoginDto } from 'src/modules/user/dtos/user-login.dto';
-import { ApiOkResponse, ApiTags } from '@nestjs/swagger';
+import { ApiBody, ApiOkResponse, ApiTags, PickType } from '@nestjs/swagger';
 import {
   BaseResponseDto,
+  FullResponseDto,
   IBaseResponse,
   IFullResponse,
-} from 'src/modules/user/dtos/base-response.dto';
+  IMessageResponse,
+  MessageResponseDto,
+} from 'src/modules/user/dtos/responses.dto';
+import { RefreshDto } from 'src/modules/user/dtos/refresh.dto';
+import { AuthGuard } from 'src/modules/user/auth.guard';
 
 @ApiTags('user')
 @Controller()
@@ -17,19 +31,17 @@ export class UserController {
 
   @ApiOkResponse({
     description: 'User has been successfully created',
-    type: BaseResponseDto,
+    type: MessageResponseDto,
   })
   @Post('/registration')
   async registration(
     @Body() userDto: UserDto,
     @Res({ passthrough: true }) res: Response,
-  ): Promise<IBaseResponse> {
+  ): Promise<IMessageResponse> {
     return await this.userService.registration(userDto);
   }
 
-  @ApiOkResponse({
-    type: BaseResponseDto,
-  })
+  @ApiOkResponse({ type: FullResponseDto })
   @Post('/login')
   async login(
     @Body() userLoginDto: UserLoginDto,
@@ -38,28 +50,30 @@ export class UserController {
     return this.userService.login(userLoginDto);
   }
 
+  @ApiBody({ type: RefreshDto })
+  @ApiOkResponse({ type: MessageResponseDto })
   @Post('/logout')
   async logout(
     @Req() req: Request,
     @Body() refreshToken: string,
     @Res({ passthrough: true }) res: Response,
-  ): Promise<{ message: string }> {
+  ): Promise<IMessageResponse> {
     await this.userService.logout(refreshToken);
 
     return { message: 'logout succeed' };
   }
 
-  @ApiOkResponse({
-    type: BaseResponseDto,
-  })
-  @Post('/refresh')
+  @ApiBody({ type: RefreshDto })
+  @ApiOkResponse({ type: BaseResponseDto })
+  @Post('/refresh/:refreshToken')
   async refresh(
-    @Body() body: { refreshToken: string },
+    @Param() param: { refreshToken: string },
     @Res({ passthrough: true }) res: Response,
   ): Promise<IBaseResponse> {
-    return this.userService.refresh(body.refreshToken);
+    return this.userService.refresh(param.refreshToken);
   }
 
+  @UseGuards(AuthGuard)
   @Get('/test')
   async test() {
     return 'private route';

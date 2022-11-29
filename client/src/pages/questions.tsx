@@ -55,12 +55,7 @@ const questions = () => {
 							покупки
 						</Typography>
 						<div className="w-full">
-							<Accordion
-								content={DATA}
-								renderItem={(item, index) => (
-									<AccordionItem item={item} index={index} />
-								)}
-							/>
+							<Accordion content={DATA} />
 						</div>
 					</div>
 				</div>

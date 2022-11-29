@@ -1,5 +1,5 @@
 import { ComponentProps, useState } from 'react';
-import { ResetPasswordForm, SignInForm } from 'modules/auth';
+import { ResetPasswordForm, LoginForm } from 'modules/auth/index';
 import Modal from 'common/components/_base/Modal/Modal';
 import Typography from 'common/components/_base/Typography/Typography';
 
@@ -7,7 +7,7 @@ interface SignInModalProps {
 	trigger: ComponentProps<typeof Modal>['trigger'];
 }
 
-const SignInModal = ({ trigger }: SignInModalProps) => {
+const LoginModal = ({ trigger }: SignInModalProps) => {
 	const [isSignIn, setIsSignIn] = useState(true);
 	return (
 		<Modal
@@ -26,7 +26,7 @@ const SignInModal = ({ trigger }: SignInModalProps) => {
 					>
 						вход
 					</Typography>
-					<SignInForm />
+					<LoginForm />
 					<Typography
 						onClick={() => setIsSignIn(!isSignIn)}
 						variant="sm"
@@ -55,4 +55,4 @@ const SignInModal = ({ trigger }: SignInModalProps) => {
 	);
 };
 
-export default SignInModal;
+export default LoginModal;

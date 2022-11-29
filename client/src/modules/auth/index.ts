@@ -1,17 +1,15 @@
 import ResetPasswordForm from './components/ResetPassword/ResetPassword.form';
-import SignInForm from './components/SignIn/SignIn.form';
-import SignUpForm from './components/SignUp/SignUp.form';
-import { AuthService } from 'modules/auth/services/Auth.service';
-import SignInModal from './components/SignInModal';
-import SignUpPage from './components/SignUp.page';
-
-const authService = AuthService.getInstance();
+import LoginForm from 'modules/auth/components/Login/Login.form';
+import RegistrationForm from 'modules/auth/components/Registation/Registration.form';
+import * as authService from 'modules/auth/services/Auth.service';
+import LoginModal from 'modules/auth/components/Login/LoginModal';
+import RegistationPage from 'modules/auth/components/Registation/Registration.page';
 
 export {
-	SignUpForm,
-	SignInForm,
+	RegistrationForm,
+	LoginForm,
 	ResetPasswordForm,
-	SignInModal,
-	SignUpPage,
+	LoginModal,
+	RegistationPage,
 	authService,
 };

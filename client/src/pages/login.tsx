@@ -1,20 +1,20 @@
-import SignUpForm from 'modules/auth/components/SignUp/SignUp.form';
+import { LoginModal } from 'modules/auth';
+import RegistrationForm from 'modules/auth/components/Registation/Registration.form';
 import { GetStaticPropsContext } from 'next';
+import { signOut, useSession } from 'next-auth/react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Button from 'common/components/_base/Button/Button';
 import Modal from 'common/components/_base/Modal/Modal';
-import SignInForm from 'modules/auth/components/SignIn/SignIn.form';
+import LoginForm from 'modules/auth/components/Login/Login.form';
 
 const Login = () => {
+	const signOutHandler = () => {
+		signOut({ redirect: false }).then(console.log);
+	};
 	return (
 		<div className="bg-beige flex h-screen w-screen justify-center pt-20">
-			<Modal trigger={<Button text="click" />}>
-				<div className="flex h-fit bg-white p-8">
-					<SignInForm />
-					{/*<ResetPasswordForm />*/}
-					{/*<SignUpForm />*/}
-				</div>
-			</Modal>
+			<Button text="sign out" onClick={signOutHandler} />
+			<LoginModal trigger={<Button text="click" />} />
 		</div>
 	);
 };

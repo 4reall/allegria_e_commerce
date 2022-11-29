@@ -27,7 +27,7 @@ declare module 'next-auth' {
 	// 	profile?: P;
 	// 	isNewUser?: boolean;
 	// }
-	// interface SignIn {
+	// interface Login {
 	// 	user: User | AdapterUser;
 	// 	account: A | null;
 	// 	profile?: P;

@@ -2,7 +2,7 @@ import type { GetStaticPropsContext, NextPage } from 'next';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-import SignInModal from 'modules/auth/components/SignInModal';
+import LoginModal from 'modules/auth/components/Login/LoginModal';
 import Button from 'common/components/_base/Button/Button';
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -46,7 +46,7 @@ const Home: NextPage = () => {
 
 	return (
 		<div className="bg-beige-dark flex h-screen w-screen items-center justify-center p-4">
-			<SignInModal trigger={<Button text="open" />} />
+			<LoginModal trigger={<Button text="open" />} />
 		</div>
 	);
 };

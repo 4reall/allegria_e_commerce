@@ -1,9 +1,9 @@
 import { GetStaticPropsContext } from 'next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { SignUpPage } from 'modules/auth';
+import { RegistationPage } from 'modules/auth';
 
 const Registration = () => {
-	return <SignUpPage />;
+	return <RegistationPage />;
 };
 
 export async function getStaticProps({ locale }: GetStaticPropsContext) {

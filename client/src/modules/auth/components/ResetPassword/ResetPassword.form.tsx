@@ -1,5 +1,5 @@
 import Form from 'common/components/_base/Form';
-import { SubmitHandler } from 'react-hook-form';
+import { SubmitHandler, useForm } from 'react-hook-form';
 import ResetPasswordLayout from 'modules/auth/components/ResetPassword/ResetPassword.layout';
 
 interface FormValues {
@@ -7,6 +7,7 @@ interface FormValues {
 }
 
 const ResetPasswordForm = () => {
+	const methods = useForm<FormValues>();
 	const onSubmit: SubmitHandler<FormValues> = async (data, event) => {
 		event?.preventDefault();
 		// const response = await signIn('credentials', {
@@ -17,7 +18,7 @@ const ResetPasswordForm = () => {
 		console.log(data);
 	};
 	return (
-		<Form onSubmit={onSubmit} className="w-full">
+		<Form methods={methods} onSubmit={onSubmit} className="w-full">
 			<ResetPasswordLayout />
 		</Form>
 	);

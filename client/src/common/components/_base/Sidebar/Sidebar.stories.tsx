@@ -15,7 +15,7 @@ export const Base: ComponentStory<typeof Sidebar> = (args) => (
 	<Sidebar
 		{...args}
 		renderTrigger={(open, setOpen) => (
-			<Button onClick={() => setOpen(!open)}>click</Button>
+			<Button onClick={() => setOpen(!open)} text="click" />
 		)}
 	/>
 );

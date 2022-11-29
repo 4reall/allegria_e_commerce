@@ -10,7 +10,6 @@ import {
 } from 'react-query';
 import { SessionProvider } from 'next-auth/react';
 import { Session } from 'next-auth';
-import Header from 'common/components/Header';
 import { ReactQueryDevtools } from 'react-query/devtools';
 
 interface PageProps {

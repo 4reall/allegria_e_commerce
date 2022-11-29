@@ -1,10 +1,10 @@
 import Button from 'common/components/_base/Button/Button';
 import PageContainer from 'common/components/_base/PageContainer';
 import Typography from 'common/components/_base/Typography/Typography';
-import { SignUpForm } from 'modules/auth';
+import { RegistrationForm } from 'modules/auth/index';
 import { useSession } from 'next-auth/react';
 
-const SignUpPage = () => {
+const RegistrationPage = () => {
 	const { data } = useSession();
 
 	const handleLogout = () => {};
@@ -20,10 +20,10 @@ const SignUpPage = () => {
 				>
 					Регистрация
 				</Typography>
-				<SignUpForm />
+				<RegistrationForm />
 			</div>
 		</PageContainer>
 	);
 };
 
-export default SignUpPage;
+export default RegistrationPage;

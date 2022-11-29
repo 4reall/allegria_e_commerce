@@ -20,7 +20,7 @@ export class TokenService {
 
   generateAccessToken(userTokenDto: UserTokenDto) {
     return jwt.sign(userTokenDto, process.env.JWT_ACCESS_KEY, {
-      expiresIn: '15m',
+      expiresIn: '30m',
     });
   }
 
@@ -43,7 +43,7 @@ export class TokenService {
         | string
         | UserTokenDto;
     } catch (e) {
-      throw new UnauthorizedException('refresh token expired');
+      throw new UnauthorizedException('access token expired');
     }
   }
   validateRefreshToken(accessToken: string) {
@@ -55,7 +55,7 @@ export class TokenService {
       throw new UnauthorizedException('refresh token expired');
     }
   }
-  async findToken(refreshToken): Promise<TokenDocument> {
+  async findToken(refreshToken: string): Promise<TokenDocument> {
     return this.tokenModel.findOne({ refreshToken });
   }
 }

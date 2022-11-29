@@ -1,74 +1,75 @@
 import { AxiosResponse } from 'axios';
 import axios from 'common/configs/axios';
-import { IUser } from 'common/types/User';
+import { IUser, IUserBase } from 'common/types/User';
 
-interface SignIn {
+interface SignInProps {
 	email: string;
 	password: string;
 }
 
-type SignUpProps = Pick<
-	IUser,
-	'surname' | 'name' | 'mailing' | 'tel' | 'email'
-> & { password: string };
+type SignUpProps = Pick<IUser, 'surname' | 'name' | 'tel' | 'email'> & {
+	password: string;
+	mailing: boolean;
+};
 
 interface BaseResponse {
-	user: IUser;
+	user: IUserBase;
 	accessToken: string;
+}
+
+interface FullResponse {
 	refreshToken: string;
 }
 
-export class AuthService {
-	private static _instance: AuthService | null = null;
+export const registration = (
+	props: SignUpProps
+): Promise<AxiosResponse<BaseResponse>> => {
+	try {
+		return axios.post<BaseResponse>('/registration', props, {
+			withCredentials: true,
+		});
+	} catch (e) {
+		console.log(e);
+		throw e;
+	}
+};
+export const login = (
+	props: SignInProps
+): Promise<AxiosResponse<FullResponse>> => {
+	try {
+		return axios.post<FullResponse>('/login', props, {
+			withCredentials: true,
+		});
+	} catch (e) {
+		console.log(e);
+		throw e;
+	}
+};
 
-	static getInstance() {
-		if (this._instance === null) this._instance = new AuthService();
-		return this._instance;
+export const logout = (
+	refreshToken: string
+): Promise<AxiosResponse<{ message: string }>> => {
+	try {
+		return axios.get(`/logout/${refreshToken}`, {
+			withCredentials: true,
+		});
+	} catch (e) {
+		console.log(e);
+		throw e;
 	}
-	async signUp(props: SignUpProps): Promise<AxiosResponse<BaseResponse>> {
-		try {
-			return axios.post<BaseResponse>('/registration', props, {
-				withCredentials: true,
-			});
-		} catch (e) {
-			console.log(e);
-			throw e;
-		}
-	}
-	async signIn(props: SignIn): Promise<AxiosResponse<BaseResponse>> {
-		try {
-			return axios.post<BaseResponse>('/login', props, {
-				withCredentials: true,
-			});
-		} catch (e) {
-			console.log(e);
-			throw e;
-		}
-	}
+};
 
-	async signOut(): Promise<AxiosResponse<{ message: string }>> {
-		try {
-			return axios.get('/logout', {
-				withCredentials: true,
-			});
-		} catch (e) {
-			console.log(e);
-			throw e;
-		}
+export const refreshAccessToken = (
+	refreshToken: string
+): Promise<AxiosResponse<BaseResponse>> => {
+	try {
+		return axios.post<BaseResponse>(
+			'/refresh',
+			{ refreshToken },
+			{ withCredentials: true }
+		);
+	} catch (e) {
+		console.log(e);
+		throw e;
 	}
-
-	async refreshAccessToken(
-		refreshToken: string
-	): Promise<AxiosResponse<BaseResponse>> {
-		try {
-			return axios.post<BaseResponse>(
-				'/refresh',
-				{ refreshToken },
-				{ withCredentials: true }
-			);
-		} catch (e) {
-			console.log(e);
-			throw e;
-		}
-	}
-}
+};
