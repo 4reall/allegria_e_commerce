@@ -6,6 +6,7 @@ const typographyConfig = {
 		decor: 'font-decor',
 		normal: 'font-normal',
 		inter: 'font-inter',
+		avenir: 'font-avenir',
 	},
 	color: {
 		primary: 'text-primary',
@@ -19,7 +20,6 @@ const typographyConfig = {
 		'2xl': 'text-2xl',
 		xl: 'text-xl',
 		lg: 'text-lg',
-		base: 'text-base',
 		sm: 'text-sm',
 		xs: 'text-xs',
 		none: '',
@@ -47,7 +47,7 @@ type TypographyProps<TTag extends ElementType> = TypographyOwnProps<TTag> &
 const baseTag = 'span';
 
 const Typography = <TTag extends ElementType = typeof baseTag>({
-	variant = 'base',
+	variant = 'none',
 	color = 'primary',
 	font = 'normal',
 	spacing = 'none',

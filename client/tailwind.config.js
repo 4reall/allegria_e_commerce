@@ -1,4 +1,3 @@
-const { screens } = require('tailwindcss/defaultTheme');
 const colors = require('tailwindcss/colors');
 const { screens } = require('tailwindcss/defaultTheme');
 
@@ -24,6 +23,7 @@ module.exports = {
 				decor: ['Cormorant Garamond', 'serif'],
 				normal: ['Jost', 'sans-serif'],
 				inter: ['Inter', 'sans-serif'],
+				avenir: ['Avenir', 'sans-serif'],
 			},
 			extend: {
 				fontSize: {
