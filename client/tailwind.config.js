@@ -1,4 +1,4 @@
-// /** @type {import("tailwindcss").Config} */
+const { screens } = require('tailwindcss/defaultTheme');
 const colors = require('tailwindcss/colors');
 const { screens } = require('tailwindcss/defaultTheme');
 

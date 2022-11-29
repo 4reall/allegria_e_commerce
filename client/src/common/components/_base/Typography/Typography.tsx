@@ -22,6 +22,7 @@ const typographyConfig = {
 		base: 'text-base',
 		sm: 'text-sm',
 		xs: 'text-xs',
+		none: '',
 	},
 	spacing: {
 		md: 'tracking-[0.2em]',
