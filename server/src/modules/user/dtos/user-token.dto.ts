@@ -17,7 +17,7 @@ export class UserTokenDto {
   readonly isActivated: boolean;
 
   constructor(model: UserDocument) {
-    this.roles = model.roles.map((role) => role.value);
+    this.roles = model.roles.map((role) => role);
     this.userId = model._id;
     this.isActivated = model.isActivated;
   }

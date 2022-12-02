@@ -3,6 +3,7 @@ import { AppModule } from 'src/app.module';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { ValidationPipe } from '@nestjs/common';
 import * as cookieParser from 'cookie-parser';
+import { ServerExceptionsFilter } from 'src/share/exceptions/server-exceptions.filter';
 
 const bootstrap = async () => {
   const PORT = process.env.PORT || 5500;
@@ -32,6 +33,8 @@ const bootstrap = async () => {
       transform: true,
     }),
   );
+
+  app.useGlobalFilters(new ServerExceptionsFilter());
 
   await app.listen(PORT, () => console.log(`Server started at ${PORT} port`));
 };

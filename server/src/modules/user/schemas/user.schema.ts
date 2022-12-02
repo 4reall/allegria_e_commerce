@@ -1,7 +1,6 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 import * as mongoose from 'mongoose';
-import { Role } from 'src/modules/role/role.schema';
 import { Order } from 'src/modules/order/order.schema';
 import { Product } from 'src/modules/product/schemas/product.schema';
 
@@ -21,11 +20,16 @@ export class User {
   @Prop()
   activationLink: string;
 
+  // @Prop({
+  //   type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Role' }],
+  //   required: true,
+  // })
+  // roles: Role[];
   @Prop({
-    type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Role' }],
+    type: [{ type: String }],
     required: true,
   })
-  roles: Role[];
+  roles: string[];
 
   @Prop({ type: String, required: true })
   name: string;

@@ -1,9 +1,4 @@
-import {
-  BadRequestException,
-  ConflictException,
-  Injectable,
-  UnauthorizedException,
-} from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { UserDto } from 'src/modules/user/dtos/user.dto';
 import { InjectModel } from '@nestjs/mongoose';
 import { User, UserDocument } from 'src/modules/user/schemas/user.schema';
@@ -20,6 +15,7 @@ import {
   IMessageResponse,
   IUserResponse,
 } from 'src/modules/user/dtos/responses.dto';
+import { ServerException } from 'src/share/exceptions/server.exception';
 
 @Injectable()
 export class UserService {
@@ -41,21 +37,12 @@ export class UserService {
   }
 
   async registration(createUserDto: UserDto): Promise<IMessageResponse> {
-    const emailCandidate = await this.userModel.findOne({
-      email: createUserDto.email,
-    });
-    if (emailCandidate) {
-      throw new ConflictException({
-        message: 'User already exists',
-      });
-    }
-    const telCandidate = await this.userModel.findOne({
-      tel: createUserDto.tel,
-    });
-    if (telCandidate) {
-      throw new ConflictException({
-        message: 'User already exists',
-      });
+    const candidate = await this.userModel
+      .findOne()
+      .or([{ email: createUserDto.email }, { tel: createUserDto.tel }]);
+
+    if (candidate) {
+      throw ServerException.Exist('User already exists');
     }
 
     const hashedPassword = await hash(createUserDto.password, 3);
@@ -76,12 +63,12 @@ export class UserService {
       email,
     });
     if (!user) {
-      throw new BadRequestException('user has not found');
+      throw ServerException.NotFound('user has not found');
     }
 
     const isPassEqual = await compare(password, user.password);
     if (!isPassEqual) {
-      throw new BadRequestException('invalid password');
+      throw ServerException.Invalid('invalid password');
     }
 
     const userTokenDto = new UserTokenDto(user);
@@ -107,15 +94,11 @@ export class UserService {
   }
 
   async refresh(refreshToken: string): Promise<IBaseResponse> {
-    if (!refreshToken) {
-      throw new UnauthorizedException();
-    }
-
     const tokenPayload = this.tokenService.validateRefreshToken(refreshToken);
     const tokenFromDb = await this.tokenService.findToken(refreshToken);
 
     if (!tokenPayload || !tokenFromDb) {
-      throw new UnauthorizedException();
+      throw ServerException.NotFound();
     }
 
     const user = await this.userModel.findOne({ _id: tokenFromDb.userId });

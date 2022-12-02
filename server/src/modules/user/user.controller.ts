@@ -6,13 +6,14 @@ import {
   Post,
   Req,
   Res,
+  UnauthorizedException,
   UseGuards,
 } from '@nestjs/common';
 import { UserDto } from 'src/modules/user/dtos/user.dto';
 import { UserService } from 'src/modules/user/services/user.service';
 import { Response, Request } from 'express';
 import { UserLoginDto } from 'src/modules/user/dtos/user-login.dto';
-import { ApiBody, ApiOkResponse, ApiTags, PickType } from '@nestjs/swagger';
+import { ApiBody, ApiOkResponse, ApiTags } from '@nestjs/swagger';
 import {
   BaseResponseDto,
   FullResponseDto,
@@ -38,6 +39,8 @@ export class UserController {
     @Body() userDto: UserDto,
     @Res({ passthrough: true }) res: Response,
   ): Promise<IMessageResponse> {
+    console.log('registration', 123);
+
     return await this.userService.registration(userDto);
   }
 
@@ -67,9 +70,12 @@ export class UserController {
   @ApiOkResponse({ type: BaseResponseDto })
   @Post('/refresh/:refreshToken')
   async refresh(
-    @Param() param: { refreshToken: string },
+    @Param('refreshToken') param: { refreshToken?: string },
     @Res({ passthrough: true }) res: Response,
   ): Promise<IBaseResponse> {
+    if (!param.refreshToken) {
+      throw new UnauthorizedException();
+    }
     return this.userService.refresh(param.refreshToken);
   }
 

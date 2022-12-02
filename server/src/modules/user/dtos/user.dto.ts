@@ -2,7 +2,7 @@ import {
   IsBoolean,
   IsDefined,
   IsEmail,
-  IsPhoneNumber,
+  IsMobilePhone,
   IsString,
   MaxLength,
   MinLength,
@@ -33,7 +33,7 @@ export class UserDto {
   readonly surname: string;
 
   @IsDefined()
-  @IsPhoneNumber()
+  @IsMobilePhone()
   readonly tel: string;
 
   @IsBoolean()
