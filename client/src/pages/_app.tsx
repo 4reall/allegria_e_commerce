@@ -1,6 +1,10 @@
+import { DevSupport } from '@react-buddy/ide-toolbox';
+import Header from 'common/components/Header/Header';
+import Layout from 'layouts/Layout';
 import type { AppProps } from 'next/app';
 import 'common/styles/global.css';
 import { appWithTranslation } from 'next-i18next';
+import Breadcrumbs from 'nextjs-breadcrumbs';
 import { useState } from 'react';
 import {
 	DehydratedState,
@@ -11,6 +15,8 @@ import {
 import { SessionProvider } from 'next-auth/react';
 import { Session } from 'next-auth';
 import { ReactQueryDevtools } from 'react-query/devtools';
+import 'nextjs-breadcrumbs/dist/index.css';
+import { ComponentPreviews, useInitial } from 'dev';
 
 interface PageProps {
 	dehydratedState: DehydratedState;
@@ -23,12 +29,15 @@ function App({ Component, pageProps }: AppProps<PageProps>) {
 	return (
 		<QueryClientProvider client={queryClient}>
 			<Hydrate state={pageProps.dehydratedState}>
-				<SessionProvider
-					// refetchInterval={14}
-					session={pageProps.session}
-				>
-					{/*<Header />*/}
-					<Component {...pageProps} />
+				<SessionProvider session={pageProps.session}>
+					<Layout>
+						<DevSupport
+							ComponentPreviews={ComponentPreviews}
+							useInitialHook={useInitial}
+						>
+							<Component {...pageProps} />
+						</DevSupport>
+					</Layout>
 				</SessionProvider>
 			</Hydrate>
 			<ReactQueryDevtools initialIsOpen={false} />

@@ -1,5 +1,8 @@
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import Typography from 'common/components/_base/Typography/Typography';
+import Typography, {
+	TypographyProps,
+	TypographySignature,
+} from 'common/components/_base/Typography/Typography';
 
 export default {
 	title: 'Typography',
@@ -23,8 +26,8 @@ export default {
 		bold: false,
 		spacing: 'none',
 	},
-} as ComponentMeta<typeof Typography>;
+};
 
-export const Base: ComponentStory<typeof Typography> = ({ text, ...args }) => (
-	<Typography {...args}>{text}</Typography>
+export const Base = ({ children, ...args }: TypographyProps<'span'>) => (
+	<Typography {...args}>{children}</Typography>
 );

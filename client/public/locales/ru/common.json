@@ -18,5 +18,327 @@
 		"notEqual": "Пароли не совпадают",
 		"required": "Обязательное поле",
 		"tel": "Некорректный номер телефона"
-	}
+	},
+	"navLinks": [
+		{
+			"link": {
+				"label": "женщины",
+				"href": "/women"
+			},
+			"items": [
+				{
+					"link": {
+						"label": "ОДЕЖДА",
+						"href": "/women/clothing"
+					},
+					"items": [
+						{
+							"link": {
+								"label": "Свитера толcтовки",
+								"href": "/women/clothing/hoodies"
+							},
+							"items": []
+						},
+						{
+							"link": {
+								"label": "Платья юбки",
+								"href": "/women/clothing/dress"
+							},
+							"items": []
+						},
+						{
+							"link": {
+								"label": "Футболки и топы",
+								"href": "/women/clothing/t-shirts"
+							},
+							"items": []
+						},
+						{
+							"link": {
+								"label": "Брюки и шорты",
+								"href": "/women/clothing/pants"
+							},
+							"items": []
+						},
+						{
+							"link": {
+								"label": "Рубашки",
+								"href": "/women/clothing/shirts"
+							},
+							"items": []
+						},
+						{
+							"link": {
+								"label": "Комбинезоны",
+								"href": "/women/clothing/overalls"
+							},
+							"items": []
+						},
+						{
+							"link": {
+								"label": "Леггинсы",
+								"href": "/women/clothing/leggings"
+							},
+							"items": []
+						}
+					]
+				},
+				{
+					"link": {
+						"label": "Обувь",
+						"href": "/women/shoes"
+					},
+					"items": [
+						{
+							"link": {
+								"label": "Кроссовки",
+								"href": "/women/shoes/sneakers"
+							},
+							"items": []
+						},
+						{
+							"link": {
+								"label": "Шлепанцы",
+								"href": "/women/shoes/slippers"
+							},
+							"items": []
+						}
+					]
+				},
+				{
+					"link": {
+						"label": "СУМКИ",
+						"href": "/women/bags"
+					},
+					"items": [
+						{
+							"link": {
+								"label": "Сумки",
+								"href": "/women/bags/bags"
+							},
+							"items": []
+						},
+						{
+							"link": {
+								"label": "Рюкзаки",
+								"href": "/women/bags/backpacks"
+							},
+							"items": []
+						},
+						{
+							"link": {
+								"label": "Поясные",
+								"href": "/women/bags/belt-bags"
+							},
+							"items": []
+						}
+					]
+				},
+				{
+					"link": {
+						"label": "АКСЕСУАРЫ",
+						"href": "/women/accessories"
+					},
+					"items": [
+						{
+							"link": {
+								"label": "Головные уборы",
+								"href": "/women/accessories/hats"
+							},
+							"items": []
+						},
+						{
+							"link": {
+								"label": "Перчатки",
+								"href": "/women/accessories/gloves"
+							},
+							"items": []
+						},
+						{
+							"link": {
+								"label": "Шарфы и платки",
+								"href": "/women/accessories/scarves and shawls"
+							},
+							"items": []
+						}
+					]
+				},
+				{
+					"link": {
+						"label": "БЕЛЬЕ",
+						"href": "/women/underwear"
+					},
+					"items": [
+						{
+							"link": {
+								"label": "Носки",
+								"href": "/women/underwear/socks"
+							},
+							"items": []
+						},
+						{
+							"link": {
+								"label": "Разное",
+								"href": "/women/underwear/other"
+							},
+							"items": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"link": {
+				"label": "мужчины",
+				"href": "/men"
+			},
+			"items": [
+				{
+					"link": {
+						"label": "ОДЕЖДА",
+						"href": "/men/clothing"
+					},
+					"items": [
+						{
+							"link": {
+								"label": "Свитера толcтовки",
+								"href": "/men/clothing/hoodies"
+							},
+							"items": []
+						},
+						{
+							"link": {
+								"label": "Футболки и топы",
+								"href": "/men/clothing/t-shirts"
+							},
+							"items": []
+						},
+						{
+							"link": {
+								"label": "Брюки и шорты",
+								"href": "/men/clothing/pants"
+							},
+							"items": []
+						},
+						{
+							"link": {
+								"label": "Рубашки",
+								"href": "/men/clothing/shirts"
+							},
+							"items": []
+						},
+						{
+							"link": {
+								"label": "Комбинезоны",
+								"href": "/men/clothing/overalls"
+							},
+							"items": []
+						}
+					]
+				},
+				{
+					"link": {
+						"label": "Обувь",
+						"href": "/men/shoes"
+					},
+					"items": [
+						{
+							"link": {
+								"label": "Кроссовки",
+								"href": "/men/shoes/sneakers"
+							},
+							"items": []
+						},
+						{
+							"link": {
+								"label": "Шлепанцы",
+								"href": "/men/shoes/slippers"
+							},
+							"items": []
+						}
+					]
+				},
+				{
+					"link": {
+						"label": "СУМКИ",
+						"href": "/men/bags"
+					},
+					"items": [
+						{
+							"link": {
+								"label": "Сумки",
+								"href": "/men/bags/bags"
+							},
+							"items": []
+						},
+						{
+							"link": {
+								"label": "Рюкзаки",
+								"href": "/men/bags/backpacks"
+							},
+							"items": []
+						},
+						{
+							"link": {
+								"label": "Поясные",
+								"href": "/men/bags/belt-bags"
+							},
+							"items": []
+						}
+					]
+				},
+				{
+					"link": {
+						"label": "АКСЕСУАРЫ",
+						"href": "/men/accessories"
+					},
+					"items": [
+						{
+							"link": {
+								"label": "Головные уборы",
+								"href": "/men/accessories/hats"
+							},
+							"items": []
+						},
+						{
+							"link": {
+								"label": "Перчатки",
+								"href": "/men/accessories/gloves"
+							},
+							"items": []
+						},
+						{
+							"link": {
+								"label": "Шарфы и платки",
+								"href": "/men/accessories/scarves and shawls"
+							},
+							"items": []
+						}
+					]
+				},
+				{
+					"link": {
+						"label": "БЕЛЬЕ",
+						"href": "/men/underwear"
+					},
+					"items": [
+						{
+							"link": {
+								"label": "Носки",
+								"href": "/men/underwear/socks"
+							},
+							"items": []
+						},
+						{
+							"link": {
+								"label": "Разное",
+								"href": "/men/underwear/other"
+							},
+							"items": []
+						}
+					]
+				}
+			]
+		}
+	]
 }

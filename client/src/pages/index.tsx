@@ -1,3 +1,4 @@
+import NavigationMenu from 'common/components/NavigationMenu/NavigationMenu';
 import type { GetStaticPropsContext, NextPage } from 'next';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -6,6 +7,7 @@ import LoginModal from 'modules/auth/components/Login/LoginModal';
 import Button from 'common/components/_base/Button/Button';
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import Breadcrumbs from 'nextjs-breadcrumbs';
 
 // const options = ['option 1', 'option 2', 'option 3'];
 
@@ -44,17 +46,13 @@ const options = [
 const Home: NextPage = () => {
 	const { t } = useTranslation('about');
 
-	return (
-		<div className="bg-beige-dark flex h-screen w-screen items-center justify-center p-4">
-			<LoginModal trigger={<Button text="open" />} />
-		</div>
-	);
+	return <div>{/*{t('title')}*/}</div>;
 };
 
 export async function getStaticProps({ locale }: GetStaticPropsContext) {
 	return {
 		props: {
-			...(await serverSideTranslations(locale || 'ru', ['about'])),
+			...(await serverSideTranslations(locale || 'ru', ['common'])),
 		},
 	};
 }

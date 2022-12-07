@@ -1,5 +1,11 @@
 import cn from 'classnames';
-import { ComponentProps, ElementType } from 'react';
+import {
+	ComponentProps,
+	ElementType,
+	forwardRef,
+	ReactElement,
+	Ref,
+} from 'react';
 
 const typographyConfig = {
 	font: {
@@ -41,26 +47,36 @@ interface TypographyOwnProps<TTag extends ElementType = ElementType> {
 	as?: TTag;
 }
 
-type TypographyProps<TTag extends ElementType> = TypographyOwnProps<TTag> &
-	Omit<ComponentProps<TTag>, keyof TypographyOwnProps>;
+export type TypographyProps<TTag extends ElementType> =
+	TypographyOwnProps<TTag> &
+		Omit<ComponentProps<TTag>, keyof TypographyOwnProps>;
 
 const baseTag = 'span';
 
-const Typography = <TTag extends ElementType = typeof baseTag>({
-	variant = 'none',
-	color = 'primary',
-	font = 'normal',
-	spacing = 'none',
-	uppercase,
-	bold,
-	children,
-	className,
-	as,
-	...props
-}: TypographyProps<TTag>) => {
+export type TypographySignature = <TTag extends ElementType = typeof baseTag>(
+	props: TypographyProps<TTag>,
+	ref: Ref<HTMLElement>
+) => ReactElement;
+
+const Typography = <TTag extends ElementType = typeof baseTag>(
+	{
+		variant = 'none',
+		color = 'primary',
+		font = 'normal',
+		spacing = 'none',
+		uppercase,
+		bold,
+		children,
+		className,
+		as,
+		...props
+	}: TypographyProps<TTag>,
+	ref: any
+) => {
 	const CustomTag = as || baseTag;
 	return (
 		<CustomTag
+			ref={ref}
 			className={cn(
 				typographyConfig.variant[variant],
 				typographyConfig.color[color],
@@ -77,4 +93,4 @@ const Typography = <TTag extends ElementType = typeof baseTag>({
 	);
 };
 
-export default Typography;
+export default forwardRef(Typography) as TypographySignature;

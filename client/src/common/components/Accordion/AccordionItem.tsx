@@ -1,16 +1,17 @@
 import * as AccordionPrimitive from '@radix-ui/react-accordion';
+import { ILink, LinkGroup } from 'common/types/Link';
 import Typography from '../_base/Typography/Typography';
 import cn from 'classnames';
 import { PlusIcon, MinusIcon } from '@radix-ui/react-icons';
 
 interface AccordionItemProps {
-	title: string;
-	content: string[];
+	label: string;
+	items: LinkGroup[];
 	index: number;
 	isUppercase?: boolean;
 }
 
-const AccordionItem = ({ title, content, index }: AccordionItemProps) => {
+const AccordionItem = ({ label, items, index }: AccordionItemProps) => {
 	return (
 		<AccordionPrimitive.Item
 			value={`item-${index}`}
@@ -27,7 +28,7 @@ const AccordionItem = ({ title, content, index }: AccordionItemProps) => {
 							font="inter"
 							color="primaryDark"
 						>
-							{title}
+							{label}
 						</Typography>
 						<PlusIcon
 							width={20}
@@ -57,13 +58,13 @@ const AccordionItem = ({ title, content, index }: AccordionItemProps) => {
 					'radix-state-closed:animate-slide-up-accordion'
 				)}
 			>
-				{content.map((item, index) => (
+				{items.map(({ link }) => (
 					<Typography
 						className="hover:!text-accent block cursor-pointer"
 						font="inter"
-						key={index}
+						key={link.href}
 					>
-						{item}
+						{link.label}
 					</Typography>
 				))}
 			</AccordionPrimitive.Content>

@@ -18,7 +18,7 @@ const ProductsList = ({ productPages, limit }: ProductsListProps) => {
 				? productPages.map((page) =>
 						page.map((product) => (
 							<ProductCard
-								className="w-2/3 justify-self-center"
+								className="w-full justify-self-center"
 								key={product._id}
 								image={product.imagesUrls[0]}
 								price={product.price.value}

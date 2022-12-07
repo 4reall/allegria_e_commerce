@@ -6,6 +6,9 @@ const nextConfig = {
 	reactStrictMode: true,
 	swcMinify: true,
 	i18n,
+	experimental: {
+		newNextLinkBehavior: false,
+	},
 	images: {
 		remotePatterns: [
 			{

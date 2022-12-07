@@ -1,20 +1,22 @@
 import * as AccordionPrimitive from '@radix-ui/react-accordion';
+import * as TabsPrimitive from '@radix-ui/react-tabs';
 import AccordionItem from 'common/components/Accordion/AccordionItem';
-
-export interface ContentItem {
-	title: string;
-	content: string[];
-}
+import { LinkGroup } from 'common/types/Link';
 
 interface CustomAccordionProps {
-	content: ContentItem[];
+	linkGroups: LinkGroup[];
 }
 
-const Accordion = ({ content }: CustomAccordionProps) => {
+const Accordion = ({ linkGroups }: CustomAccordionProps) => {
 	return (
-		<AccordionPrimitive.Root type="single" collapsible>
-			{content.map((contentItem, index) => (
-				<AccordionItem key={index} {...contentItem} index={index} />
+		<AccordionPrimitive.Root className="w-full" type="single" collapsible>
+			{linkGroups.map(({ link, items }, index) => (
+				<AccordionItem
+					key={index}
+					label={link.label}
+					items={items}
+					index={index}
+				/>
 			))}
 		</AccordionPrimitive.Root>
 	);

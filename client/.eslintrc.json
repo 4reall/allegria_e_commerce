@@ -1,66 +1,66 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true,
-        "node": true
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:@next/next/recommended",
+    "plugin:storybook/recommended",
+    "airbnb",
+    "prettier",
+    "next/core-web-vitals"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "extends": [
-        "plugin:react/recommended",
-        "plugin:@next/next/recommended",
-        "plugin:storybook/recommended",
-        "airbnb",
-        "prettier",
-        "next/core-web-vitals"
-    ],
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 12,
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react",
-        "prettier"
-    ],
-    "rules": {
-        "prettier/prettier": "error",
-        "react/react-in-jsx-scope": "off",
-        "react/jsx-props-no-spreading": "off",
-        "react/forbid-prop-types": "off",
-        "import/extensions": "off",
-        "react/jsx-filename-extension": "off",
-        "arrow-body-style": "off",
-        "import/prefer-default-export": "off",
-        "import/no-absolute-path": "off",
-        "no-unused-vars": "warn",
-        "react/no-unused-prop-types":"warn",
-        "global-require": "off",
-        "react/function-component-definition": [
-            "error",
-            {
-                "namedComponents": [
-                    "function-declaration",
-                    "arrow-function"
-                ],
-                "unnamedComponents": "arrow-function"
-            }
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/forbid-prop-types": "off",
+    "import/extensions": "off",
+    "react/jsx-filename-extension": "off",
+    "arrow-body-style": "off",
+    "import/prefer-default-export": "off",
+    "import/no-absolute-path": "off",
+    "no-unused-vars": "warn",
+    "react/no-unused-prop-types": "warn",
+    "global-require": "off",
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": [
+          "function-declaration",
+          "arrow-function"
         ],
-        "react/require-default-props": [
-            "error",
-            {
-                "ignoreFunctionalComponents": true
-            }
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "react/require-default-props": [
+      "error",
+      {
+        "ignoreFunctionalComponents": true
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.stories.*",
+          "**/.storybook/**/*.*"
         ],
-        "import/no-extraneous-dependencies": [
-            "error",
-            {
-                "devDependencies": [
-                    "**/*.stories.*",
-                    "**/.storybook/**/*.*"
-                ],
-                "peerDependencies": true
-            }
-        ]
-    }
+        "peerDependencies": true
+      }
+    ]
+  }
 }

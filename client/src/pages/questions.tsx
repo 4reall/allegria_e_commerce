@@ -54,9 +54,7 @@ const questions = () => {
 						>
 							покупки
 						</Typography>
-						<div className="w-full">
-							<Accordion content={DATA} />
-						</div>
+						<div className="w-full"></div>
 					</div>
 				</div>
 			</div>

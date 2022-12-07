@@ -50,8 +50,8 @@ const Filters = ({ brands, colors, totalCount }: FiltersProps) => {
 
 	return (
 		<>
-			<div className="z-10 grid grid-cols-2 gap-2 sm:grid-cols-4">
-				<Dropdown triggerLabel="Colors">
+			<div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+				<Dropdown triggerLabel="Colors" className="z-30">
 					<div className="grid grid-cols-5 gap-2 bg-white p-4">
 						{colors.map((color, i) => (
 							<ColorLabel
@@ -71,7 +71,7 @@ const Filters = ({ brands, colors, totalCount }: FiltersProps) => {
 						))}
 					</div>
 				</Dropdown>
-				<Dropdown triggerLabel="Brands">
+				<Dropdown triggerLabel="Brands" className="z-30">
 					<ScrollArea height={200}>
 						<div className="grid h-full grid-cols-1 bg-white">
 							{brands.map((brand) => (
@@ -94,7 +94,7 @@ const Filters = ({ brands, colors, totalCount }: FiltersProps) => {
 						</div>
 					</ScrollArea>
 				</Dropdown>
-				<Dropdown triggerLabel="Sizes">
+				<Dropdown triggerLabel="Sizes" className="z-30">
 					<div className="grid grid-cols-4 gap-2 bg-white p-4">
 						{sizes.map((size) => (
 							<Typography

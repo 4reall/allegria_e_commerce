@@ -23,13 +23,13 @@ const ProductCard = ({
 }: ProductCardProps) => {
 	return (
 		<div className={className}>
-			<div className="relative -z-10 mx-auto w-full">
+			<div className="relative mx-auto w-full">
 				{topLabel}
 				<Image
 					height={0}
 					width={0}
 					sizes={'100vh'}
-					className={'h-auto w-full'}
+					className="h-auto w-full"
 					src={image}
 					alt="product image"
 					priority

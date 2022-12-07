@@ -12,7 +12,6 @@ import dehaWomanLayingSmallScreen from '../../public/assets/images/brands/deha/d
 import dehaWomanStandingSmallScreen from '../../public/assets/images/brands/deha/dehaWomanStandingSmallScreen.png';
 import ginaLucyBanner from '../../public/assets/images/brands/ginaLucy/ginaLucyBanner.jpg';
 import ginaLucyTextPic from '../../public/assets/images/brands/ginaLucy/ginaLucyTextPic.png';
-import birkenstockBanner from '../../public/assets/images/brands/birkenstock/birkenstockBanner.png';
 import birkenstockTextPic from '../../public/assets/images/brands/birkenstock/birkenstockTextPic.png';
 import birkenstockUnderTextPic from '../../public/assets/images/brands/birkenstock/birkenstockUnderTextPic.png';
 
@@ -22,19 +21,19 @@ const Brands = () => {
 		<main>
 			<div className="relative z-10 mb-12 h-[460px] space-y-1 bg-[url('/assets/images/brands/vintageBrand/americanVintageBanner.jpg')] bg-cover bg-center pt-40 text-center uppercase md:mb-28 md:h-[600px] md:px-1 md:pt-56">
 				<div className="mx-auto max-w-[630px] space-y-2">
-					<Typography type="decor" color="beige" className="block">
+					<Typography font="decor" color="beige" className="block">
 						{t('brand')}
 					</Typography>
 					<Typography
 						variant="none"
-						type="decor"
+						font="decor"
 						color="beige"
 						className="block text-xl md:text-4xl"
 					>
 						{t('vintageBrand')}
 					</Typography>
 					<Typography
-						type="decor"
+						font="decor"
 						color="beige"
 						className="m-auto block px-2 normal-case md:w-[630px]"
 					>
@@ -61,14 +60,14 @@ const Brands = () => {
 					</div>
 					<div className="mx-auto flex max-w-[600px] flex-col justify-center text-center md:text-left">
 						<Typography
-							type="decor"
+							font="decor"
 							variant="lg"
 							color="primaryDark"
 							className="mb-5"
 						>
 							{t('vintageBrand')}
 						</Typography>
-						<Typography variant="sm" type="decor" className="">
+						<Typography variant="sm" font="decor" className="">
 							{t('vintageText')}
 						</Typography>
 					</div>
@@ -83,18 +82,18 @@ const Brands = () => {
 
 			<div className="relative z-10 mb-12 h-[460px] space-y-1 bg-[url('/assets/images/brands/deha/dehaBanner.jpg')] bg-cover bg-center pt-40 text-center uppercase md:mb-28 md:h-[600px] md:px-1 md:pt-56">
 				<div className="mx-auto max-w-[630px] space-y-2 ">
-					<Typography type="decor" color="beige" className="block">
+					<Typography font="decor" color="beige" className="block">
 						{t('brand')}
 					</Typography>
 					<Typography
-						type="decor"
+						font="decor"
 						color="beige"
 						className="block text-4xl md:text-xl "
 					>
 						{t('dehaBrand')}
 					</Typography>
 					<Typography
-						type="decor"
+						font="decor"
 						color="beige"
 						className="m-auto block px-2 normal-case md:w-[630px]"
 					>
@@ -107,7 +106,7 @@ const Brands = () => {
 				<div className="flex max-w-[1200px]  flex-col-reverse gap-16 px-2 md:mb-12 md:flex-row xl:mx-auto">
 					<div className="mx-auto mb-20 flex max-w-[600px] flex-col justify-center md:mb-0 md:pt-12 md:text-left">
 						<Typography
-							type="decor"
+							font="decor"
 							variant="lg"
 							color="primaryDark"
 							className="mb-5 text-center"
@@ -117,7 +116,7 @@ const Brands = () => {
 						<div className="text-center">
 							<Typography
 								variant="sm"
-								type="decor"
+								font="decor"
 								className="mb-10 block"
 							>
 								{t('dehaText')}
@@ -159,21 +158,21 @@ const Brands = () => {
 			<div className="mb-14 space-y-1 text-center uppercase md:mb-28">
 				<div className="mx-auto mb-12 max-w-[630px] space-y-2 px-1">
 					<Typography
-						type="decor"
+						font="decor"
 						color="primaryDark"
 						className="block"
 					>
 						{t('brand')}
 					</Typography>
 					<Typography
-						type="decor"
+						font="decor"
 						color="primaryDark"
 						className="block text-4xl md:text-xl"
 					>
 						{t('ginaLucyBrand')}
 					</Typography>
 					<Typography
-						type="decor"
+						font="decor"
 						color="primaryDark"
 						className="m-auto block px-2 normal-case md:w-[630px]"
 					>
@@ -200,14 +199,14 @@ const Brands = () => {
 					</div>
 					<div className="mx-auto flex max-w-[600px] flex-col justify-center text-center md:text-left">
 						<Typography
-							type="decor"
+							font="decor"
 							variant="lg"
 							color="primaryDark"
 							className="mb-5"
 						>
 							{t('ginaLucyBrand')}
 						</Typography>
-						<Typography variant="sm" type="decor" className="">
+						<Typography variant="sm" font="decor" className="">
 							{t('ginaLucyText')}
 						</Typography>
 					</div>
@@ -216,18 +215,18 @@ const Brands = () => {
 
 			<div className="relative z-10 mb-12 h-[460px] space-y-1 bg-[url('/assets/images/brands/birkenstock/birkenstockBanner.jpg')] bg-cover bg-center pt-40 text-center uppercase md:mb-28 md:h-[600px] md:px-1 md:pt-56">
 				<div className="mx-auto max-w-[630px] space-y-2">
-					<Typography type="decor" color="beige" className="block">
+					<Typography font="decor" color="beige" className="block">
 						{t('brand')}
 					</Typography>
 					<Typography
-						type="decor"
+						font="decor"
 						color="beige"
 						className="block text-4xl md:text-xl"
 					>
 						{t('birkenstockBrand')}
 					</Typography>
 					<Typography
-						type="decor"
+						font="decor"
 						color="beige"
 						className="m-auto block px-2 normal-case md:w-[630px]"
 					>
@@ -240,7 +239,7 @@ const Brands = () => {
 				<div className="flex max-w-[1200px]  flex-col-reverse gap-16 px-2 md:mb-12 md:flex-row xl:mx-auto">
 					<div className="mx-auto mb-20 flex max-w-[600px]  flex-col justify-center md:mb-0 md:pt-12 md:text-left">
 						<Typography
-							type="decor"
+							font="decor"
 							variant="lg"
 							color="primaryDark"
 							className="mb-5 text-center"
@@ -250,7 +249,7 @@ const Brands = () => {
 						<div className="flex flex-col text-center">
 							<Typography
 								variant="sm"
-								type="decor"
+								font="decor"
 								className="mb-10 text-center"
 							>
 								{t('birkenstockText')}

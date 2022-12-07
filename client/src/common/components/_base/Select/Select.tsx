@@ -63,7 +63,7 @@ const Select = <T,>({
 				<SelectPrimitive.Content
 					className={cn(
 						`border-[1px] border-${borderColor} focus:border-${borderColor} overflow-hidden`,
-						'animate-appear-in rounded-md',
+						'animate-appear-in z-30 rounded-md',
 						'radix-popper-content-wrapper',
 						bgColor,
 						!outline
